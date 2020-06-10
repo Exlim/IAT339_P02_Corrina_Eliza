@@ -2,7 +2,7 @@
 	font-family: 'BarlowSemiCondensed-ExtraBold';
 	font-weight: extrabold;
 	font-style: normal;
-	src: url('..font/BarlowSemiCondensed-ExtraBold.ttf')
+	src: url('../fonts/BarlowSemiCondensed-ExtraBold.ttf')
 		 format('truetype');
 }
 
@@ -11,7 +11,7 @@
 	font-family: 'SpaceMono-Regular';
 	font-weight: regular;
 	font-style: normal;
-	src: url('..font/SpaceMono-Regular.ttf')
+	src: url('../fonts/SpaceMono-Regular.ttf')
 		 format('truetype');
 }
 
