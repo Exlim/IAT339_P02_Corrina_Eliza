@@ -1,0 +1,17 @@
+@font-face{
+	font-family: 'BarlowSemiCondensed-ExtraBold';
+	font-weight: extrabold;
+	font-style: normal;
+	src: url('..font/BarlowSemiCondensed-ExtraBold.ttf')
+		 format('truetype');
+}
+
+
+@font-face{
+	font-family: 'SpaceMono-Regular';
+	font-weight: regular;
+	font-style: normal;
+	src: url('..font/SpaceMono-Regular.ttf')
+		 format('truetype');
+}
+
