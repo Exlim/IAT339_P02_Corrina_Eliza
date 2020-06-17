@@ -1,4 +1,4 @@
-# exclude all jpeg and jpg 
+#exclude all jpeg and jpg 
 *.jpg;
 *.jpeg;
 
@@ -7,3 +7,6 @@
 
 #exclude all svg
 *.svg;
+
+#exclude README.md file
+*.README.md

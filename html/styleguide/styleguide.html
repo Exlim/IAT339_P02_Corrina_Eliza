@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This code was made in reference of Paul Brokenshire's HTML Basics Tutorial 
+     also with the help and reference of w3schools.com. 
+     Code written by Corrina Tang (301284310) for IAT339 --> 
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Styleguide</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+  </head>
+
+   <body>
+    
+<!-- Top Navigation --> 
+  <div class = "topnav">
+    <a href="citations.html">CITATIONS</a>
+    <a href="index.html">WIREFRAMES</a> 
+    <a href="styleguide.html">STYLEGUIDE</a> 
+  </div>
+
+<!-- Side Navigation --> 
+
+  <div class="sidenav">
+    <a href="#foundation">FOUNDATION</a>
+      <a href="#gridstructure">Grid Structure</a>
+      <a href="#colorswatches">Color Swatches</a>
+      <a href="#typograpahy">Typography</a>
+      <a href="#Components">COMPONENTS</a>
+      <a href="#Addtocartbutton">Add to Cart Button</a>
+      <a href="#bfbutton">Back + Forward Button</a>
+      <a href="#textfieldlabel">Label + Form</a>
+      <a href="#Mainnav">Main Navigation</a>
+      <a href="#detailedproduct">Detailed Product View</a>
+      <a href="#FAQ">FAQ Accordian</a>
+  </div>
+
+
+  <section id="foundation"> 
+
+    <section id="gridstructure"> 
+      <h2>Grid Structure</h2> 
+        <p> This site will use a 12 column grid because of it's flexibility to combine columns enabling the website to be in 1/2, 1/3, and 1/4 column styling. There will be 0.5rem of padding and margin. </p>
+      <div class= "flexbox-container">
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+        <div class=flexbox-item> <p> 1/12 </p> </div>
+      </div>
+
+      <h3>CSS Selector</h3>
+        <p>.flexbox-item .flexbox-container</p>
+      <h3>Sample Code:</h3>
+      <code>&lt;div class="flexbox-container&gt;</code>
+        <code>&lt;div class="flexbox-item&gt; &lt;/div&gt;</code>
+        <code>&lt;div class="flexbox-item&gt; &lt;/div&gt;</code>
+        <code>&lt;div class="flexbox-item&gt; &lt;/div&gt;</code>
+      <code>&lt;/div&gt;</code>
+   </section>  
+   <!-- End of Grid Structure Section --> 
+
+
+
+   <section id="colorswatches"> 
+    <h2>Color Swatches</h2>
+      <div class = "color-swatches">
+        <div class = swatch-1> <p>#D93333</p></div>
+        <div class = swatch-2> <p>#B73326</p></div>  
+        <div class = swatch-3> <p>#FFF9ED</p></div>  
+        <div class = swatch-4> <p>#1A1A1A</p></div>  
+      </div>
+   </section> 
+   <!-- End of Color Swatches Section --> 
+
+
+   <section id="typograpahy"> 
+    <h2> Typography </h2> 
+      <h1> Heading 01 </h1> 
+        <p>Barlow Extra Bold - 3rem/48px</p>
+      <h2>Heading 02</h2>
+        <p>Barlow Extra Bold - 3rem/48px</p>
+      <h3> Heading 03</h3>
+        <p>H3 Barlow Extra Bold 1.5rem/24px </p>
+   <h3>CSS Selector</h3>
+      <p> h1, h2, h3</p>
+  <h3>Sample Code:</h3>
+    <code>&lt;h1&gt; Heading 01 &lt;h1&gt;</code>
+    <code>&lt;h2&gt; Heading 02 &lt;h2&gt;</code>
+    <code>&lt;h3&gt; Heading 03 &lt;h3&gt;</code>
+
+
+  <h2> Paragraphs </h2> 
+     <p> Shiro murasaki white soy sauce is distinguished by its pale color which allows it to be used as a rich soy seasoning without darkening the colour of the dish in the same way as a traditional soy sauce. </p>
+     <p> Space Mono Regular - 1rem/16px </p>
+  <h3>CSS Selector</h3>
+    <p> p </p>
+  <h3>Sample Code:</h3>
+    <code>&lt;p&gt; Shiro murasaki white soy sauce...&lt;/p&gt;</code>
+
+
+  <h2> Bulleted Lists </h2> 
+     <p> Soy sauce has first been made since the 13th century. It has an earthy, umami flavour, making it the ideal all-purpose seasoning! The most basic and key ingredients to Soy Sauce are: </p>
+    <ul class="bullet">
+      <li> Fermented Soybeans </li>
+      <li> Salt </li>
+      <li> Wheat </li>
+      <li> Water </li>
+    </ul>
+  <h3>CSS Selector</h3>
+    <p> ul.bullet.li</p>
+  <h3>Sample Code:</h3>
+  <code>&lt;ul class = "bullet"&gt;</code>
+  <code>&lt;li&gt; Fermented Soybeans &lt;li&gt;</code>
+  <code>&lt;li&gt; Salt &lt;li&gt;</code>
+  <code>&lt;li&gt; Wheat &lt;li&gt;</code>
+  <code>&lt;li&gt; Water &lt;li&gt;</code>
+  <code>&lt;/ul&gt;</code>
+
+
+  <h2> Numbered Lists </h2> 
+    <ol class="number">
+      <li> Item 1 </li>
+      <li> Item 2 </li>
+      <li> Item 3 </li>
+      <li> Item 4 </li>
+    </ol>
+    <h3>CSS Selector</h3>
+      <p> ol.number li</p>
+    <h3>Sample Code:</h3>
+      <code>&lt;ol class = "number"&gt;</code>
+      <code>&lt;li&gt; Numbered Item 1 &lt;li&gt;</code>
+      <code>&lt;li&gt; Numbered Item 2 &lt;li&gt;</code>
+      <code>&lt;li&gt; Numbered Item 3 &lt;li&gt;</code>
+      <code>&lt;li&gt; Numbered Item 4 &lt;li&gt;</code>
+      <code>&lt;/ol&gt;</code>
+
+
+      <h2>In-text Link</h2>
+        <p> This is an <a href="#">in-text link</a>.</p>
+      <h3>CSS Selector</h3>
+        <p> p > a </p>
+      <h3>Sample Code:</h3>
+        <code>&lt;p&gt; This is an &lt;a href="#"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;</code>
+
+     </section>    
+        <!-- End of Typography Section --> 
+  
+   </section>
+      <!-- End of Foundation Section --> 
+
+
+    <section id = "Components">
+      <section id = "Addtocartbutton">
+      <h2>Add to Cart Button</h2>
+        <button class="btn-addtocart">ADD TO CART</button>
+      <h3>CSS Selector</h3>
+        <p>.btn-addtocart</p>
+      <h3>Sample Code:</h3>
+        <code>&lt;button class = "btn-addtocart"&gt;Add to Cart&lt;/button&gt;</code>
+    </section>    
+          <!-- End of Add to Cart Button Section --> 
+
+
+      <section id = "bfbutton">
+        <h2>Back + Forward Buttons</h2>
+          <button class="btn-back"><</button>
+          <button class="btn-forward">></button>
+        <h3>CSS Selector</h3>
+          <p> .btn-back  .btn-forward</p>
+        <h3>Sample Code:</h3>
+          <code>&lt;button class= "btn-back" &gt;<&lt;/button&gt;</code>
+          <code>&lt;button class= "btn-forward" &gt;>&lt;/button&gt;</code>
+      </section>    
+            <!-- Back and Forward Button Section --> 
+
+
+      <section id="textfieldlabel"> 
+        <h2>Text Input Field & Label</h2>
+
+          <form> 
+            <p> Subscribe to our Mailing List!</p>
+            <input class = "form-input" value= "Your email here please!" type = "text"> 
+            <input type = "submit" class="btn-submit" value="STAY IN TOUCH">
+          </form>
+
+        <h3>CSS Selector</h3>
+          <p>label  .form-input  .btn-submit</p>
+
+      <h3>Sample Code:</h3>
+        <code>&lt;form&gt;</code>
+        <code>&lt;label&gt; Subscribe to our Mailing List! &lt;/label&gt;</code>
+        <code> &lt;input class="form-input" value = "Your email here please!"type="text"name="text"&gt;</code>
+        <code> &lt;input type = "submit" class = "btn-submit" value = "STAY IN TOUCH"&gt;</code>
+        <code>&lt;/form&gt;</code>
+      </section> 
+            <!-- End of Text Field Label Section --> 
+
+
+  <section id = Mainnav>
+  <h2>Main Navigation</h2>
+    <nav class="saucyboynav"> 
+      <img src="../img/SaucyBoys-Logo.png" alt="SaucyBoys-Logo">
+      <a class="saucyboynav"> CART(0) </a> 
+      <a class="saucyboynav"> FAQ </a>
+      <a class="saucyboynav"> ABOUT </a> 
+      <a class="saucyboynav"> SHOP </a>
+      <a class="saucyboynav"> HOME </a>
+
+    </nav>   
+    <h3>CSS Selector</h3>
+      <p>.saucyboynav</p>
+    <h3>Sample Code</h3>
+    <code>&lt;div class = "saucyboynav"&gt;</code>
+      <code>&lt;a href="#"&gt;HOME&lt;/a&gt;</code>
+      <code>&lt;a href="#"&gt;SHOP&lt;/a&gt;</code>
+      <code>&lt;a href="#"&gt;ABOUT&lt;/a&gt;</code>
+      <code>&lt;a href="#"&gt;FAQ&lt;/a&gt;</code>
+      <code>&lt;a href="#"&gt;CART&lt;/a&gt;</code>
+    <code>&lt;/div&gt;</code>
+  </section>
+        <!-- End of Main Navigation Section --> 
+
+
+  <section id = "detailedproduct">
+     <h2>Detailed Product View </h2>
+     <div class= "flexbox-detailedproduct">
+        <div class=flexbox-product>
+            <img src="../img/whitesoy.jpg" alt="Image of White Soy Sauce">
+        </div>
+
+        <div class=flexbox-product>
+        <h1> Shiro Murasaki </h1>
+        <h4> $15.98 </h4>
+        <p> Shiro murasaki white soy sauce is distinguished by its 
+          pale color which allows it to be used as a rich soy seasoning
+          without darkening the colour of the dish in the same way as a traditional soy sauce.</p> 
+        <button class="btn-addtocart">ADD TO CART</button>
+        </div>
+      </div>
+
+        <h3>CSS Selector</h3>
+          <p>.flexbox-detailedproduct  .flexbox-product .btn-addtocart</p>
+
+      <h3>Sample Code</h3>
+      <code>&lt;div class="flexbox-detailedproduct"&gt;</code>
+      <code>&lt;div class=flexbox-product&gt;</code>
+      <code>&lt;img src="../img/whitesoy.jpg" alt="Image of White Soy Sauce"&gt;SHOP&lt;/div&gt;</code>
+      <code>&lt;div class=flexbox-product&gt;</code>
+      <code>&lt;h1&gt;Shiro Murasaki&lt;/h1&gt;</code>
+      <code>&lt;h4&gt;$15.98&lt;/h4&gt;</code>
+      <code>&lt;p&gt;Shiro murasaki white soy sauce is distinguished by its 
+          pale color which allows it to be used as a rich soy seasoning
+          without darkening the colour of the dish in the same way as a traditional soy sauce.&lt;/p&gt;</code>
+    <code>&lt;button class="btn-addtocart"&gt;ADD TO CART&lt;/button&gt;</code>
+   <code>&lt;/div&gt;</code>
+   <code>&lt;/div&gt;</code>
+  </section>
+        <!-- End of Detailed Product Section --> 
+
+
+  <section id= "FAQ">
+
+  <!--The 'accordion' code and use was learned and referenced from How To - Collapsibles/Accordion from https://www.w3schools.com/howto/howto_js_accordion.asp-->
+    <h2> FAQ Accordian</h2>
+
+    <button class="accordion">Why are you guys called SaucyBoys?</button>
+    <div class="panel">
+      <p>We’re a pair of twin brothers who are raised and born in New York City.
+    We’ve always loved soy sauce, we had it with everything. It was only natural 
+    that we started our own store for selling soy sauce! </p>
+    </div>
+
+    <button class="accordion">Where are you located? </button>
+    <div class="panel">
+      <p>New York City!</p>
+    </div>
+
+  <button class="accordion">Where do you ship to? </button>
+  <div class="panel">
+    <p>We ship world wide baby!</p>
+  </div>
+
+  <h3>CSS Selector</h3>
+          <p>.accordion  .panel</p>
+
+    <h3>Sample Code</h3>
+      <code>&lt;button class="accordion"&gt;Why are you guys called SaucyBoys? &lt;/button&gt;</code>
+      <code>&lt;div class="panel"&gt;</code>
+      <code>&lt;p&gt;We’re a pair of twin brothers who are raised and born in New York City. We’ve always loved soy sauce, we had it with everything. It was only natural that we started our own store for selling soy sauce!&lt;/p&gt;</code>
+      <code>&lt;/div&gt;</code>
+      
+  </section>
+        <!-- End of FAQ Accordian Section --> 
+
+
+</section>
+      <!-- End of Components Section --> 
+
+<!-- Javascript for Accordion --> 
+
+<script> 
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+  </body> 
+</html>
