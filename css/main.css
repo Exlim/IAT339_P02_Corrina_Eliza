@@ -71,6 +71,8 @@ img {
     padding:0.9rem 1rem 0.9rem 1rem;
     font: inherit;
     margin: 0;
+    color:white;
+
 }
 
 .main-nav-button:hover{
@@ -117,7 +119,7 @@ img {
   font-size: 16px;
   border: none;
   outline: none;
-  color: black;
+  color: white
   padding:0.9rem 1rem 0.9rem 1rem;
   background-color: inherit;
   font-family: inherit;
@@ -125,7 +127,7 @@ img {
 }
 
  .subnav-button:hover{
-    background:#B62A2A;
+    text-decoration:underline;
     color:white;
  }
 
@@ -177,12 +179,12 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 20% 10% 10% 10%;
+    padding: 10% 10% 10% 10%;
     height: 100%;
 }
 
 .homepage-image{
-    background-image: url(../img/temporary_hero_image.jpg);
+    background-image: url(../img/Hero_Image_Template.svg);
 }
 
 .hero-text{
