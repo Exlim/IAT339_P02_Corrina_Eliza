@@ -17,7 +17,7 @@ h3{
 h4 {
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
   font-size: 1rem;
-  margin-top: : 0.5rem;
+  margin-top: 0.5rem;
   padding:0;
 
 }
@@ -44,7 +44,6 @@ form{
 a {
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
   color: #D93333;
-  padding-top:-0.2rem;
 }
 
 a:active, a:hover, a:focus {
@@ -113,6 +112,8 @@ img {
 .subnav {
   float: left;
   overflow: hidden;
+  max-width:100%;
+  max-height:80%;
 }
 
 /* SUBNAV BUTTON -----------------------------------*/
@@ -120,7 +121,7 @@ img {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white
+  color: white;
   padding:0.9rem 1rem 0.9rem 1rem;
   background-color: inherit;
   font-family: inherit;
@@ -139,6 +140,8 @@ img {
   background-color: white;
   width: 100%;
   z-index: 1;
+  overflow:scroll;
+  max-height:25rem;
 }
 
 .subnav:hover .subnav-content {
@@ -173,7 +176,17 @@ img {
   font-size: 16px;
 }
 
-.btn-submit{
+.button:hover, 
+.button:focus,
+.btn-submit:hover,
+.btn-submit:focus,
+.btn-product:hover,
+.btn-product:focus{
+  background-color:#292929;
+}
+
+.btn-submit,
+.btn-product{
   background-color:black;
   border:none;
   color: white;
@@ -186,6 +199,21 @@ img {
   font-size: 16px;  
   margin-top:1rem;
 }
+
+/*OPTIONAL PRODUCT BUTTON
+.btn-product{
+  background-color:white;
+  border:0.1rem solid black;
+  color: black;
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  font-size: 16px;  
+  margin-top:1rem;
+}*/
 
 /*HERO BANNER --------------*/
 .hero-banner{
@@ -267,6 +295,16 @@ img {
  .card{
     text-align:left;
  }
+
+ .product-header-link{
+  text-decoration:none;
+  color:black;
+}
+
+.product-header-link:hover, .product-header-link:focus{
+  text-decoration:underline;
+  color:black;
+}
 
 /*SPLASH IMAGE ON PRODUCT PAGE ---------------------*/
 .product-page-hero-banner{
@@ -385,3 +423,4 @@ img {
   margin: 0;
   padding: 0;
 }
+
