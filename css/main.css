@@ -223,3 +223,18 @@ img {
   font: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
+
+/* Black Button for Add (+) Minus (-) Increments */
+.btn-blacksquare
+{
+  background-color:black;
+  border:none;
+  color: white;
+  height: 3.5rem;
+  width: 3.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  font-size: 2rem;
+}

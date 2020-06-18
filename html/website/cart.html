@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="../../css/grids.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/normalize.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <h1> Your Cart! </h1>
+
+  <div class = "parent-container">
+        <div class="flexbox-layout-major">
+        	<h2> Product </h2>
+        </div>
+        <div class="flexbox-layout-minor">
+        	<h2> Quantity </h2>
+        </div>
+        <div class="flexbox-layout-minor">
+        	<h2> Price </h2>
+        </div>
+  </div>
+
+    <div class = "parent-container margins-2rem">
+        <div class="flexbox-layout-minor">
+        	<div class = "rectangle"></div>
+        	<div class = "rectangle"></div>
+        </div>
+
+        <div class="flexbox-layout-minor">
+        	<h2> Your Soy Sauce Name </h2>
+        	<h3> 200ml</h3>
+        </div>
+        <div class="flexbox-layout-major">
+       	
+    <div class="form-group">
+    <div class="input-group-btn">
+    <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+ 	<input type="text" id="myNumber" class="form-control input-number" value="1"/>
+  	 <div class="input-group-btn">
+    <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+
+            </div>
+        </div>
+    </div>
+
+      <a href="#"> Remove </a>
+        </div>
+
+        <div class="flexbox-layout-minor">
+        	<h2> $16.99 </h2>
+        </div>
+  </div>
+
+   <div class = "parent-container margins-2rem">
+        <div class="flexbox-layout-minor">
+        	<div class = "rectangle"></div>
+        	<div class = "rectangle"></div>
+        </div>
+
+        <div class="flexbox-layout-minor">
+        	<h2> Your Soy Sauce Name </h2>
+        	<h3> 200ml</h3>
+        </div>
+        <div class="flexbox-layout-major">
+       	
+    <div class="form-group">
+    <div class="input-group-btn">
+    <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+ 	<input type="text" id="myNumber" class="form-control input-number" value="1"/>
+  	 <div class="input-group-btn">
+    <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+
+            </div>
+        </div>
+    </div>
+
+      <a href="#"> Remove </a>
+        </div>
+
+        <div class="flexbox-layout-minor">
+        	<h2> $16.99 </h2>
+        </div>
+  </div>
+
+<script>
+
+  function up(max) {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+    if (document.getElementById("myNumber").value >= parseInt(max)) {
+        document.getElementById("myNumber").value = max;
+    }
+}
+function down(min) {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+    if (document.getElementById("myNumber").value <= parseInt(min)) {
+        document.getElementById("myNumber").value = min;
+    }
+}
+</script>
+
+  </body>
+
+
+
+  </html>
