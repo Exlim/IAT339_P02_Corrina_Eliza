@@ -227,4 +227,19 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	padding-left:1rem;
 }
 
-/*PRODUCT DETAIL ----------------------------------------------------------- */
+
+
+/*REVIEWS ----------------------------------------------------------- */
+.reviews-column{
+	flex-direction: column;
+}
+
+.margins-1rem{
+	margin: 1rem;
+}
+
+/*CART ----------------------------------------------------------- */
+.cart-row{
+	justify-content: flex-start;
+}
+
