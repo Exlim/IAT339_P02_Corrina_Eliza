@@ -76,8 +76,9 @@ img {
 }
 
 .main-nav-button:hover{
-    background:#B62A2A;
+    text-decoration:underline;
     color:white;
+
 }
 
 .main-nav{
@@ -102,7 +103,7 @@ img {
 }
 
 .discount-header-font{
-  font-size:0.8rem;
+  font-size:0.7rem;
 }
 }
 
@@ -170,6 +171,20 @@ img {
   display: inline-block;
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
   font-size: 16px;
+}
+
+.btn-submit{
+  background-color:black;
+  border:none;
+  color: white;
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  font-size: 16px;  
+  margin-top:1rem;
 }
 
 /*HERO BANNER --------------*/
@@ -354,4 +369,19 @@ img {
   background-color: grey;
 }
 
+/* FOOTER ----------------------------*/
 
+.footer-header-link {
+  color:black;
+  text-decoration:none;
+}
+
+.footer-header-link:hover, .footer-header-link:focus{
+  color:#D93333;
+}
+
+.footer-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
