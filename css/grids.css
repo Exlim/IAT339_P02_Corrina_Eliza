@@ -63,7 +63,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 .main-nav-container{
 	justify-content:space-between;
 	flex-wrap:wrap;
-	height:3rem;
+	height:auto;
 	padding-right:0.5rem;
 	padding-left:0.5rem;
 }
@@ -204,6 +204,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 .product-nav-col{
 	padding-right:2rem;
 	padding-left:2rem;
+	align-items:center;
 }
 
 /*DROP DOWN MENU CODE ----------------------------------------------------------- */
