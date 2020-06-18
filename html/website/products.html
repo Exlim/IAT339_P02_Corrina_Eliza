@@ -15,20 +15,21 @@
   </head>
   <body>
 
-  <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
+<!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
 <section class="discount-header">
-  <div class="slab-black flexbox-full_width center-container">
-    <p> GET FREE SHIPPING ON ORDERS OVER $25 <a href="#">SEE DETAILS</a></p>
+  <div class="slab-white flexbox-full_width center-container">
+    <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a href="#">SEE DETAILS</a></p>
   </div>
 </section>
 
 <!-- NAV SECTION--------------------------------------------------------------   -->
 <nav class="main-nav">
-  <div class="slab-black main-nav-container bg-red parent-container">
+  <div class="main-nav-container slab-black parent-container">
     <div class="main-nav-logo">
       <a href="home_page.html">
-      <img src="../../img/Saucyboys_Logo.svg" alt="Saucyboys website logo">
-      </a>    </div>
+      <img class="logo-width" src="../../img/Saucyboys_Logo.svg" alt="Saucyboys website logo">
+      </a>
+    </div>
     <div class="main-nav-items">
       <div class="main-nav-col">
         <a href="home_page.html">
@@ -41,7 +42,7 @@
         </a>
       </div>
       <div class="main-nav-col">
-        <a href="#">
+        <a href="about.html">
         <button class="main-nav-button">ABOUT</button>
         </a>
       </div>
@@ -136,7 +137,6 @@
 
 
 <!--MULTIPLE PRODUCTS SECTION --------------------------------------------- --->
-  <section>
 
     <section>
       <h2>ALL SOY SAUCE</h2>
@@ -144,41 +144,63 @@
 <!--FIRST ROW OF PRODUCTS ------------------------------------- -->
       <section id="first-row-of-products">
         <div class="parent-container product-grid"> <!--Parent Product Grid Div Container Starts -->
-          <div class="product-grid-col center-grid-items">
+        <div class="product-grid-col center-grid-items"> <!--Start of product -->
+          <a href="detailed_product.html">
             <img src="../../img/Product_Image.svg" alt="Grebox product image">
-            <h3>Soy Sauce Name</h3>
-            <div class="rating">
-              <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-              <a href="#">22 reviews</a>
-            </div>
-            <p>$11.98</p>
-            <button class = "button" onclick="window.location.href='cart.html'">Add to Cart</button>      
-          </div>
-
-
-        <div class="product-grid-col center-grid-items">
-          <img src="../../img/Product_Image.svg" alt="Grebox product image">
-          <h3>Soy Sauce Name</h3>
+          </a>
+          <h3>
+            <a class="product-header-link" href="detailed_product.html">Soy Sauce Name</a>
+          </h3>
           <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            <span">☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
             <a href="#">22 reviews</a>
           </div>
           <p>$11.98</p>
-          <button class = "button" onclick="window.location.href='cart.html'">Add to Cart</button>     
-        </div>
+          <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+        </div> <!--End of product -->
 
-
-        <div class="product-grid-col center-grid-items card">
-          <img src="../../img/Product_Image.svg" alt="Grebox product image">
-
-          <h3>Soy Sauce Name</h3>
+        <div class="product-grid-col center-grid-items"> <!--Start of product -->
+          <a href="detailed_product.html">
+            <img src="../../img/Product_Image.svg" alt="Grebox product image">
+          </a>
+          <h3>
+            <a class="product-header-link" href="detailed_product.html">Soy Sauce Name</a>
+          </h3>
           <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            <span">☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
             <a href="#">22 reviews</a>
           </div>
-        <p>$11.98</p>
-        <button class = "button" onclick="window.location.href='cart.html'">Add to Cart</button>       
-        </div>
+          <p>$11.98</p>
+          <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+        </div> <!--End of product -->
+
+
+        <div class="product-grid-col center-grid-items"> <!--Start of product -->
+          <a href="detailed_product.html">
+            <img src="../../img/Product_Image.svg" alt="Grebox product image">
+          </a>
+          <h3>
+            <a class="product-header-link" href="detailed_product.html">Soy Sauce Name</a>
+          </h3>
+          <div class="rating">
+            <span">☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <a href="#">22 reviews</a>
+          </div>
+          <p>$11.98</p>
+          <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+        </div> <!--End of product -->
 
 
       </div> <!-- Parent Product Grid Div Container Ends -->
@@ -187,49 +209,71 @@
 <!--SECOND ROW OF PRODUCTS -------============------------------ -->
       <section id="second-row-of-products">
         <div class="parent-container product-grid"> <!--Parent Product Grid Div Container Starts -->
-          <div class="product-grid-col center-grid-items">
+        <div class="product-grid-col center-grid-items"> <!--Start of product -->
+          <a href="detailed_product.html">
             <img src="../../img/Product_Image.svg" alt="Grebox product image">
-            <h3>Soy Sauce Name</h3>
-            <div class="rating">
-              <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-              <a href="#">22 reviews</a>
-            </div>
-            <p>$11.98</p>
-            <button class = "button" onclick="window.location.href='cart.html'">Add to Cart</button>      
-          </div>
-
-
-        <div class="product-grid-col center-grid-items">
-          <img src="../../img/Product_Image.svg" alt="Grebox product image">
-          <h3>Soy Sauce Name</h3>
+          </a>
+          <h3>
+            <a class="product-header-link" href="detailed_product.html">Soy Sauce Name</a>
+          </h3>
           <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            <span">☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
             <a href="#">22 reviews</a>
           </div>
           <p>$11.98</p>
-          <button class = "button" onclick="window.location.href='cart.html'">Add to Cart</button>     
-        </div>
+          <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+        </div> <!--End of product -->
 
 
-        <div class="product-grid-col center-grid-items card">
-          <img src="../../img/Product_Image.svg" alt="Grebox product image">
-
-          <h3>Soy Sauce Name</h3>
+        <div class="product-grid-col center-grid-items"> <!--Start of product -->
+          <a href="detailed_product.html">
+            <img src="../../img/Product_Image.svg" alt="Grebox product image">
+          </a>
+          <h3>
+            <a class="product-header-link" href="detailed_product.html">Soy Sauce Name</a>
+          </h3>
           <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            <span">☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
             <a href="#">22 reviews</a>
           </div>
-        <p>$11.98</p>
-        <button class = "button">Add to Cart</button>       
-        </div>
+          <p>$11.98</p>
+          <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+        </div> <!--End of product -->
+
+
+         <div class="product-grid-col center-grid-items"> <!--Start of product -->
+          <a href="detailed_product.html">
+            <img src="../../img/Product_Image.svg" alt="Grebox product image">
+          </a>
+          <h3>
+            <a class="product-header-link" href="detailed_product.html">Soy Sauce Name</a>
+          </h3>
+          <div class="rating">
+            <span">☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <a href="#">22 reviews</a>
+          </div>
+          <p>$11.98</p>
+          <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+        </div> <!--End of product -->
 
 
       </div> <!-- Parent Product Grid Div Container Ends -->
       </section>     
 
 
-    </section>
-  </section>
+    </section> 
 
 <!-- FOOTER SECTION ------------------------------------------- -->
 
@@ -237,22 +281,30 @@
   <div class="footer-container bg-cream">
     <div class="footer-content">
       <div class="footer-col">
-        <h2>Info</h2>
-        <ul>
+
+        <a class="footer-header-link" href="about.html">
+          <h2>Info</h2>
+        </a>
+
+        <ul class="footer-list">
           <li>
-              <a href="#">About Us</a>
+              <a href="about.html">About Us</a>
           </li>
           <li>
-              <a href="#">Styleguide</a>
+              <a href="../styleguide/index.html">Styleguide</a>
           </li>
           <li>
-              <a href="#">Citations</a>
+              <a href="../styleguide/citations.html">Citations</a>
           </li>
         </ul>
       </div>
       <div class="footer-col">
-        <h2>Contact Us</h2>
-        <ul>
+
+        <a class="footer-header-link" href="contact_us.html">
+          <h2>Contact Us</h2>
+        </a>
+
+        <ul class="footer-list">
           <li>ADDRESS: 91 West St, Brooklyn NY 11222</li>
           <li>TEL: 253.623.2634</li>
           <li>EMAIL: Info@SaucyBoys.co</li>
@@ -264,6 +316,7 @@
     </div>
   </div>
 </section>
+
 
   </body>
   </html>

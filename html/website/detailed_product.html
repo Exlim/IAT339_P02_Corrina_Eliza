@@ -2,91 +2,114 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link href="../../css/normalize.css" rel="stylesheet">
+    <link href="../../css/fonts.css" rel="stylesheet">
     <link href="../../css/grids.css" rel="stylesheet">
     <link href="../../css/main.css" rel="stylesheet">
-    <link href="../../css/normalize.css" rel="stylesheet">
   </head>
 
   <body> 
 
-    <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
+<!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
 <section class="discount-header">
-  <div class="slab-black flexbox-full_width center-container">
-    <p> GET FREE SHIPPING ON ORDERS OVER $25 <a href="#">SEE DETAILS</a></p>
+  <div class="slab-white flexbox-full_width center-container">
+    <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a href="#">SEE DETAILS</a></p>
   </div>
 </section>
-    <!-- NAV SECTION--------------------------------------------------------------   -->
+
+<!-- NAV SECTION--------------------------------------------------------------   -->
 <nav class="main-nav">
-  <div class="slab-black main-nav-container bg-red parent-container">
+  <div class="main-nav-container slab-black parent-container">
     <div class="main-nav-logo">
-      <img src="../../img/Saucyboys_Logo.svg" alt="Saucyboys website logo">
+      <a href="home_page.html">
+      <img class="logo-width" src="../../img/Saucyboys_Logo.svg" alt="Saucyboys website logo">
+      </a>
     </div>
     <div class="main-nav-items">
       <div class="main-nav-col">
+        <a href="home_page.html">
         <button class="main-nav-button">HOME</button>
+        </a>
       </div>
       <div class="main-nav-col subnav">
+        <a href="products.html">
         <button class="main-nav-button subnav-button">SHOP</button>
-          <div class="subnav-content"> <!--Subnav content container div starts -->
-          <div class="subnav-container"> <!--Subnav flexbox container div start -->
-            <div class="subnav-filter"> <!-- Subnav filter div starts -->
-              <h3><a href="#">All Soy Sauce</a></h3>
-              <h3><a href="#">Soy Sauce by Country</a></h3>
-                <ul>
-                  <li><a href="#">China</a></li>
-                  <li><a href="#">Japan</a></li>
-                  <li><a href="#">Korea</a></li>
-                  <li><a href="#">Indonesia</a></li>
-                  <li><a href="#">Vietnam</a></li>
-                </ul>
-              <h3><a href="#">Just In</a></h3>
-              <h3><a href="#">Bestsellers</a></h3>
-              <h3><a href="#">Top Rated</a></h3>
-              <h3><a href="#">Sale</a></h3>
-
-
-            </div> <!-- Subnav filter div ends -->
-
-
-            <div class="subnav-types">
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">Dark Soy Sauce</a>                
-              </div>
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">Tamaru Soy Sauce</a>                  
-              </div>
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">White Soy Sauce</a>                  
-              </div>
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">Special Soy Sauce</a>                  
-              </div>
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">Low Sodium Soy Sauce</a>                  
-              </div>
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">Gluten Free Soy Sauce</a>                  
-              </div>
-            </div>
-
-          </div> <!--Subnav flexbox container div ends -->
-          </div> <!--Subnav content container div ends -->
+        </a>
       </div>
       <div class="main-nav-col">
+        <a href="about.html">
         <button class="main-nav-button">ABOUT</button>
+        </a>
       </div>
       <div class="main-nav-col">
+        <a href="cart.html">
         <button class="main-nav-button">CART</button>
+        </a>
       </div>
     </div>
   </div>
 </nav>
+  <!-- PRODUCT NAV ---------------------------- -->
+  <section class="product-nav-section">
+    <div class="product-nav"> <!-- Start of product nav div -->
+
+      <!--ALL SOY SAUCE BUTTON -------------------------------------------------------------------------------->
+      <div class="product-nav-col dropdown">
+        <button class="product-nav-button drop-button">ALL SOY SAUCE<i class="insert_icon_here"></i>
+          </button>
+        <div class="dropdown-content"> <!--Start of dropdown-content menu -->
+
+          <div class="row dropdown-menu-container"> <!--Start of dropdown-menu-container div -->
+
+            <div class="dropdown-menu-col">
+              <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
+              <a href="#">Tamaru Soy Sauce</a>
+            </div>
+            <div class="dropdown-menu-col">
+              <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
+              <a href="#">Tamaru Soy Sauce</a>              
+            </div>
+            <div class="dropdown-menu-col">
+              <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
+              <a href="#">Tamaru Soy Sauce</a>              
+            </div>
+            <div class="dropdown-menu-col">
+              <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
+              <a href="#">Tamaru Soy Sauce</a>              
+            </div>
+            <div class="dropdown-menu-col">
+              <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
+              <a href="#">Tamaru Soy Sauce</a>              
+            </div>
+          </div> <!--End of dropdown menu continaer div -->
+
+          <div class="row dropdown-menu-container">
+            <a href="#">View All</a>
+          </div>
+          
+        </div>
+      </div> <!-- End of dropdown-content menu -->
+
+<!--SAUCE TYPE DROP DOWN BUTTON -------------------------------------------------------------------------------->
+      <div class="product-nav-col">
+        <button class="product-nav-button">SAUCE TYPE</button>
+      </div>
+
+<!--COUNTRY DROP DOWN BUTTON -------------------------------------------------------------------------------->
+      <div class="product-nav-col">
+        <button class="product-nav-button">COUNTRY</button>
+
+
+      </div>
+      <div class="product-nav-col">
+        <button class="product-nav-button">JUST IN</button>
+      </div>
+      <div class="product-nav-col">
+        <button class="product-nav-button">SALE</button>
+      </div>
+    </div> <!-- End of product nav div -->
+    <hr>
+  </section>  
 
 
 
@@ -179,7 +202,7 @@
   </div>
 
   <div class = "parent-container margins-1rem">
-    <button class = "btn-black-long">LEAVE A REVIEW</button>
+    <button class = "button" onclick="window.location.href='review.html'">LEAVE A REVIEW</button>
 
   </div>
 

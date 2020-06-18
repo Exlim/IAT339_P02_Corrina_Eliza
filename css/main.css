@@ -17,7 +17,7 @@ h3{
 h4 {
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
   font-size: 1rem;
-  margin-top: : 0.5rem;
+  margin-top: 0.5rem;
   padding:0;
 
 }
@@ -44,7 +44,6 @@ form{
 a {
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
   color: #D93333;
-  padding-top:-0.2rem;
 }
 
 a:active, a:hover, a:focus {
@@ -71,11 +70,14 @@ img {
     padding:0.9rem 1rem 0.9rem 1rem;
     font: inherit;
     margin: 0;
+    color:white;
+
 }
 
 .main-nav-button:hover{
-    background:#B62A2A;
+    text-decoration:underline;
     color:white;
+
 }
 
 .main-nav{
@@ -100,7 +102,7 @@ img {
 }
 
 .discount-header-font{
-  font-size:0.8rem;
+  font-size:0.7rem;
 }
 }
 
@@ -117,7 +119,7 @@ img {
   font-size: 16px;
   border: none;
   outline: none;
-  color: black;
+  color: white;
   padding:0.9rem 1rem 0.9rem 1rem;
   background-color: inherit;
   font-family: inherit;
@@ -125,7 +127,7 @@ img {
 }
 
  .subnav-button:hover{
-    background:#B62A2A;
+    text-decoration:underline;
     color:white;
  }
 
@@ -136,6 +138,8 @@ img {
   background-color: white;
   width: 100%;
   z-index: 1;
+  overflow:scroll;
+  max-height:25rem;
 }
 
 .subnav:hover .subnav-content {
@@ -170,6 +174,45 @@ img {
   font-size: 16px;
 }
 
+.button:hover, 
+.button:focus,
+.btn-submit:hover,
+.btn-submit:focus,
+.btn-product:hover,
+.btn-product:focus{
+  background-color:#292929;
+}
+
+.btn-submit,
+.btn-product{
+  background-color:black;
+  border:none;
+  color: white;
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  font-size: 16px;  
+  margin-top:1rem;
+}
+
+/*OPTIONAL PRODUCT BUTTON
+.btn-product{
+  background-color:white;
+  border:0.1rem solid black;
+  color: black;
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  font-size: 16px;  
+  margin-top:1rem;
+}*/
+
 /*HERO BANNER --------------*/
 .hero-banner{
 
@@ -177,12 +220,12 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 20% 10% 10% 10%;
+    padding: 10% 10% 10% 10%;
     height: 100%;
 }
 
 .homepage-image{
-    background-image: url(../img/temporary_hero_image.jpg);
+    background-image: url(../img/Hero_Image_Template.svg);
 }
 
 .hero-text{
@@ -250,6 +293,16 @@ img {
  .card{
     text-align:left;
  }
+
+ .product-header-link{
+  text-decoration:none;
+  color:black;
+}
+
+.product-header-link:hover, .product-header-link:focus{
+  text-decoration:underline;
+  color:black;
+}
 
 /*SPLASH IMAGE ON PRODUCT PAGE ---------------------*/
 .product-page-hero-banner{
@@ -326,7 +379,7 @@ img {
   margin:30px;
 }
 
-input{
+.input-button-size{
   height:3.5rem;
   width:3.5rem;
 }
@@ -352,4 +405,20 @@ input{
   background-color: grey;
 }
 
+/* FOOTER ----------------------------*/
+
+.footer-header-link {
+  color:black;
+  text-decoration:none;
+}
+
+.footer-header-link:hover, .footer-header-link:focus{
+  color:#D93333;
+}
+
+.footer-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
