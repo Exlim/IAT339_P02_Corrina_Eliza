@@ -1,0 +1,225 @@
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+/*NAV CODE*/
+
+.main-nav-button{
+    background-color: inherit;
+    color:black;
+    border:none;
+    padding:0.9rem 1rem 0.9rem 1rem;
+    font: inherit;
+    margin: 0;
+}
+
+.main-nav-button:hover{
+    background:#B62A2A;
+    color:white;
+}
+
+.main-nav{
+  position:sticky;
+  top:3rem;
+  z-index:2;
+}
+
+.discount-header{
+  position:sticky;
+  top:0;
+  z-index:2;
+}
+
+.product-nav-section{
+  position:sticky;
+  top:7rem;
+  z-index:2;
+  background:white;
+}
+
+/*MAIN NAV SUBNAV CODE*/
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* SUBNAV BUTTON -----------------------------------*/
+.subnav .subnav-button {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+ .subnav-button:hover{
+    background:#B62A2A;
+    color:white;
+ }
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* PRODUCT NAV * ------------------------*/
+
+.product-nav-button{
+    background-color: inherit;
+    color:black;
+    border:none;
+    padding:0.9rem 1rem 0.9rem 1rem;
+    font: inherit;
+    margin: 0;
+}
+
+.product-nav-button:hover{
+
+}
+
+/*HERO BANNER --------------*/
+.hero-banner{
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 20% 10% 10% 10%;
+    height: 100%;
+}
+
+.homepage-image{
+    background-image: url(../img/temporary_hero_image.jpg);
+}
+
+.hero-text{
+    text-align: left;
+    left: 25%;
+    top:50%;
+    color: white;
+    max-width:30rem;
+}
+
+/*SLAB COLOURS ------------------------------------------------------*/
+
+.slab-black, .bg-black, .block-black{
+    background:black;
+    color:white;
+}
+
+.slab-red, .bg-red, .block-red{
+    background:#D93333;
+}
+
+.slab-cream, .bg-cream, .block-cream{
+    background:#FFF9ED;
+}
+
+.slab-orange, .bg-orange, .block-orange{
+    background:#FDBF61;
+}
+
+/*STICKY BANNER ------------------------------------------------------*/
+
+ .sticky-event{
+    padding:0rem 0.5rem 0rem 0.5rem;
+    position:fixed;
+    top:8rem;
+    right:1rem;
+    z-index:3;
+ }
+
+ .close_button {
+  position: absolute;
+  top: -0.15rem;
+  right: 0.5rem;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*ABOUT SECTION ------------------------------------*/
+
+ .text-padding{
+    padding: 2rem;
+ }
+
+ .stick-img-right{
+    margin-right:0rem;
+ }
+
+ /*PRODUCT GRID SECTION --------------------------------*/
+
+ .card{
+    text-align:left;
+ }
+
+/*SPLASH IMAGE ON PRODUCT PAGE ---------------------*/
+.product-page-hero-banner{
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 10% 10% 15% 10%;
+    height: 100%;
+}
+
+.product-page-hero-image{
+    background-image: 
+    linear-gradient(rgb(255,249,237, 0.5), rgb(255,249,237,0.5), rgb(255,249,237,0.5),  rgb(255,249,237,0.5), white),
+    url(../img/Splash_Image_Greybox.svg);
+}
+
+.product-hero-text{
+    text-align: left;
+    left: 25%;
+    top:25%;
+    color: black;
+    max-width:30rem;    
+}
+
+/*DROP DOWN PRODUCT MENU ----------------------------------------------------*/
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
