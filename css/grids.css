@@ -231,6 +231,9 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
 /*REVIEWS ----------------------------------------------------------- */
 .reviews-column{
+	display:flex;
+	justify-content:flex-start;
+	align-content:flex-start;
 	flex-direction:column;
 }
 
@@ -240,7 +243,6 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	align-content:flex-start;
 }
 
 .margins-1rem{

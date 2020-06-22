@@ -61,6 +61,13 @@ img {
 
 
 /*CSS SELECTORS -------------------------------------------------------------------------------------------------------*/
+
+/*GENERAL CODE */
+
+.h2-styling{
+  padding:0rem 4rem 0rem 4rem;
+}
+
 /*NAV CODE*/
 
 .main-nav-button{
@@ -281,7 +288,7 @@ img {
 /*ABOUT SECTION ------------------------------------*/
 
  .text-padding{
-    padding: 2rem;
+    padding: 0rem 4rem 0rem 4rem;
  }
 
  .stick-img-right{
