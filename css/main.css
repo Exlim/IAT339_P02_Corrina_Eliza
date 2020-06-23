@@ -59,13 +59,19 @@ img {
     max-width: 100%;
 }
 
+header{
+  position:sticky;
+  top:0rem;
+  z-index:2;
+}
+
 
 /*CSS SELECTORS -------------------------------------------------------------------------------------------------------*/
 
 /*GENERAL CODE */
 
-.h2-styling{
-  padding:0rem 4rem 0rem 4rem;
+.header-formatting{
+  padding:0 4rem 0 4rem;
 }
 
 /*NAV CODE*/
@@ -87,12 +93,6 @@ img {
 
 }
 
-.main-nav{
-  position:sticky;
-  top:2.5rem;
-  z-index:2;
-}
-
 .product-nav-section{
   position:sticky;
   top:5.5rem;
@@ -101,12 +101,6 @@ img {
 }
 
 /*DISCOUNT HEADER -----------------*/
-
-.discount-header{
-  position:sticky;
-  top:0;
-  z-index:2;
-}
 
 .discount-header-font{
   font-size:0.7rem;
@@ -287,13 +281,15 @@ img {
 
 /*ABOUT SECTION ------------------------------------*/
 
- .text-padding{
-    padding: 0rem 4rem 0rem 4rem;
- }
-
  .stick-img-right{
     margin-right:0rem;
+    padding:0rem;
  }
+
+ .unequal-text-formatting{
+  margin:0rem; 
+  padding:2rem 2rem 0rem 4rem;
+  }
 
  /*PRODUCT GRID SECTION --------------------------------*/
 
@@ -428,4 +424,6 @@ img {
   margin: 0;
   padding: 0;
 }
+
+
 

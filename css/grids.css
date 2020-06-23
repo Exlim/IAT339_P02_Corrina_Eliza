@@ -5,15 +5,14 @@
 /*Above box column code referenced from Philip Walton's 'Better, Simpler Grids' Page
 https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
- .flexbox-full_width{
- 	flex: 1 0 auto;
- }
 
  .flexbox-half,
  .flexbox-third{
- 	flex:1 0 auto;
+
+ 	flex:1 0 45%;
  	margin-right:0.25rem;
  	margin-left:0.25rem;
+ 	padding:2rem 4rem 2rem 4rem;
  }
 
  .parent-container{
@@ -22,23 +21,66 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
  	display:flex;
  }
 
- .flexbox-layout-major{
- 	flex:2 0;
- 	margin-left:0.25rem;
- 	margin-right:0.25rem;
+ .parent-container-wrap{
+  	display: -webkit-flex;
+	display: -ms-flex;
+ 	display:flex;
+
+  	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
+ 	flex-wrap:wrap;
  }
 
- .flexbox-layout-minor{
+/*Flexbox smaller first*/
+  .flexbox-layout-minor{
  	flex:1 0;
  	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
  	flex-wrap:wrap;
  	margin-right:0.25rem;
  	margin-left:0.25rem;
+ 	padding: 2rem 2rem 2rem 4rem;
+ }
+
+ .flexbox-layout-major{
+ 	flex:2 1;
+  	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
+ 	flex-wrap:wrap;
+ 	margin-left:0.25rem;
+ 	margin-right:0.25rem;
+  	padding: 2rem 4rem 2rem 2rem;
+
+ }
+
+/*Flexbox larger first*/
+
+ .flexbox-layout-major-inverted{
+ 	flex:2 0;
+  	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
+ 	flex-wrap:wrap;
+ 	margin-left:0.25rem;
+ 	margin-right:0.25rem;
+  	padding: 2rem 2rem 2rem 4rem;
+
+ }
+
+  .flexbox-layout-minor-inverted{
+ 	flex:1 0;
+ 	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
+ 	flex-wrap:wrap;
+ 	margin-right:0.25rem;
+ 	margin-left:0.25rem;
+ 	padding: 2rem 4rem 2rem 2rem;
  }
 
  .center-container{
+  	display: -webkit-flex;
+	display: -ms-flex;
  	display: flex;
+
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
@@ -46,7 +88,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
  }
 
  .slab-formatting{
- 	padding-top:5rem;
+ 	padding-top:3rem;
 	padding-bottom:4rem;
  }
 
@@ -127,16 +169,20 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 /*PRODUCT GRID CODE ---------------------------------*/
 
 .product-grid{
-	flex-wrap:wrap;
-	justify-content:center;
+  	display: -webkit-flex;
+	display: -ms-flex;
+ 	display:flex;
+
+  	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
+ 	flex-wrap:wrap;
+	justify-content:space-between;
+	padding:1rem 4rem 3rem 4rem;
 }
 
 .product-grid-col{
-    padding: 1.25rem;
     margin-right: 0.25rem;
     margin-left: 0.25rem;
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
 }
 
 .center-grid-items{
@@ -150,10 +196,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 .footer-container{
 	justify-content:space-between;
 	height:auto;
-	padding-top:2rem;
-	padding-bottom:4rem;
-	padding-right:0.5rem;
-	padding-left:0.5rem;
+	padding:0rem 2rem 0 2rem;
 	display:flex;
 	flex-wrap:wrap;
 }
@@ -162,11 +205,14 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	flex: 3 0 auto;
 	flex-wrap: wrap;
 	display:flex;
-	justify-content:space-around;
+	justify-content:flex-start;
+	padding-right:4rem;;
 }
 
 .footer-col{
 	flex-wrap:wrap;
+	padding-right:4rem;
+	padding-left:4rem;
 }
 
 .footer-logo{
@@ -257,4 +303,61 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 /*CONTACT US -------------------------------------*/
 .contact-us-wrap{
 	flex-wrap:wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 60.1875rem) {
+  .flexbox-layout-minor{
+    flex:1 0 100%;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap:wrap;
+  }
+
+  .flexbox-layout-major{
+  flex:1 100%;
+    flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
+  flex-wrap:wrap;
+  }
+
+}
+
+@media (min-width: 60.1875rem) {
+  .flexbox-layout-minor{
+    flex:1 0 100%;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap:wrap;
+  }
+
+  .flexbox-layout-major{
+  flex:1 100%;
+    flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
+  flex-wrap:wrap;
+  }
+
+}
+
+	body{
+		margin:0;
+	}
+
+/*When larger screen, add 8rem margin*/
+@media (min-width: 98rem) {
+	body{
+		margin:0 1rem 0 1rem;
+	}
 }
