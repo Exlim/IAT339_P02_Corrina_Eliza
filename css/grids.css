@@ -6,99 +6,101 @@
 https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
 
- .flexbox-half,
- .flexbox-third{
+.flexbox-half,
+.flexbox-third{
 
- 	flex:1 0 45%;
- 	margin-right:0.25rem;
- 	margin-left:0.25rem;
- 	padding:2rem 4rem 2rem 4rem;
- }
+	flex:1 0 45%;
+	margin-right:0.25rem;
+	margin-left:0.25rem;
+	padding:2rem 5rem 2rem 5rem;
+}
 
- .parent-container{
- 	display: -webkit-flex;
+.parent-container{
+	display: -webkit-flex;
 	display: -ms-flex;
- 	display:flex;
- }
+	display:flex;
+}
 
- .parent-container-wrap{
-  	display: -webkit-flex;
+.parent-container-wrap{
+	display: -webkit-flex;
 	display: -ms-flex;
- 	display:flex;
+	display:flex;
 
-  	flex-wrap: -webkit-wrap;
+	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
- 	flex-wrap:wrap;
- }
+	flex-wrap:wrap;
+}
 
 /*Flexbox smaller first*/
-  .flexbox-layout-minor{
- 	flex:1 0;
- 	flex-wrap: -webkit-wrap;
+.flexbox-layout-minor{
+	flex:1 0;
+	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
- 	flex-wrap:wrap;
- 	margin-right:0.25rem;
- 	margin-left:0.25rem;
- 	padding: 2rem 2rem 2rem 4rem;
- }
+	flex-wrap:wrap;
+	margin-right:0.25rem;
+	margin-left:0.25rem;
+	padding: 2rem 2rem 2rem 5rem;
+}
 
- .flexbox-layout-major{
- 	flex:2 1;
-  	flex-wrap: -webkit-wrap;
+.flexbox-layout-major{
+	flex:2 1;
+	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
- 	flex-wrap:wrap;
- 	margin-left:0.25rem;
- 	margin-right:0.25rem;
-  	padding: 2rem 4rem 2rem 2rem;
+	flex-wrap:wrap;
+	margin-left:0.25rem;
+	margin-right:0.25rem;
+	padding: 2rem 5rem 2rem 2rem;
 
- }
+}
 
 /*Flexbox larger first*/
 
- .flexbox-layout-major-inverted{
- 	flex:2 0;
-  	flex-wrap: -webkit-wrap;
+.flexbox-layout-major-inverted{
+	flex:2 0;
+	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
- 	flex-wrap:wrap;
- 	margin-left:0.25rem;
- 	margin-right:0.25rem;
-  	padding: 2rem 2rem 2rem 4rem;
+	flex-wrap:wrap;
+	margin-left:0.25rem;
+	margin-right:0.25rem;
+	padding: 2rem 2rem 2rem 5rem;
 
- }
+}
 
-  .flexbox-layout-minor-inverted{
- 	flex:1 0;
- 	flex-wrap: -webkit-wrap;
+.flexbox-layout-minor-inverted{
+	flex:1 0;
+	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
- 	flex-wrap:wrap;
- 	margin-right:0.25rem;
- 	margin-left:0.25rem;
- 	padding: 2rem 4rem 2rem 2rem;
- }
+	flex-wrap:wrap;
+	margin-right:0.25rem;
+	margin-left:0.25rem;
+	padding: 2rem 5rem 2rem 2rem;
+}
 
- .center-container{
-  	display: -webkit-flex;
+.center-container{
+	display: -webkit-flex;
 	display: -ms-flex;
- 	display: flex;
+	display: flex;
 
 	flex-direction:column;
 	justify-content:center;
+	text-align:center;
 	align-items:center;
 	align-content:center;
- }
+	padding: 0rem 2rem 0rem 2rem;
+}
 
- .slab-formatting{
- 	padding-top:3rem;
+.slab-formatting{
+	padding-top:3rem;
 	padding-bottom:4rem;
- }
+}
 
- .slab-container{
- 	display: flex;
+.slab-container{
+	display: flex;
 
 	justify-content:space-between;
 	align-items:center;
 	align-content:center;
- }
+}
 
 /*NAV CODE --------------------------------*/
 
@@ -169,20 +171,20 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 /*PRODUCT GRID CODE ---------------------------------*/
 
 .product-grid{
-  	display: -webkit-flex;
+	display: -webkit-flex;
 	display: -ms-flex;
- 	display:flex;
+	display:flex;
 
-  	flex-wrap: -webkit-wrap;
+	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
- 	flex-wrap:wrap;
+	flex-wrap:wrap;
 	justify-content:space-between;
-	padding:1rem 4rem 3rem 4rem;
+	padding:1rem 5rem 3rem 5rem;
 }
 
 .product-grid-col{
-    margin-right: 0.25rem;
-    margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	margin-left: 0.25rem;
 }
 
 .center-grid-items{
@@ -196,17 +198,15 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 .footer-container{
 	justify-content:space-between;
 	height:auto;
-	padding:0rem 2rem 0 2rem;
+	padding:2rem 2rem 4rem 2rem;
 	display:flex;
 	flex-wrap:wrap;
 }
 
 .footer-content{
-	flex: 3 0 auto;
 	flex-wrap: wrap;
 	display:flex;
 	justify-content:flex-start;
-	padding-right:4rem;;
 }
 
 .footer-col{
@@ -218,8 +218,10 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 .footer-logo{
 	flex: 1 0 20%;
 	flex-wrap:wrap;
+	justify-content:flex-end;
 	display:flex;
-	padding-top:8rem;
+	padding-right:2rem;
+	padding-top:4rem;
 }
 
 /*PRODUCT SPLASH IMAGE CODE ----------------------------------------------------------------*/
@@ -291,10 +293,6 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	align-items:center;
 }
 
-.margins-1rem{
-	margin: 1rem;
-}
-
 /*CART ----------------------------------------------------------- */
 .cart-row{
 	justify-content: flex-start;
@@ -303,61 +301,4 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 /*CONTACT US -------------------------------------*/
 .contact-us-wrap{
 	flex-wrap:wrap;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*MEDIA QUERIES*/
-
-@media (max-width: 60.1875rem) {
-  .flexbox-layout-minor{
-    flex:1 0 100%;
-    flex-wrap: -webkit-wrap;
-    flex-wrap: -ms-wrap;
-    flex-wrap:wrap;
-  }
-
-  .flexbox-layout-major{
-  flex:1 100%;
-    flex-wrap: -webkit-wrap;
-  flex-wrap: -ms-wrap;
-  flex-wrap:wrap;
-  }
-
-}
-
-@media (min-width: 60.1875rem) {
-  .flexbox-layout-minor{
-    flex:1 0 100%;
-    flex-wrap: -webkit-wrap;
-    flex-wrap: -ms-wrap;
-    flex-wrap:wrap;
-  }
-
-  .flexbox-layout-major{
-  flex:1 100%;
-    flex-wrap: -webkit-wrap;
-  flex-wrap: -ms-wrap;
-  flex-wrap:wrap;
-  }
-
-}
-
-	body{
-		margin:0;
-	}
-
-/*When larger screen, add 8rem margin*/
-@media (min-width: 98rem) {
-	body{
-		margin:0 1rem 0 1rem;
-	}
 }
