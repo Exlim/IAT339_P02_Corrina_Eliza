@@ -225,7 +225,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 6rem 4rem 6rem 4rem;
+    padding: 4rem 2rem 4rem 2rem;
     height: 36.875rem;
 }
 
@@ -240,6 +240,7 @@ header{
     right:4rem;
     color: white;
     max-width:30rem;
+    padding:2rem;
 }
 
 /*SLAB COLOURS ------------------------------------------------------*/
@@ -287,7 +288,7 @@ header{
 /*ABOUT SECTION ------------------------------------*/
 
  .stick-img-right{
-    margin-right:0rem;
+    margin:0rem;
     padding:0rem;
  }
 
@@ -396,9 +397,10 @@ header{
 /* REVIEWS -------------------------------------*/ 
 .review-cards{
   border-radius: 1rem;
-  height: 350px ;
+  height: 350px;
   width: 300px;
   padding:1rem;
+  margin: 1rem;
   background-color:#FFF9ED;
 }
 
@@ -467,6 +469,7 @@ ul.breadcrumbs li a:active{
 /*MEDIA QUERIES*/
 
 
+
 @media (max-width: 60.1875rem) {
   .flexbox-layout-minor{
     flex:1 100%;
@@ -502,6 +505,48 @@ ul.breadcrumbs li a:active{
     z-index:3;
   }
 
+  .product-grid{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display:flex;
+
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  padding:1rem 3rem 3rem 3rem;
+
+ }
+
+  .unequal-text-formatting{
+    padding:2rem;
+  }
+}
+
+@media (max-width: 40.1875rem) {
+
+  .product-grid{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display:flex;
+
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding:1rem 3rem 3rem 3rem;
+  }
+
+  .footer-col{
+    padding:0rem;
+  }
+
+  .flexbox-half,
+  .flexox-third {
+    padding:2rem;
+  }
+
+
 }
 
 
@@ -513,6 +558,3 @@ ul.breadcrumbs li a:active{
 @media (min-width: 98rem) {
 
 }
-
-
-

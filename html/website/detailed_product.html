@@ -128,16 +128,21 @@
     <li><a href="#">SHIRO MURASAKI</a></li>
   </ul>
 
-  <div class = "parent-container alignitems_center"> 
+  <div class = "parent-container-wrap alignitems_center"> 
     <div class = "flexbox-half"> 
       <img src="../../img/whitesoy.jpg" alt="Bottle of White Soy Sauce">
     </div>
 
     <div class = "flexbox-half">
      <h1> Shiro Murasaki</h1>
+      <div>
+      <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+      
+      <a href="#detailed_product-reviews">22 reviews</a>
+      </div>
      <h2> $15.98 </h2>
      <p> Shiro murasaki white soy sauce is distinguished by its pale color which allows it to be used as a rich soy seasoning without darkening the colour of the dish in the same way as a traditional soy sauce. </p> 
-     <button class = "button">Add to Cart</button>
+     <button class = "button" onclick="window.location.href='cart.html'">Add to Cart</button>
    </div>
  </div>
 
@@ -167,7 +172,7 @@
 
 <!-- RECEIPE SECTION -------------------------------------------->
 <section>
-  <div class="parent-container"> <!--receipe div starts -->
+  <div class="parent-container-wrap"> <!--receipe div starts -->
    <div class="stick-img-right flexbox-layout-major-inverted">
     <img src="../../img/General_Info_Image.svg" alt="Grebox image 964 px wide">
   </div>
@@ -252,38 +257,51 @@
 
 
 <!-- REVIEWS SECTION -------------------------------------------->
-<section>
-  <div class = "slab-red parent-container reviews-column"> <!--review div starts -->
-    <div class = "flexbox-full_width review reviews-column margins-1rem">
-      <h2> REVIEWS </h2>
+<section id="detailed_product-reviews">
+  <div class = "slab-red parent-container slab-formatting reviews-column"> <!--review div starts -->
+    <div class = "reviews-column">
+      <h2 class="header-formatting"> REVIEWS </h2>
+      <div>
       <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+      </div>
       <a href="#">22 reviews</a>
     </div>
 
-    <div class = "parent-container margins-1rem"> 
+    <div class = "parent-container-wrap"> 
       <div class = "flexbox-third review-cards">
         <h4> FIRST AND LAST NAME </h4>
+        <div>
         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
         <p> Review </p>
       </div>
+
       <div class = "flexbox-third review-cards">
         <h4> FIRST AND LAST NAME  </h4>
+        <div>
         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
         <p> Review </p>
       </div>
+
       <div class = "flexbox-third review-cards">
         <h4> FIRST AND LAST NAME  </h4>
+        <div>
         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
         <p> Review </p>
       </div>
+
       <div class = "flexbox-third review-cards">
         <h4> FIRST AND LAST NAME  </h4>
+        <div>
         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
         <p> Review </p>
       </div>
     </div>
 
-    <div class = "parent-container margins-1rem">
+    <div class = "parent-container center-container">
       <button class = "button" onclick="window.location.href='review.html'">LEAVE A REVIEW</button>
 
     </div>

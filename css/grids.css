@@ -234,7 +234,12 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 }
 
 .product-splash-container{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
+
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
 	justify-content:space-between;
 	align-items:flex-start;
@@ -299,7 +304,8 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	justify-content: flex-start;
 }
 
-/*CONTACT US -------------------------------------*/
-.contact-us-wrap{
-	flex-wrap:wrap;
-}
+
+
+
+
+/*MOBILE MENU -------------- */

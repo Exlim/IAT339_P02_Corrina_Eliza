@@ -1,0 +1,43 @@
+/*HTML*/
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+
+/*CSS*/
+
+/* Style the navigation menu */
+.main-nav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.main-nav #myLinks {
+  display: none;
+}
+
+
+/* Style navigation menu links */
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Add a grey background color on mouse-over */
+.main-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the hamburger menu */
+.main-nav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
