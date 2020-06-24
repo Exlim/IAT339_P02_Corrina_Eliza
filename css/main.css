@@ -70,7 +70,6 @@ header{
   z-index:2;
 }
 
-
 /*CSS SELECTORS -------------------------------------------------------------------------------------------------------*/
 
 /*GENERAL CODE */
@@ -321,12 +320,19 @@ header{
     url(../img/Splash_Image_Greybox.svg);
 }
 
+.product-hero-header{
+  position:relative;
+  text-align:left;
+  color:black;
+}
+
 .product-hero-text{
+    position:relative;
     text-align: left;
-    left: 4rem;
-    top:4rem;
+
     color: black;
 }
+
 
 /*DROP DOWN PRODUCT MENU ----------------------------------------------------*/
 
@@ -422,12 +428,48 @@ header{
 }
 
 
+/* BREADCRUMBS -----------------------*/
+
+ul.breadcrumbs {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+ul.breadcrumbs li {
+  display: inline;
+}
+
+ul.breadcrumbs li+li:before {
+  padding: 0.25rem;
+  color: black;
+  content: ">\00a0";
+}
+
+ul.breadcrumbs li a {
+  color: black;
+  font-family: BarlowSemiCondensed-ExtraBold;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumbs li a:hover,
+ul.breadcrumbs li a:focus, 
+ul.breadcrumbs li a:active{
+  color: #D93333;
+  text-decoration: underline;
+}
+
+
+
+
+
 
 /*MEDIA QUERIES*/
 
+
 @media (max-width: 60.1875rem) {
   .flexbox-layout-minor{
-    flex:1 0 100%;
+    flex:1 100%;
     flex-wrap: -webkit-wrap;
     flex-wrap: -ms-wrap;
     flex-wrap:wrap;
@@ -440,6 +482,20 @@ header{
     flex-wrap:wrap;
   }
 
+  .flexbox-layout-minor-inverted{
+    flex:1 100%;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap:wrap;
+  }
+
+  .flexbox-layout-major-inverted{
+    flex:1 100%;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap:wrap;
+  }
+  
   .sticky-event{
     padding:0rem 0.5rem 0rem 0.5rem;
     position:fixed;
@@ -448,25 +504,13 @@ header{
 
 }
 
+
 @media (min-width: 79rem) {
 
 
 }
 
 @media (min-width: 98rem) {
-  .flexbox-layout-minor{
-    flex:1 0 100%;
-    flex-wrap: -webkit-wrap;
-    flex-wrap: -ms-wrap;
-    flex-wrap:wrap;
-  }
-
-  .flexbox-layout-major{
-    flex:1 100%;
-    flex-wrap: -webkit-wrap;
-    flex-wrap: -ms-wrap;
-    flex-wrap:wrap;
-  }
 
 }
 

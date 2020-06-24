@@ -96,7 +96,6 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
 .slab-container{
 	display: flex;
-
 	justify-content:space-between;
 	align-items:center;
 	align-content:center;
@@ -183,8 +182,9 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 }
 
 .product-grid-col{
-	margin-right: 0.25rem;
-	margin-left: 0.25rem;
+	margin-right:0.25rem;
+	margin-left:0.25rem;
+	margin-bottom:2rem;
 }
 
 .center-grid-items{
@@ -221,7 +221,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	justify-content:flex-end;
 	display:flex;
 	padding-right:2rem;
-	padding-top:4rem;
+	padding-top:3rem;
 }
 
 /*PRODUCT SPLASH IMAGE CODE ----------------------------------------------------------------*/
@@ -229,7 +229,8 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 .product-splash-col{
 	display:flex;
 	flex-wrap:wrap;
-	max-width:40%;
+	align-content:flex-start;
+	max-width:45%;
 }
 
 .product-splash-container{
