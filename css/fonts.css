@@ -1,6 +1,6 @@
 @font-face{
 	font-family: 'BarlowSemiCondensed-ExtraBold';
-	font-weight: extrabold;
+	font-weight: bold;
 	font-style: normal;
 	src: url('../fonts/BarlowSemiCondensed-ExtraBold.ttf')
 		 format('truetype');
@@ -9,7 +9,7 @@
 
 @font-face{
 	font-family: 'SpaceMono-Regular';
-	font-weight: regular;
+	font-weight: normal;
 	font-style: normal;
 	src: url('../fonts/SpaceMono-Regular.ttf')
 		 format('truetype');
