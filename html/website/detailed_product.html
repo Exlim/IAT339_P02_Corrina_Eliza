@@ -125,7 +125,7 @@
   	<h1> Shiro Murasaki</h1>
   	<h2> $15.98 </h2>
   	<p> Shiro murasaki white soy sauce is distinguished by its pale color which allows it to be used as a rich soy seasoning without darkening the colour of the dish in the same way as a traditional soy sauce. </p> 
-  	<button class = "button">Add to Cart</button>
+  	<button class = "button" onclick="openNav()">Add to Cart</button>
   </div>
   </div>
 
@@ -207,6 +207,113 @@
   </div>
 
 </div> <!--review div ends -->
+
+<!-- SIDE MENU CART SECTION--------------------------------------------------------------   -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h1> Your Cart </h1> 
+  <h2> 2 Bottles </h2>
+  <div class = "parent-container margins-1rem"> <!-- Item No.1 Start --> 
+    <div class="flexbox-layout-minor cart-image"> 
+    </div>
+
+    <div class="flexbox-layout-minor"> 
+      <h2> Soy Sauce Name </h2>
+      <h3> 200ml </h3>
+    </div>
+
+    <div class="flexbox-layout-minor">
+      <div class="input-group">
+       <div class="input-group-btn">
+          <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+    </div>
+
+    <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
+       <div class="input-group-btn">
+    <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+    </div>
+    </div>
+    <a href="#"> Remove </a>
+  </div>
+
+  <div class="flexbox-layout-minor">
+  <h2> $16.99 </h2>
+  </div>
+
+  </div> <!-- Item No.1 End --> 
+
+  <div class = "parent-container margins-1rem"> <!-- Item No.2 Start --> 
+    <div class="flexbox-layout-minor cart-image"> 
+    </div>
+
+    <div class="flexbox-layout-minor"> 
+      <h2> Soy Sauce Name </h2>
+      <h3> 200ml </h3>
+    </div>
+
+    <div class="flexbox-layout-minor">
+      <div class="input-group">
+       <div class="input-group-btn">
+          <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+    </div>
+
+    <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
+       <div class="input-group-btn">
+    <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+    </div>
+    </div>
+    <a href="#"> Remove </a>
+  </div>
+
+  <div class="flexbox-layout-minor">
+  <h2> $16.99 </h2>
+  </div>
+
+  </div> <!-- Item No.2 End --> 
+
+  <hr>
+
+  <div class = "parent-container margins-1rem"> <!-- Total Costs Start --> 
+    <div class="flexbox-layout-major"> 
+      <p> Subtotal </p>
+      <p> GST </p>
+      <p> PST </p>
+      <p> Estimated Shipping Costs </p>
+      <hr>
+      <h4>Total</h4>
+  </div>
+
+    <div class="flexbox-layout-major "> 
+      <p> $33.98 </p>
+      <p> $2.00</p>
+      <p> $3.00 </p>
+      <p> $38.98 </p>
+      <hr>
+      <h4>$28.98</h4>
+      <button class = "button">CHECK OUT</button>
+  </div>
+</div><!-- Total Costs End --> 
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  </div>
+
+  <script> 
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "500px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+  </script>
 
 </section>
 
