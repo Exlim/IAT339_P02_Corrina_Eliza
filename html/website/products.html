@@ -11,8 +11,22 @@
     <link href="../../css/fonts.css" rel="stylesheet">    
     <link href="../../css/grids.css" rel="stylesheet">
     <link href="../../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   </head>
+
+<script>
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
   <body>
 
@@ -33,7 +47,7 @@
       <img class="logo-width" src="../../img/Saucyboys_Logo.svg" alt="Saucyboys website logo">
       </a>
     </div>
-    <div class="main-nav-items">
+    <div class="main-nav-items"  id="myLinks">
       <div class="main-nav-col">
         <a href="home_page.html">
         <button class="main-nav-button">HOME</button>
@@ -55,6 +69,9 @@
         </a>
       </div>
     </div>
+  <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
   </div>
 </nav>
   <!-- PRODUCT NAV ---------------------------- -->
@@ -96,10 +113,6 @@
               <a href="#">Citrus Soy Sauce</a>              
             </div>
           </div> <!--End of dropdown menu continaer div -->
-
-          <div class="row dropdown-menu-container">
-            <a href="#">View All</a>
-          </div>
           
         </div>
       </div> <!-- End of dropdown-content menu -->
@@ -133,10 +146,6 @@
               <a href="#">Hamada Shoyu</a>              
             </div>
           </div> <!--End of dropdown menu continaer div -->
-
-          <div class="row dropdown-menu-container">
-            <a href="#">View All</a>
-          </div>
           
         </div>
       </div> <!-- End of dropdown-content menu -->
@@ -155,7 +164,8 @@
   <!-- PRODUCT SPLASH PAGE SECTION ---------------------------- -->
 
   <section>
-  <div class="hero-banner product-page-hero-image product-splash-container" role="banner"> <!--Start of products splash page section-->
+  <div class="product-hero-banner product-page-hero-image" role="banner"> <!--Start of products splash page section-->
+    <div class="parent-container-wrap product-splash-container">
       <div class="flexbox-half product-splash-col">
         <div class="product-hero-header">  
           <h1>SOY SAUCE</h1>
@@ -167,6 +177,7 @@
             <a href="#">SHIPPING FREE ON ORDERS OVER $50</a>
           </div>
       </div>
+    </div>
     </div> <!-- End of products splash page div section -->
   </section>
 
