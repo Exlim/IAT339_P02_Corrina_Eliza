@@ -193,6 +193,12 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	justify-content:center;
 }
 
+.empty-div{
+	margin-right:0.25rem;
+	margin-left:0.25rem;
+	width:18.6875rem;
+}
+
 /*FOOTER CODE --------------------------------------------------------------------*/
 
 .footer-container{
