@@ -1,120 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link href="../../css/normalize.css" rel="stylesheet">
-    <link href="../../css/fonts.css" rel="stylesheet">
-    <link href="../../css/grids.css" rel="stylesheet">
-    <link href="../../css/main.css" rel="stylesheet">
-  </head>
+<head>
 
-  <body>
+  <title>Cart</title>
 
-    <!-- Javascript for Add and Minus Buttons --> 
-<script>
+  <meta charset="utf-8">
 
-  function up(max) {
-    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
-    if (document.getElementById("myNumber").value >= parseInt(max)) {
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/fonts.css" rel="stylesheet">
+  <link href="../../css/grids.css" rel="stylesheet">
+  <link href="../../css/main.css" rel="stylesheet">
+</head>
+
+  <!-- Javascript for Add and Minus Buttons --> 
+  <script>
+
+    function up(max) {
+      document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+      if (document.getElementById("myNumber").value >= parseInt(max)) {
         document.getElementById("myNumber").value = max;
+      }
     }
-}
-function down(min) {
-    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
-    if (document.getElementById("myNumber").value <= parseInt(min)) {
+    function down(min) {
+      document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+      if (document.getElementById("myNumber").value <= parseInt(min)) {
         document.getElementById("myNumber").value = min;
+      }
     }
-}
-</script>
-<!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
-<section class="discount-header">
-  <div class="slab-white flexbox-full_width center-container">
-    <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a href="#">SEE DETAILS</a></p>
-  </div>
-</section>
+  </script>
 
-<!-- NAV SECTION--------------------------------------------------------------   -->
-<nav class="main-nav">
-  <div class="main-nav-container slab-black parent-container">
-    <div class="main-nav-logo">
-      <a href="home_page.html">
-      <img class="logo-width" src="../../img/Saucyboys_Logo.svg" alt="Saucyboys website logo">
-      </a>
+<body>
+
+<header>
+
+  <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
+  <section class="discount-header">
+    <div class="slab-white center-container">
+      <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a href="#">SEE DETAILS</a></p>
     </div>
-    <div class="main-nav-items">
-      <div class="main-nav-col">
+  </section>
+
+  <!-- NAV SECTION--------------------------------------------------------------   -->
+  <nav class="main-nav">
+    <div class="main-nav-container slab-black parent-container">
+      <div class="main-nav-logo">
         <a href="home_page.html">
-        <button class="main-nav-button">HOME</button>
+          <img class="logo-width" src="../../img/Saucyboys_Logo.svg" alt="Saucyboys website logo">
         </a>
       </div>
-      <div class="main-nav-col subnav">
-        <a href="products.html">
-        <button class="main-nav-button subnav-button">SHOP</button>
-        </a>
+      <div class="main-nav-items">
+        <div class="main-nav-col">
+          <a href="home_page.html">
+            <button class="main-nav-button">HOME</button>
+          </a>
+        </div>
+        <div class="main-nav-col subnav">
+          <a href="products.html">
+            <button class="main-nav-button subnav-button">SHOP</button>
+          </a>
+        </div>
+        <div class="main-nav-col">
+          <a href="about.html">
+            <button class="main-nav-button">ABOUT</button>
+          </a>
+        </div>
+        <div class="main-nav-col">
+          <a href="cart.html">
+            <button class="main-nav-button">CART</button>
+          </a>
+        </div>
       </div>
-      <div class="main-nav-col">
-        <a href="about.html">
-        <button class="main-nav-button">ABOUT</button>
-        </a>
+    </div>
+  </nav>
+
+</header>
+
+  <section>
+    <h1 class="header-formatting"> Your Cart! </h1>
+    <div class = "parent-container"> <!-- Headers Start --> 
+
+      <div class="flexbox-layout-major"> 
+        <h2> Product </h2>
+        <hr>
       </div>
-      <div class="main-nav-col">
-        <a href="cart.html">
-        <button class="main-nav-button">CART</button>
-        </a>
+      <div class="flexbox-layout-minor">
+        <h2> Quantity </h2>
+        <hr>
       </div>
-    </div>
-  </div>
-</nav>
+      <div class="flexbox-layout-minor">
+        <h2> Price </h2>
+        <hr>
+      </div>
+    </div> <!-- Headers End --> 
 
+    <div class = "parent-container"> <!-- Item No.1 Start --> 
+      <div class="flexbox-layout-minor cart-image"> 
+      </div>
 
-<section>
-  <h1> Your Cart! </h1>
-  <div class = "parent-container margins-1rem"> <!-- Headers Start --> 
-    
-    <div class="flexbox-layout-major"> 
-      <h2> Product </h2>
-      <hr>
-    </div>
-    <div class="flexbox-layout-minor">
-      <h2> Quantity </h2>
-      <hr>
-    </div>
-    <div class="flexbox-layout-minor">
-      <h2> Price </h2>
-      <hr>
-    </div>
-  </div> <!-- Headers End --> 
+      <div class="flexbox-layout-minor"> 
+        <h2> Soy Sauce Name </h2>
+        <h3> 200ml </h3>
+      </div>
 
-  <div class = "parent-container margins-1rem"> <!-- Item No.1 Start --> 
-    <div class="flexbox-layout-minor cart-image"> 
-    </div>
-
-    <div class="flexbox-layout-minor"> 
-      <h2> Soy Sauce Name </h2>
-      <h3> 200ml </h3>
-    </div>
-
-    <div class="flexbox-layout-minor">
-      <div class="input-group">
-       <div class="input-group-btn">
+      <div class="flexbox-layout-minor">
+        <div class="input-group">
+         <div class="input-group-btn">
           <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+        </div>
+
+        <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
+        <div class="input-group-btn">
+          <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+        </div>
+      </div>
+      <a href="#"> Remove </a>
     </div>
 
-    <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
-  	   <div class="input-group-btn">
-    <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+    <div class="flexbox-layout-minor">
+      <h2> $16.99 </h2>
     </div>
-    </div>
-    <a href="#"> Remove </a>
-  </div>
-
-  <div class="flexbox-layout-minor">
-  <h2> $16.99 </h2>
-  </div>
 
   </div> <!-- Item No.1 End --> 
 
-  <div class = "parent-container margins-1rem"> <!-- Item No.2 Start --> 
+
+
+  <div class = "parent-container"> <!-- Item No.2 Start --> 
     <div class="flexbox-layout-minor cart-image"> 
     </div>
 
@@ -126,47 +138,47 @@ function down(min) {
     <div class="flexbox-layout-minor">
       <div class="input-group">
        <div class="input-group-btn">
-          <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
-    </div>
+        <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+      </div>
 
-    <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
-       <div class="input-group-btn">
-    <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
-    </div>
+      <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
+      <div class="input-group-btn">
+        <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+      </div>
     </div>
     <a href="#"> Remove </a>
   </div>
 
   <div class="flexbox-layout-minor">
-  <h2> $16.99 </h2>
+    <h2> $16.99 </h2>
   </div>
 
-  </div> <!-- Item No.2 End --> 
+</div> <!-- Item No.2 End --> 
 
-  <hr>
+<hr>
 
-  <div class = "parent-container margins-1rem"> <!-- Total Costs Start --> 
-    <div class="flexbox-layout-major"> 
-      <p> Subtotal </p>
-      <p> GST </p>
-      <p> PST </p>
-      <p> Estimated Shipping Costs </p>
-      <hr>
-      <h4>Total</h4>
+<div class = "parent-container"> <!-- Total Costs Start --> 
+  <div class="flexbox-layout-major"> 
+    <p> Subtotal </p>
+    <p> GST </p>
+    <p> PST </p>
+    <p> Estimated Shipping Costs </p>
+    <hr>
+    <h4>Total</h4>
   </div>
 
-    <div class="flexbox-layout-major "> 
-      <p> $33.98 </p>
-      <p> $2.00</p>
-      <p> $3.00 </p>
-      <p> $38.98 </p>
-      <hr>
-      <h4>$28.98</h4>
-      <button class = "button">CHECK OUT</button>
+  <div class="flexbox-layout-major "> 
+    <p> $33.98 </p>
+    <p> $2.00</p>
+    <p> $3.00 </p>
+    <p> $38.98 </p>
+    <hr>
+    <h4>$28.98</h4>
+    <button class = "button">CHECK OUT</button>
   </div>
 </div><!-- Total Costs End --> 
 
 
-  </body>
+</body>
 
-  </html>
+</html>
