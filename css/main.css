@@ -35,21 +35,12 @@ input{
   height:2rem;
 }
 
+.yourinput{
+  height:10rem;
+}
+
 form{
   padding: 0.5rem;
-}
-
-/* LINKS + LINK STATES*/ 
-
-a {
-  font-family: "SpaceMono-Regular", Verdana, sans-serif;
-  color: #D93333;
-}
-
-a:active, a:hover, a:focus {
-  color:#B73326;
-  /** this will prevent there being a line under the link **/
-  text-decoration: none;
 }
 
 
@@ -626,3 +617,66 @@ input[type=text] {
   .sidenav {padding-top: 15px;} 
   .sidenav a {font-size: 18px;} 
 } 
+
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+
+
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #F9A11C;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #F9A11C;
+}
+
+/*STARS STYLING*/ 
+.stars{
+font-size: 1.5rem;
+}
+
+.stars-review{
+font-size: 1rem;
+}
+
+
+/* LINKS + LINK STATES*/ 
+
+a {
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  color: #D93333;
+}
+
+a:active, a:hover, a:focus {
+  color:#B73326;
+  /** this will prevent there being a line under the link **/
+  text-decoration: none;
+}
+
