@@ -154,10 +154,10 @@ header{
 
 .product-nav-button{
     background-color: inherit;
+    font-family: "SpaceMono-Regular", Verdana, sans-serif;
     color:black;
     border:none;
     padding:0.9rem 1rem 0.9rem 1rem;
-    font: inherit;
     margin: 0;
 }
 
@@ -224,7 +224,8 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 4rem 2rem 4rem 2rem;
+    padding: 2rem 1rem 2rem 1rem;
+    /*padding: 4rem 2rem 4rem 2rem;*/
     height: 36.875rem;
 }
 
@@ -235,12 +236,14 @@ header{
 .hero-text{
     position:absolute;
     text-align: left;
-    bottom:8rem;
+    bottom:3rem;
     right:4rem;
     color: white;
     max-width:30rem;
     padding:2rem;
 }
+
+
 
 /*SLAB COLOURS ------------------------------------------------------*/
 
@@ -317,7 +320,7 @@ header{
 .product-page-hero-image{
     background-image: 
     linear-gradient(rgb(255,249,237, 0.5), rgb(255,249,237,0.5), rgb(255,249,237,0.5),  rgb(255,249,237,0.5), white),
-    url(../img/Splash_Image_Greybox.svg);
+    url(../img/updated-imgs/products-splash-image.jpg);
 }
 
 .product-hero-header{
@@ -331,6 +334,17 @@ header{
     text-align: left;
 
     color: black;
+}
+
+.product-hero-banner{
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 2rem 1rem 2rem 1rem;
+    /*padding: 4rem 2rem 4rem 2rem;*/
+    height: 28.875rem;
 }
 
 
@@ -460,9 +474,13 @@ ul.breadcrumbs li a:active{
   text-decoration: underline;
 }
 
+a.dropdown-menu-col {
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+}
 
-
-
+.hamburger_icon {
+  display:none;
+}
 
 
 /*MEDIA QUERIES*/
@@ -520,6 +538,14 @@ ul.breadcrumbs li a:active{
   .unequal-text-formatting{
     padding:2rem;
   }
+
+.product-nav{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 40.1875rem) {
@@ -545,6 +571,51 @@ ul.breadcrumbs li a:active{
     padding:2rem;
   }
 
+.hamburger_icon {
+  display: block;
+}
+
+.main-nav-container{
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+
+/* Style the navigation menu */
+.main-nav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.main-nav #myLinks {
+  display: none;
+}
+
+
+/* Style navigation menu links */
+.main-nav button,
+.main-nav-logo button,
+.main-nav-items button,
+.main-nav-content button {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Add a grey background color on mouse-over */
+.main-nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Style the hamburger menu */
+.main-nav a.hamburger_icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 1rem;
+}
 
 }
 

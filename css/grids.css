@@ -247,19 +247,13 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display:flex;
 	flex-wrap:wrap;
 	align-content:flex-start;
-	max-width:45%;
 }
 
-.product-splash-container{
-	display: -webkit-flex;
-	display: -ms-flex;
-	display:flex;
 
-	flex-wrap: -webkit-wrap;
-	flex-wrap: -ms-wrap;
-	flex-wrap:wrap;
-	justify-content:space-between;
-	align-items:flex-start;
+.product-splash-container{
+    height: 70%;
+    align-items: flex-start;
+    align-content: center;
 }
 
 
@@ -267,9 +261,16 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
 .product-nav{
 	display:flex;
-	flex-wrap:wrap;
 	justify-content:center;
 	align-items:center;
+}
+
+.product-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.product-nav{
+  -ms-overflow-style: none;
 }
 
 .product-nav-col{
