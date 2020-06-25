@@ -611,10 +611,11 @@ a.dropdown-menu-col {
 
 /* Style the hamburger menu */
 .main-nav a.hamburger_icon {
-  background: white;
+  background: black;
   display: block;
   position: absolute;
   right: 1rem;
+  color:red;
 }
 
 }
