@@ -382,6 +382,8 @@ header{
 .input-group{
   display:flex;
   align-items: center;
+    width:3.5rem;
+
 }
 
 /* REVIEWS -------------------------------------*/ 
@@ -560,11 +562,16 @@ form{
 
 input[type=text] {
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
-  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
 }
+
+.input-width100{
+  width:100%;
+}
+
+
 
 /* THE SIDE NAVIGATION MENU ----------------------------*/ 
  
