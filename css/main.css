@@ -557,3 +557,20 @@ ul.breadcrumbs li a:active{
 @media (min-width: 98rem) {
 
 }
+
+
+label{
+cursor:default;
+}
+
+form{
+  display:block;
+}
+
+input[type=text] {
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
