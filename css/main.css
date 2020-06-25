@@ -371,7 +371,6 @@ header{
 }
 
 .form-group{
-  width:30%;
   margin:30px;
 }
 
@@ -382,6 +381,7 @@ header{
 
 .input-group{
   display:flex;
+  align-items: center;
 }
 
 /* REVIEWS -------------------------------------*/ 
