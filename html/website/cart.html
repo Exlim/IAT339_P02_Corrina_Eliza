@@ -12,7 +12,11 @@
   <link href="../../css/fonts.css" rel="stylesheet">
   <link href="../../css/grids.css" rel="stylesheet">
   <link href="../../css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
+
 
   <!-- Javascript for Add and Minus Buttons --> 
   <script>
@@ -29,7 +33,17 @@
         document.getElementById("myNumber").value = min;
       }
     }
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
   </script>
+
 
 <body>
 
@@ -50,7 +64,7 @@
           <img class="logo-width" src="../../img/Saucyboys_Logo.svg" alt="Saucyboys website logo">
         </a>
       </div>
-      <div class="main-nav-items">
+      <div class="main-nav-items"  id="myLinks">
         <div class="main-nav-col">
           <a href="home_page.html">
             <button class="main-nav-button">HOME</button>
@@ -72,6 +86,9 @@
           </a>
         </div>
       </div>
+  <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
     </div>
   </nav>
 

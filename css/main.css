@@ -611,7 +611,7 @@ a.dropdown-menu-col {
 
 /* Style the hamburger menu */
 .main-nav a.hamburger_icon {
-  background: black;
+  background: white;
   display: block;
   position: absolute;
   right: 1rem;
