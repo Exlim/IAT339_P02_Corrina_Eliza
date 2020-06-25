@@ -77,34 +77,34 @@
 
 </header>
 
-  <section>
-    <h1 class="header-formatting"> Your Cart! </h1>
-    <div class = "parent-container"> <!-- Headers Start --> 
+<div class="parent-container">
+  <div class = "flexbox-layout-cart">
 
-      <div class="flexbox-layout-major"> 
+    <h1 class="header-formatting"> Your Cart! </h1>
+
+    <div class = "parent-container "> <!-- Headers Start --> 
+      <div class="flexbox-layout-major header-formatting "> 
         <h2> Product </h2>
-        <hr>
       </div>
-      <div class="flexbox-layout-minor">
+      <div class="flexbox-layout-minor header-formatting">
         <h2> Quantity </h2>
-        <hr>
       </div>
-      <div class="flexbox-layout-minor">
+      <div class="flexbox-layout-minor header-formatting">
         <h2> Price </h2>
-        <hr>
       </div>
     </div> <!-- Headers End --> 
+    <!-- Item No.1 Start --> 
 
-    <div class = "parent-container"> <!-- Item No.1 Start --> 
-      <div class="flexbox-layout-minor cart-image"> 
+    <div class = "parent-container"> 
+      <div class="flexbox-layout-major header-formatting "> 
+        <img src="../../img/product-photos-300x300/white-soysauce-300x300.jpg" alt="Grebox product image">
+
       </div>
 
-      <div class="flexbox-layout-minor"> 
-        <h2> Soy Sauce Name </h2>
-        <h3> 200ml </h3>
-      </div>
 
-      <div class="flexbox-layout-minor">
+
+      <div class="flexbox-layout-minor header-formatting">
+
         <div class="input-group">
          <div class="input-group-btn">
           <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
@@ -118,67 +118,90 @@
       <a href="#"> Remove </a>
     </div>
 
-    <div class="flexbox-layout-minor">
-      <h2> $16.99 </h2>
+    <div class="flexbox-layout-minor header-formatting">
+      <h4> $16.99 </h4>
     </div>
 
-  </div> <!-- Item No.1 End --> 
+  </div> <!-- Item No.1 End -->
 
 
+    <div class = "parent-container"> 
+      <div class="flexbox-layout-major header-formatting "> 
+     <img src="../../img/product-photos-300x300/ponzu-300x300.jpg" alt="Grebox product image">
 
-  <div class = "parent-container"> <!-- Item No.2 Start --> 
-    <div class="flexbox-layout-minor cart-image"> 
-    </div>
-
-    <div class="flexbox-layout-minor"> 
-      <h2> Soy Sauce Name </h2>
-      <h3> 200ml </h3>
-    </div>
-
-    <div class="flexbox-layout-minor">
-      <div class="input-group">
-       <div class="input-group-btn">
-        <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
       </div>
 
-      <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
-      <div class="input-group-btn">
-        <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+
+
+      <div class="flexbox-layout-minor header-formatting">
+
+        <div class="input-group">
+         <div class="input-group-btn">
+          <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+        </div>
+
+        <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
+        <div class="input-group-btn">
+          <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+        </div>
       </div>
+      <a href="#"> Remove </a>
     </div>
-    <a href="#"> Remove </a>
-  </div>
 
-  <div class="flexbox-layout-minor">
-    <h2> $16.99 </h2>
-  </div>
+    <div class="flexbox-layout-minor header-formatting">
+      <h4> $12.99 </h4>
+    </div>
 
-</div> <!-- Item No.2 End --> 
+  </div>  <!-- Item No.2 End --> 
+
+
+</div>
+
+<!-- Order Summary ------------------------------------> 
+<div class ="flexbox-layout-summary slab-cream">
+  <h3> Order Summary </h3> 
+  <div class = "parent-container">
+   <div class= "flexbox-ordersummary">
+    <h4> Shiro Murasaki </h4> 
+    <h4> 2 Year Old Soy Sauce </h4> 
+  </div>
+  <div class = "flexbox-ordersummary">
+    <h4>$16.99 </h4>
+    <h4>$12.99 </h4>
+  </div>
+</div>
 
 <hr>
 
-<div class = "parent-container"> <!-- Total Costs Start --> 
-  <div class="flexbox-layout-major"> 
-    <p> Subtotal </p>
-    <p> GST </p>
-    <p> PST </p>
-    <p> Estimated Shipping Costs </p>
-    <hr>
-    <h4>Total</h4>
+<div class = "parent-container">
+  <div class= "flexbox-ordersummary">
+    <h4> Subtotal </h4> 
+    <h4> Tax </h4> 
+    <h4> Shipping Costs </h4> 
+  </div>
+  <div class = "flexbox-ordersummary">
+    <h4>$29.98 </h4>
+    <h4>$3.60 </h4>
+    <h4>$5.00</h4>
+  </div>
+</div>
+
+<hr> 
+
+<div class = "parent-container">
+  <div class= "flexbox-ordersummary">
+    <h4> Total </h4> 
+  </div>
+  <div class = "flexbox-ordersummary">
+    <h4>$38.58 </h4>
   </div>
 
-  <div class="flexbox-layout-major "> 
-    <p> $33.98 </p>
-    <p> $2.00</p>
-    <p> $3.00 </p>
-    <p> $38.98 </p>
-    <hr>
-    <h4>$28.98</h4>
-    <button class = "btn-product" onclick="window.location.href='checkout.html'">CHECK OUT</button>      
-  </div>
-</div><!-- Total Costs End --> 
+</div>
+          <button class = "btn-product" onclick="window.location.href='checkout.html'">CHECK OUT</button>      
 
+</div>
 
+</div> 
 </body>
 
 </html>

@@ -20,6 +20,13 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	margin-right: 1rem;
 }
 
+.flexbox-cartname{
+	flex:1 0 45%;
+	margin-right: 1rem;
+	flex-direction: row;
+
+}
+
 .flexbox-ordersummary{
 	flex:1 0 45%;
 	margin-right: 10rem;
@@ -30,6 +37,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -webkit-flex;
 	display: -ms-flex;
 	display:flex;
+
 }
 
 .parent-container-wrap{
@@ -62,6 +70,33 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	margin-right:0.25rem;
 	padding: 2rem 5rem 2rem 2rem;
 
+}
+
+.flexbox-layout-cart{
+	flex:10 0.5;
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
+	flex-wrap:wrap;
+	margin-right:0.25rem;
+	margin-left:0.25rem;
+	padding: 2rem 2rem 2rem 5rem;
+	width:70%;
+}
+
+.flexbox-layout-summary{
+	flex:1 0;
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
+	flex-wrap:wrap;
+	margin-left:0.25rem;
+	margin-right:0.25rem;
+	padding: 2rem 5rem 2rem 2rem;
+		width:35%;
+
+
+}
+.pricing-alignright{
+	align-items: flex-end;
 }
 
 /*Flexbox larger first*/
