@@ -30,6 +30,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 .flexbox-ordersummary{
 	flex:1 0 45%;
 	margin-right: 10rem;
+	flex-wrap: wrap;
 }
 
 
@@ -92,8 +93,6 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	margin-right:0.25rem;
 	padding: 2rem 5rem 2rem 2rem;
 		width:35%;
-
-
 }
 .pricing-alignright{
 	align-items: flex-end;
