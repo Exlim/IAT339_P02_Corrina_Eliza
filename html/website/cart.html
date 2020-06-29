@@ -94,87 +94,43 @@ function myFunction() {
 
 </header>
 
-<div class="parent-container">
-  <div class = "flexbox-layout-cart">
+<!-- YOUR CART --------------------------------------> 
 
+<div class="parent-container-wrap">
+  <div class = "flexbox-layout-major">
     <h1 class="header-formatting"> Your Cart! </h1>
 
-    <div class = "parent-container "> <!-- Headers Start --> 
-      <div class="flexbox-layout-major header-formatting "> 
+    <div class = "parent-container-wrap "> 
+      <div class="flexbox-layout-major header-formatting"> 
         <h2> Product </h2>
-      </div>
-      <div class="flexbox-layout-minor header-formatting">
-        <h2> Quantity </h2>
-      </div>
-      <div class="flexbox-layout-minor header-formatting">
-        <h2> Price </h2>
-      </div>
-    </div> <!-- Headers End --> 
-    <!-- Item No.1 Start --> 
-
-    <div class = "parent-container"> 
-      <div class="flexbox-layout-major header-formatting "> 
-        <img src="../../img/product-photos-300x300/white-soysauce-300x300.jpg" alt="Grebox product image">
-
-      </div>
-
-
-
-      <div class="flexbox-layout-minor header-formatting">
-
-        <div class="input-group">
-         <div class="input-group-btn">
-          <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+  
+         <div class = "flexbox-layout-minor">
+            <img src="../../img/product-photos-300x300/white-soysauce-300x300.jpg" alt="Grebox product image">
+          </div>
+          
+        <div class ="flexbox-layout-major"> 
+            <h4> Shiro Murasaki </h4>
+            <div class="input-group">
+            <div class="input-group-btn">
+            <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+            </div>
+            <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
+            <div class="input-group-btn">
+            <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+            </div>
+            </div>
+            <a href="#"> Remove </a>
         </div>
-
-        <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
-        <div class="input-group-btn">
-          <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
-        </div>
-      </div>
-      <a href="#"> Remove </a>
     </div>
 
     <div class="flexbox-layout-minor header-formatting">
-      <h4> $16.99 </h4>
-    </div>
-
-  </div> <!-- Item No.1 End -->
-
-
-    <div class = "parent-container"> 
-      <div class="flexbox-layout-major header-formatting "> 
-     <img src="../../img/product-photos-300x300/ponzu-300x300.jpg" alt="Grebox product image">
-
+      <h2> Price </h2>
+      <h4> 16.99 </h4>
       </div>
+    </div> 
+  </div>
 
-
-
-      <div class="flexbox-layout-minor header-formatting">
-
-        <div class="input-group">
-         <div class="input-group-btn">
-          <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
-        </div>
-
-        <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
-        <div class="input-group-btn">
-          <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
-        </div>
-      </div>
-      <a href="#"> Remove </a>
-    </div>
-
-    <div class="flexbox-layout-minor header-formatting">
-      <h4> $12.99 </h4>
-    </div>
-
-  </div>  <!-- Item No.2 End --> 
-
-
-</div>
-
-<!-- Order Summary ------------------------------------> 
+<!-- ORDER SUMMARY --------------------------------------------> 
 <div class ="flexbox-layout-summary slab-cream">
   <h3> Order Summary </h3> 
   <div class = "parent-container">
@@ -187,7 +143,6 @@ function myFunction() {
     <h4>$12.99 </h4>
   </div>
 </div>
-
 <hr>
 
 <div class = "parent-container">
