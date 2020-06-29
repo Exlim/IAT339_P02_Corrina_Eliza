@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Review</title>
   <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="../../css/normalize.css" rel="stylesheet">
-  <link href="../../css/fonts.css" rel="stylesheet">
   <link href="../../css/grids.css" rel="stylesheet">
   <link href="../../css/main.css" rel="stylesheet">
+  <link href="../../css/fonts.css" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/b1c08665ce.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,118 +18,68 @@
 </head>
 
 <script>
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
   }
-}
 </script>
 
 
 <body> 
 
-<header>
+  <header>
 
-<!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
-<section class="discount-header">
-  <div class="slab-white center-container">
-    <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a href="#">SEE DETAILS</a></p>
-  </div>
-</section>
+    <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
+    <section class="discount-header">
+      <div class="slab-white center-container">
+        <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a href="#">SEE DETAILS</a></p>
+      </div>
+    </section>
 
-<!-- NAV SECTION--------------------------------------------------------------   -->
-<nav class="main-nav">
-  <div class="main-nav-container slab-black parent-container">
-    <div class="main-nav-logo">
-      <a href="home_page.html">
-        <img class="logo-width" src="../../img/Saucyboys_Logo.svg" alt="Saucyboys website logo">
-      </a>
-    </div>
-    <div class="main-nav-items"  id="myLinks">
-      <div class="main-nav-col">
-        <a href="home_page.html">
-          <button class="main-nav-button">HOME</button>
+    <!-- NAV SECTION--------------------------------------------------------------   -->
+    <nav class="main-nav">
+      <div class="main-nav-container slab-black parent-container">
+        <div class="main-nav-logo">
+          <a href="home_page.html">
+            <img class="logo-width" src="../../img/Saucyboys_Logo.svg" alt="Saucyboys website logo">
+          </a>
+        </div>
+        <div class="main-nav-items"  id="myLinks">
+          <div class="main-nav-col">
+            <a href="home_page.html">
+              <button class="main-nav-button">HOME</button>
+            </a>
+          </div>
+          <div class="main-nav-col subnav">
+
+            <a href="products.html">
+              <button class="main-nav-button">SHOP</button>
+            </a>
+
+          </div>
+          <div class="main-nav-col">
+            <a href="about.html">
+              <button class="main-nav-button">ABOUT</button>
+            </a>
+          </div>
+          <div class="main-nav-col">
+            <a href="cart.html">
+              <button class="main-nav-button">CART</button>
+            </a>
+          </div>
+        </div>
+        <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
         </a>
       </div>
-      <div class="main-nav-col subnav">
+    </nav>
 
-        <a href="products.html">
-          <button class="main-nav-button subnav-button">SHOP</button>
-        </a>
-
-        <div class="subnav-content"> <!--Subnav content container div starts -->
-          <div class="subnav-container"> <!--Subnav flexbox container div start -->
-            <div class="subnav-filter"> <!-- Subnav filter div starts -->
-              <h4><a href="#">All Soy Sauce</a></h4>
-              <h4><a href="#">Soy Sauce by Country</a></h4>
-              <ul>
-                <li><a href="#">China</a></li>
-                <li><a href="#">Japan</a></li>
-                <li><a href="#">Korea</a></li>
-                <li><a href="#">Indonesia</a></li>
-                <li><a href="#">Vietnam</a></li>
-              </ul>
-              <h4><a href="#">Just In</a></h4>
-              <h4><a href="#">Bestsellers</a></h4>
-              <h4><a href="#">Top Rated</a></h4>
-              <h4><a href="#">Sale</a></h4>
-
-
-            </div> <!-- Subnav filter div ends -->
-
-
-            <div class="subnav-types">
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">Dark Soy Sauce</a>                
-              </div>
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">Tamaru Soy Sauce</a>                  
-              </div>
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">White Soy Sauce</a>                  
-              </div>
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">Special Soy Sauce</a>                  
-              </div>
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">Low Sodium Soy Sauce</a>                  
-              </div>
-              <div class="subnav-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">Gluten Free Soy Sauce</a>                  
-              </div>
-            </div>
-
-          </div> <!--Subnav flexbox container div ends -->
-        </div> <!--Subnav content container div ends -->
-      </div>
-      <div class="main-nav-col">
-        <a href="about.html">
-          <button class="main-nav-button">ABOUT</button>
-        </a>
-      </div>
-      <div class="main-nav-col">
-        <a href="cart.html">
-          <button class="main-nav-button">CART</button>
-        </a>
-      </div>
-    </div>
-  <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-  </div>
-</nav>
-
-</header>
+  </header>
 
 
   <!-- Product + Product Image --> 
@@ -139,39 +93,40 @@ function myFunction() {
   <div class ="review-container slab-cream"> 
     <div class="reviews-column">
       <form>
-        <div class>
+        <div>
           <h2> Your Review </h2>
-          <label>Email:</label>
-          <input class = "form-input input-width100" placeholder = "Your Email Address" type = "text" name = "text"> 
+          <label for="review-email">Email:</label>
+          <input id="review-email" class = "form-input input-width100" placeholder = "Your Email Address" type = "text" name = "text"> 
         </div>
 
-        <div class>
-          <label>Your Full Name:</label>
-          <input class = "form-input input-width100" placeholder = "Your First and Last Name" type = "text" name = "text"> 
+        <div>
+          <label for="review-customer-name">Your Full Name:</label>
+          <input id="review-customer-name" class = "form-input input-width100" placeholder = "Your First and Last Name" type = "text" name = "text"> 
         </div>
 
-        <div class>
-          <label>Your Score:</label>
+        <div>
+          <label for="review-star-score">Your Score:</label>
         </div>
-        <div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-  </div>
+        <div id="review-star-score" class="rate">
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5 stars</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4 stars</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3 stars</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2 stars</label>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1 star</label>
+        </div>
 
-        <div class>
-          <input class = "form-input input-width100" placeholder = "Your Review"  type = "text" name = "text" style="height:200px">
+        <div>
+          <label for="review-text-area">Your Review:</label>
+          <textarea id= "review-text-area" class="form-input input-width100" rows="15" cols="50" placeholder = "Your Review"></textarea>
         </div>
         
         <div class>
-          <p> Any review submitted via this form may be posted to the SaucyBoys.com review page and is governed by SuaucyBoys’s Terms of Use. SaucyBoys and its trusted third parties will use your information to publish and manage your review and for research and analytics. We may also contact you about your review. For further information on how we treat your personal data, please see our Privacy Policy.</p>
+          <p> Any review submitted via this form may be posted to the SaucyBoys.com review page and is governed by SaucyBoys’s Terms of Use. SaucyBoys and its trusted third parties will use your information to publish and manage your review and for research and analytics. We may also contact you about your review. For further information on how we treat your personal data, please see our Privacy Policy.</p>
         </div>
         <div class>
           <input type = "submit" class = "btn-submit" value = "SUBMIT REVIEW">
