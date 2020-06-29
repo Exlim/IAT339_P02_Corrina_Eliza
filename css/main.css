@@ -306,6 +306,40 @@ header{
   color:black;
 }
 
+.product-links{
+  text-decoration:none;
+  color:black;
+  position:relative;
+}
+
+.product-links h3,
+.product-links p {
+  margin-top:0.15rem;
+  margin-bottom:0.15rem;
+}
+
+.product-links .bestseller-tag,
+.product-links .just-in-tag{
+  border:0.1rem solid black;
+  padding:0rem 0.2rem 0 0.2rem;
+  position:absolute;
+  top:0;
+  right:0.5rem;
+  font-size:0.95rem;
+}
+
+.product-links .sold-out-tag{
+  border:0.1rem solid black;
+  padding:0rem 0.2rem 0 0.2rem;
+  position:absolute;
+  top:0;
+  right:1rem;
+  font-size:0.95rem;
+  color: #D93333;
+}
+
+
+
 /*SPLASH IMAGE ON PRODUCT PAGE ---------------------*/
 
 .product-page-hero-image{
