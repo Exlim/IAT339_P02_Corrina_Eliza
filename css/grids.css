@@ -5,6 +5,22 @@
 /*Above box column code referenced from Philip Walton's 'Better, Simpler Grids' Page
 https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
+.parent-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display:flex;
+
+}
+
+.parent-container-wrap{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display:flex;
+
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
+	flex-wrap:wrap;
+}
 
 .flexbox-half,
 .flexbox-third{
@@ -32,23 +48,6 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	margin-right: 10rem;
 }
 
-
-.parent-container{
-	display: -webkit-flex;
-	display: -ms-flex;
-	display:flex;
-
-}
-
-.parent-container-wrap{
-	display: -webkit-flex;
-	display: -ms-flex;
-	display:flex;
-
-	flex-wrap: -webkit-wrap;
-	flex-wrap: -ms-wrap;
-	flex-wrap:wrap;
-}
 
 /*Flexbox smaller first*/
 .flexbox-layout-minor{
@@ -141,7 +140,9 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 }
 
 .slab-container{
-	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display:flex;
 	justify-content:space-between;
 	align-items:center;
 	align-content:center;
@@ -158,15 +159,20 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 }
 
 .main-nav-logo{
-	flex:3 0 auto;
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
+	flex:3 0 auto;
 	flex-wrap:wrap;
 	align-items:center;
 }
 
 .main-nav-items{
-	flex:1 0 20%;
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
+
+	flex:1 0 20%;
 	justify-content:flex-end;
 	flex-wrap:wrap;
 	align-items:center;
@@ -181,12 +187,16 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
 
 .subnav-container{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
 	justify-content:center;
 	align-items:flex-start;
 }
 
 .subnav-filter{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
 	flex:1;
 	flex-direction:column;
@@ -194,6 +204,8 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	padding:0.5rem;
 }
 .subnav-types{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:flex-start;
@@ -206,6 +218,8 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
 
 .subnav-col{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -234,6 +248,8 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 }
 
 .center-grid-items{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
@@ -248,16 +264,20 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 /*FOOTER CODE --------------------------------------------------------------------*/
 
 .footer-container{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display:flex;
 	justify-content:space-between;
 	height:auto;
 	padding:2rem 2rem 4rem 2rem;
-	display:flex;
 	flex-wrap:wrap;
 }
 
 .footer-content{
-	flex-wrap: wrap;
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
+	flex-wrap: wrap;
 	justify-content:flex-start;
 }
 
@@ -268,10 +288,13 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 }
 
 .footer-logo{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display:flex;
+
 	flex: 1 0 20%;
 	flex-wrap:wrap;
 	justify-content:flex-end;
-	display:flex;
 	padding-right:2rem;
 	padding-top:3rem;
 }
@@ -279,7 +302,10 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 /*PRODUCT SPLASH IMAGE CODE ----------------------------------------------------------------*/
 
 .product-splash-col{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
+
 	flex-wrap:wrap;
 	align-content:flex-start;
 }
@@ -295,7 +321,10 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 /*PRODUCT NAV CODE -----------------------------------------------------------------------*/
 
 .product-nav{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
+
 	justify-content:center;
 	align-items:center;
 }
@@ -317,7 +346,10 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 /*DROP DOWN MENU CODE ----------------------------------------------------------- */
 
 .dropdown-menu-container{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
+
 	flex-wrap:wrap;
 	justify-content:center;
 	align-items:center;
@@ -326,7 +358,10 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 }
 
 .dropdown-menu-col{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
+
 	justify-content:center;
 	align-items:center;
 	flex-direction:column;
@@ -338,14 +373,20 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
 /*REVIEWS ----------------------------------------------------------- */
 .reviews-column{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
+
 	justify-content:flex-start;
 	align-content:flex-start;
 	flex-direction:column;
 }
 
 .review-container{
+	display: -webkit-flex;
+	display: -ms-flex;
 	display:flex;
+	
 	flex-wrap:nowrap;
 	flex-direction:column;
 	justify-content:center;
