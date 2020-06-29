@@ -1,0 +1,142 @@
+@media (max-width: 60.1875rem) {
+  .flexbox-layout-minor{
+    flex:1 100%;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap:wrap;
+  }
+
+  .flexbox-layout-major{
+    flex:1 100%;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap:wrap;
+  }
+
+  .flexbox-layout-minor-inverted{
+    flex:1 100%;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap:wrap;
+  }
+
+  .flexbox-layout-major-inverted{
+    flex:1 100%;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap:wrap;
+  }
+  
+  .sticky-event{
+    padding:0rem 0.5rem 0rem 0.5rem;
+    position:fixed;
+    z-index:3;
+  }
+
+  .product-grid{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display:flex;
+
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  padding:1rem 3rem 3rem 3rem;
+
+ }
+
+  .unequal-text-formatting{
+    padding:2rem;
+  }
+
+.product-nav{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 40.1875rem) {
+
+  .product-grid{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display:flex;
+
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding:1rem 3rem 3rem 3rem;
+  }
+
+  .footer-col{
+    padding:0rem;
+  }
+
+  .flexbox-half,
+  .flexox-third {
+    padding:2rem;
+  }
+
+.hamburger_icon {
+  display: block;
+}
+
+.main-nav-container{
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+
+/* Style the navigation menu */
+.main-nav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.main-nav #myLinks {
+  display: none;
+}
+
+
+/* Style navigation menu links */
+.main-nav button,
+.main-nav-logo button,
+.main-nav-items button,
+.main-nav-content button {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Add a grey background color on mouse-over */
+.main-nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Style the hamburger menu */
+.main-nav a.hamburger_icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 1rem;
+  color:red;
+}
+
+}
+
+
+@media (min-width: 79rem) {
+
+
+}
+
+@media (min-width: 98rem) {
+
+}
