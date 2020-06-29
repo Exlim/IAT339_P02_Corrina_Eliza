@@ -26,6 +26,28 @@
       x.style.display = "block";
     }
   }
+
+  /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
 </script>
 
 <body>
@@ -55,7 +77,7 @@
           </div>
           <div class="main-nav-col subnav">
             <a href="products.html">
-              <button class="main-nav-button subnav-button">SHOP</button>
+              <button class="main-nav-button">SHOP</button>
             </a>
           </div>
           <div class="main-nav-col">
@@ -185,15 +207,27 @@
   <!--MULTIPLE PRODUCTS SECTION --------------------------------------------- --->
 
   <section>
+    <div class="parent-container"> <!--Start of header and filter section -->
     <h2 class="header-formatting">ALL SOY SAUCE</h2>
+
+    <div class="filter-dropdown">
+  <button onclick="myFunction()" class="filterbtn">SORT BY</button>
+  <!--<p class="filter-option">LOWEST PRICE</p>-->
+  <div id="myDropdown" class="filter-dropdown-content">
+    <a href="#">LOWEST PRICE</a>
+    <a href="#">HIGHEST PRICE</a>
+    <a href="#">RATING</a>
+  </div>
+</div>
+</div> <!-- end of header and filter section-->
 
     <!--FIRST ROW OF PRODUCTS ------------------------------------- -->
     <section>
       <div class="product-grid"> <!--Parent Product Grid Div Container Starts -->
         <div class="product-grid-col center-grid-items"> <!--Start of product -->
-          <a href="detailed_product.html">
+          <a href="white_soy_sauce.html">
             <img src="../../img/product-photos-300x300/white-soysauce-300x300.jpg" alt="Bottle of Shiro Murasaki white soy sauce on a white background">
-          </a>
+          
           <h3>
             <a class="product-header-link" href="detailed_product.html">White Soy Sauce</a>
           </h3>
@@ -203,6 +237,7 @@
 
           </div>
           <p>$21.99</p>
+          </a>
           <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
         </div> <!--End of product -->
 
