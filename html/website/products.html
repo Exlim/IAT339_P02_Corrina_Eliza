@@ -116,8 +116,10 @@ function filterFunction() {
             <div class="row dropdown-menu-container"> <!--Start of dropdown-menu-container div -->
 
               <div class="dropdown-menu-col">
-                <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                <a href="#">White Soy Sauce</a>
+                <a class="product-links" href="white_soy_sauce.html">
+                <img src="../../img/white_soy_product_nav.jpg" alt="Greybox image to be replaced by product image">
+                <a class="dropdown-menu-link"href="#">White Soy Sauce</a>
+                </a>
               </div>
               <div class="dropdown-menu-col">
                 <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
@@ -212,11 +214,12 @@ function filterFunction() {
     <h2 class="header-formatting">ALL SOY SAUCE</h2>
 
     <div class="filter-dropdown">
-  <button onclick="myFunction()" class="filterbtn">SORT BY</button>
+  <button onclick="myFunction()" class="filterbtn">SORT BY<i class="fa fa-caret-down filter-arrow"></i>
+    </button>
   <!--<p class="filter-option">LOWEST PRICE</p>-->
   <div id="myDropdown" class="filter-dropdown-content">
-    <a href="#">LOWEST PRICE</a>
-    <a href="#">HIGHEST PRICE</a>
+    <a href="#">PRICE (LOW TO HIGH)</a>
+    <a href="#">PRICE (HIGH TO LOW)</a>
     <a href="#">RATING</a>
   </div>
 </div>

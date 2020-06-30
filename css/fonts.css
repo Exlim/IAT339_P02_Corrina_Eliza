@@ -1,11 +1,18 @@
 @font-face{
-	font-family: 'BarlowSemiCondensed-ExtraBold';
-	font-weight: bold;
+	font-family: 'Barlow';
+	font-weight: bolder;
 	font-style: normal;
-	src: url('../fonts/BarlowSemiCondensed-ExtraBold.ttf')
+	src: url('../fonts/Barlow-Bold.ttf')
 		 format('truetype');
 }
 
+@font-face{
+	font-family: 'Barlow';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/Barlow-ExtraBold.ttf')
+		 format('truetype');
+}
 
 @font-face{
 	font-family: 'SpaceMono-Regular';
