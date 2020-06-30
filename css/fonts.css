@@ -1,16 +1,8 @@
 @font-face{
-	font-family: 'BarlowSemiCondensed';
+	font-family: 'Barlow';
 	font-weight: bolder;
 	font-style: normal;
-	src: url('../fonts/BarlowSemiCondensed-ExtraBold.ttf')
-		 format('truetype');
-}
-
-@font-face{
-	font-family: 'BarlowSemiCondensed';
-	font-weight: bold;
-	font-style: normal;
-	src: url('../fonts/BarlowSemiCondensed-Bold.ttf')
+	src: url('../fonts/Barlow-Bold.ttf')
 		 format('truetype');
 }
 
@@ -18,7 +10,7 @@
 	font-family: 'Barlow';
 	font-weight: bold;
 	font-style: normal;
-	src: url('../fonts/Barlow-Bold.ttf')
+	src: url('../fonts/Barlow-ExtraBold.ttf')
 		 format('truetype');
 }
 
