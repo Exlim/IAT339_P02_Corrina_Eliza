@@ -44,8 +44,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 }
 
 .flexbox-ordersummary{
-	flex:1 0 45%;
-	margin-right: 10rem;
+	justify-content:space-between;
 	flex-wrap: wrap;
 }
 
@@ -91,8 +90,9 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	margin-left:0.25rem;
 	margin-right:0.25rem;
 	padding: 2rem 5rem 2rem 2rem;
-		width:35%;
+	width:35%;
 }
+
 .pricing-alignright{
 	align-items: flex-end;
 }
@@ -241,9 +241,11 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 }
 
 .product-grid-col{
-	margin-right:0.25rem;
-	margin-left:0.25rem;
+	margin-right:0.75rem;
+	margin-left:0.75rem;
 	margin-bottom:2rem;
+	flex-wrap:wrap;
+	max-width:19.375rem;
 }
 
 .center-grid-items{

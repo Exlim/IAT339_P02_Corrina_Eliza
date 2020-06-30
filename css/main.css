@@ -1,16 +1,19 @@
 /* TYPOGRAPHY */ 
 h1{
-  font-family: "BarlowSemiCondensed-ExtraBold", Verdana, sans-serif;
+  font-family: "BarlowSemiCondensed", Verdana, sans-serif;
+  font-weight:bold;
   font-size: 3rem;
 }
 
 h2{
-  font-family: "BarlowSemiCondensed-ExtraBold", Verdana, sans-serif;
+  font-family: "BarlowSemiCondensed", Verdana, sans-serif;
+  font-weight:bold;
   font-size: 2rem;
 }
 
 h3{
-  font-family: "BarlowSemiCondensed-ExtraBold", Verdana, sans-serif;
+  font-family: "BarlowSemiCondensed", Verdana, sans-serif;
+  font-weight:bold;
   font-size: 1.5rem;
 }
 
@@ -146,9 +149,10 @@ header{
 .product-nav-button{
     background-color: inherit;
     font-family: "SpaceMono-Regular", Verdana, sans-serif;
+    font-size:0.9rem;
     color:black;
     border:none;
-    padding:0.9rem 1rem 0.9rem 1rem;
+    padding:0.7rem 1rem 0.7rem 1rem;
     margin: 0;
 }
 
@@ -320,22 +324,19 @@ header{
 
 .product-links .bestseller-tag,
 .product-links .just-in-tag{
-  border:0.1rem solid black;
-  padding:0rem 0.2rem 0 0.2rem;
+  border:none;
+  background-color:black;
+  color:white;
+  padding:0rem 0.3rem 0 0.3rem;
   position:absolute;
   top:0;
-  right:0.5rem;
-  font-size:0.95rem;
+  left:0rem;
 }
 
-.product-links .sold-out-tag{
-  border:0.1rem solid black;
-  padding:0rem 0.2rem 0 0.2rem;
-  position:absolute;
-  top:0;
-  right:1rem;
-  font-size:0.95rem;
-  color: #D93333;
+.bestseller-tag p{
+  font-family:"Barlow", Verdana, sans-serif;
+  font-weight:bold;
+  font-size:0.75rem;
 }
 
 
@@ -489,7 +490,8 @@ ul.breadcrumbs li+li:before {
 
 ul.breadcrumbs li a {
   color: black;
-  font-family: BarlowSemiCondensed-ExtraBold;
+  font-family: "BarlowSemiCondensed";
+  font-weight:bold;
   text-decoration: none;
 }
 
