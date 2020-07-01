@@ -44,7 +44,12 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 }
 
 .flexbox-ordersummary{
+	-webkit-justify-content:space-between;
+	-ms-justify-content:space-between;
 	justify-content:space-between;
+
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap: wrap;
 }
 
@@ -52,9 +57,11 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 /*Flexbox smaller first*/
 .flexbox-layout-minor{
 	flex:1 0;
+
 	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
+
 	margin-right:0.25rem;
 	margin-left:0.25rem;
 	padding: 2rem 2rem 2rem 5rem;
@@ -62,9 +69,11 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
 .flexbox-layout-major{
 	flex:2 1;
+
 	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
+
 	margin-left:0.25rem;
 	margin-right:0.25rem;
 	padding: 2rem 5rem 2rem 2rem;
@@ -87,6 +96,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
+
 	margin-left:0.25rem;
 	margin-right:0.25rem;
 	padding: 2rem 5rem 2rem 2rem;
@@ -126,7 +136,10 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: flex;
 
 	flex-direction:column;
+	-webkit-justify-content:center;
+	-ms-justify-content:center;
 	justify-content:center;
+
 	text-align:center;
 	align-items:center;
 	align-content:center;
@@ -142,7 +155,11 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -webkit-flex;
 	display: -ms-flex;
 	display:flex;
+
+	-webkit-justify-content:space-between;
+	-ms-justify-content:space-between;
 	justify-content:space-between;
+
 	align-items:center;
 	align-content:center;
 }
@@ -150,7 +167,12 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 /*NAV CODE --------------------------------*/
 
 .main-nav-container{
+	-webkit-justify-content:space-between;
+	-ms-justify-content:space-between;
 	justify-content:space-between;
+
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
 	height:auto;
 	padding-right:0.5rem;
@@ -162,6 +184,9 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -ms-flex;
 	display:flex;
 	flex:3 0 auto;
+
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
 	align-items:center;
 }
@@ -172,8 +197,14 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display:flex;
 
 	flex:1 0 20%;
+	-webkit-justify-content:flex-end;
+	-ms-justify-content:flex-end;
 	justify-content:flex-end;
+
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
+
 	align-items:center;
 	flex-direction:row;
 }
@@ -189,7 +220,11 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -webkit-flex;
 	display: -ms-flex;
 	display:flex;
+
+	-webkit-justify-content:center;
+	-ms-justify-content:center;
 	justify-content:center;
+
 	align-items:flex-start;
 }
 
@@ -206,8 +241,15 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -webkit-flex;
 	display: -ms-flex;
 	display:flex;
+
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
+
+	-webkit-justify-content:flex-start;
+	-ms-justify-content:flex-start;
 	justify-content:flex-start;
+
 	flex:2 0 auto;
 	max-width:80%;
 	align-items:center;
@@ -220,7 +262,11 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -webkit-flex;
 	display: -ms-flex;
 	display:flex;
+
+	-webkit-justify-content:center;
+	-ms-justify-content:center;
 	justify-content:center;
+
 	align-items:center;
 	flex-direction:column;
 	padding:0 1rem 2rem 1rem;	
@@ -236,7 +282,11 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
+
+	-webkit-justify-content:space-between;
+	-ms-justify-content:space-between;
 	justify-content:space-between;
+
 	padding:1rem 6rem 3rem 6rem;
 }
 
@@ -244,6 +294,9 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	margin-right:0.75rem;
 	margin-left:0.75rem;
 	margin-bottom:2rem;
+
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
 	max-width:19.375rem;
 }
@@ -252,7 +305,11 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -webkit-flex;
 	display: -ms-flex;
 	display:flex;
+
 	flex-direction:column;
+
+	-webkit-justify-content:center;
+	-ms-justify-content:center;
 	justify-content:center;
 }
 
@@ -268,9 +325,16 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -webkit-flex;
 	display: -ms-flex;
 	display:flex;
+
+	-webkit-justify-content:space-between;
+	-ms-justify-content:space-between;
 	justify-content:space-between;
+
 	height:auto;
 	padding:2rem 2rem 4rem 2rem;
+
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
 }
 
@@ -278,7 +342,13 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -webkit-flex;
 	display: -ms-flex;
 	display:flex;
+
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap: wrap;
+
+	-webkit-justify-content:flex-start;
+	-ms-justify-content:flex-start;
 	justify-content:flex-start;
 }
 
@@ -294,7 +364,13 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display:flex;
 
 	flex: 1 0 20%;
+
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
+
+	-webkit-justify-content:flex-end;
+	-ms-justify-content:flex-end;
 	justify-content:flex-end;
 	padding-right:2rem;
 	padding-top:3rem;
@@ -307,6 +383,8 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -ms-flex;
 	display:flex;
 
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
 	align-content:flex-start;
 }
@@ -326,6 +404,8 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -ms-flex;
 	display:flex;
 
+	-webkit-justify-content:center;
+	-ms-justify-content:center;
 	justify-content:center;
 	align-items:center;
 }
@@ -351,8 +431,14 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -ms-flex;
 	display:flex;
 
+	flex-wrap: -webkit-wrap;
+	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
+
+	-webkit-justify-content:center;
+	-ms-justify-content:center;
 	justify-content:center;
+
 	align-items:center;
 	padding-top:2rem;
 	padding-bottom:2rem;
@@ -363,7 +449,10 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -ms-flex;
 	display:flex;
 
+	-webkit-justify-content:center;
+	-ms-justify-content:center;
 	justify-content:center;
+
 	align-items:center;
 	flex-direction:column;
 	padding-right:1rem;
@@ -378,7 +467,10 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -ms-flex;
 	display:flex;
 
+	-webkit-justify-content:flex-start;
+	-ms-justify-content:flex-start;
 	justify-content:flex-start;
+
 	align-content:flex-start;
 	flex-direction:column;
 }
@@ -388,14 +480,21 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	display: -ms-flex;
 	display:flex;
 	
+	flex-wrap: -webkit-nowrap;
+	flex-wrap: -ms-nowrap;
 	flex-wrap:nowrap;
 	flex-direction:column;
+
+	-webkit-justify-content:center;
+	-ms-justify-content:center;
 	justify-content:center;
 	align-items:center;
 }
 
 /*CART ----------------------------------------------------------- */
 .cart-row{
+	-webkit-justify-content:flex-start;
+	-ms-justify-content:flex-start;
 	justify-content: flex-start;
 }
 
