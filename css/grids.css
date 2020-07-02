@@ -31,6 +31,17 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	padding:2rem 5rem 2rem 5rem;
 }
 
+.cart-items{
+	max-width:33.3%;
+}
+
+.input-group{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	width:3.5rem;
+}
+
 .flexbox-cart{
 	flex:1 0 45%;
 	margin-right: 1rem;
@@ -213,6 +224,12 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	flex-wrap:wrap;
 }
 
+.logo-formatting{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display:flex;
+}
+
 /*SUBNAV CODE ----------------------------------*/
 
 
@@ -391,9 +408,9 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
 
 .product-splash-container{
-    height: 70%;
-    align-items: flex-start;
-    align-content: center;
+	height: 70%;
+	align-items: flex-start;
+	align-content: center;
 }
 
 
@@ -411,17 +428,16 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 }
 
 .product-nav::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 .product-nav{
-  -ms-overflow-style: none;
+	-ms-overflow-style: none;
 }
 
 .product-nav-col{
-	padding-right:2rem;
-	padding-left:2rem;
 	align-items:center;
+	display:inline;
 }
 
 /*DROP DOWN MENU CODE ----------------------------------------------------------- */
