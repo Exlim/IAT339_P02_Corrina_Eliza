@@ -1,3 +1,10 @@
+@media (max-width:25rem){
+  .hero-text{
+    max-width:100%;
+    right:1.5rem;
+  }
+}
+
 @media (max-width: 60.1875rem) {
   .flexbox-layout-minor{
     flex:1 100%;
@@ -56,6 +63,10 @@
     scroll-behavior: smooth;
     width: 100%;
   }
+
+  .product-nav-button{
+    padding:0.3rem 1rem 0.3rem 1rem;
+}
 
 }
 

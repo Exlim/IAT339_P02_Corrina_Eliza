@@ -74,6 +74,8 @@ header{
 
 /*NAV CODE*/
 
+
+
 .main-nav-button{
     background-color: inherit;
     color:black;
@@ -449,12 +451,7 @@ a.dropdown-menu-col {
   width:3.5rem;
 }
 
-.input-group{
-  display:flex;
-  align-items: center;
-    width:3.5rem;
 
-}
 
 /* REVIEWS -------------------------------------*/ 
 .review-cards{
@@ -527,6 +524,10 @@ ul.breadcrumbs li a:active{
 
 
 .hamburger_icon {
+  display:none;
+}
+
+.cart_icon {
   display:none;
 }
 
