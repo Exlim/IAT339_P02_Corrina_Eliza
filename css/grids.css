@@ -31,6 +31,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	padding:2rem 5rem 2rem 5rem;
 }
 
+<<<<<<< HEAD
 .cart-items{
 	max-width:33.3%;
 }
@@ -42,6 +43,15 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	width:3.5rem;
 }
 
+=======
+.flexbox-reviews{
+
+	flex:1 0 20%;
+	margin-right:0.25rem;
+	margin-left:0.25rem;
+	padding:2rem 5rem 2rem 5rem;
+}
+>>>>>>> corrina--developing
 .flexbox-half-aboutus{
 	flex:1 0 20%;
 	margin-right:0.1rem;
@@ -125,6 +135,21 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	align-items: flex-end;
 }
 
+.reviews-alignleft{
+	align-items: left;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-direction:column;
+	justify-content:left;
+	text-align:left;
+	align-items:left;
+	align-content:left;
+	padding: 0rem 2rem 0rem 2rem;
+	margin:3rem;
+}
 /*Flexbox larger first*/
 
 .flexbox-layout-major-inverted{
@@ -509,6 +534,8 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
 	align-content:flex-start;
 	flex-direction:column;
+	
+	margin:1rem;
 }
 
 .review-container{
@@ -534,6 +561,9 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	justify-content: flex-start;
 }
 
+.asterix{
+	color: red;
+}
 
 
 
