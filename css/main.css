@@ -461,6 +461,7 @@ a.dropdown-menu-col {
   border-radius: 1rem;
   min-height: 320px;
   min-width: 280px;
+  max-width:330px;
   padding:1rem;
   margin: 1rem;
   background-color:#FFF9ED;

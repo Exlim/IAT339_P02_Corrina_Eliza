@@ -443,6 +443,9 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	justify-content: flex-start;
 }
 
+.asterix{
+	color: red;
+}
 
 
 
