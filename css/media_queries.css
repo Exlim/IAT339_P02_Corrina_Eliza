@@ -18,6 +18,8 @@
     flex-wrap: -webkit-wrap;
     flex-wrap: -ms-wrap;
     flex-wrap:wrap;
+    padding:0;
+    margin:0 1rem 0 1rem;
   }
 
   .flexbox-layout-minor-inverted{

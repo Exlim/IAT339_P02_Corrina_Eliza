@@ -9,21 +9,34 @@
 
  <link href="../../css/normalize.css" rel="stylesheet">
  <link href="../../css/main.css" rel="stylesheet">
- <link href="../../css/media_queries.css" rel="stylesheet">
  <link href="../../css/fonts.css" rel="stylesheet">
  <link href="../../css/grids.css" rel="stylesheet">
+ <link href="../../css/media_queries.css" rel="stylesheet">
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
-    <script src="js/additems.js"></script>
 
 <body>
 
-<!-- NAV SECTION ------------------------------------------------------------>
+  <script src="../../js/additems.js"></script>
 
-<header>
+  <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+  <!-- NAV SECTION ------------------------------------------------------------>
+
+  <header>
     <!-- NAV SECTION ------------------------------------------------------------>
     <nav class="main-nav">
       <div class="main-nav-container slab-black parent-container">
@@ -63,7 +76,7 @@
   </header>
 
   <!-- PAYMENT FORM ------------------------------------> 
-  <div class="parent-container">
+  <div class="parent-container-wrap">
     <div class = "flexbox-layout-major">
 
       <ul class="breadcrumbs">
@@ -72,60 +85,91 @@
       </ul>
 
       <h1>Checkout</h1>
-      <h2>Personal Information</h2> 
+
       <form> 
-        <div class="parent-container">
+        <h2>Personal Information</h2> 
+        <div class="parent-container-wrap cart-individual-spacing">
           <div class = "flexbox-cart">
-            <label>First Name</label> <span class="asterix">*</span>
-            <input class = "input-sm input-width100" type ="text">
+            <label for="checkout-first-name">First Name</label> <span class="asterix">*</span>
+            <input class = "input-sm input-width100" id="checkout-first-name" type ="text">
           </div>
+
           <div class = "flexbox-cart">
-            <label>Last Name</label> <span class="asterix">*</span>
-            <input class = "input-sm input-width100" type ="text">
+            <label for="checkout-last-name">Last Name</label> <span class="asterix">*</span>
+            <input class = "input-sm input-width100" id="checkout-last-name"type ="text">
           </div>
         </div>
-        <label>Email Address</label> <span class="asterix">*</span>
-        <input class = "input-sm input-width100" type ="text">
-        <label>Confirm Email Address</label> <span class="asterix">*</span>
-        <input class = "input-sm input-width100" type ="text">
+
+        <div class="flexbox-cart">
+          <label for="checkout-email">Email Address</label> <span class="asterix">*</span>
+          <input class = "input-sm input-width100" id="checkout-email" type ="text">
+        </div>
+
+        <div class="flexbox-cart">
+          <label for="checkout-email-confirm">Confirm Email Address</label> <span class="asterix">*</span>
+          <input class = "input-sm input-width100" id="checkout-email-confirm" type ="text">
+        </div>
 
         <h2> Payment Information </h2> 
-        <label>Credit Card Number</label> <span class="asterix">*</span>
-        <input class = "input-sm input-width100" type ="text">
+        <div class="flexbox-cart">
+          <label for="checkout-credit-card-number">Credit Card Number</label> <span class="asterix">*</span>
+          <input class = "input-sm input-width100" id="checkout-credit-card-number" type ="text">
+        </div>
         
-        <div class="parent-container">
+        <div class="parent-container cart-individual-spacing">
           <div class = "flexbox-cart">
-            <label>Expiry Date</label> <span class="asterix">*</span>
-            <input class = "input-sm input-width100" type ="text">
+            <label for="checkout-credit-exp">Expiry Date</label> <span class="asterix">*</span>
+            <input class = "input-sm input-width100" id="checkout-credit-exp" type ="text">
           </div>
           <div class = "flexbox-cart">
-            <label>CVV</label> <span class="asterix">*</span>
-            <input class = "input-sm" type ="text">
+            <label for="checkout-credit-cvv">CVV</label> <span class="asterix">*</span>
+            <input class = "input-sm" id="checkout-credit-cvv" type ="text">
           </div>
         </div>
 
-        <label>Name on Card</label> <span class="asterix">*</span>
-        <input class = "input-sm input-width100" type ="text">
-        <label>Address Line 1</label> <span class="asterix">*</span>
-        <input class = "input-sm input-width100" type ="text">
-        <label>Address Line 2</label> 
-        <input class = "input-sm input-width100" type ="text">
-        <label>City</label> <span class="asterix">*</span>
-        <input class = "input-sm input-width100" type ="text">
-        <label>Country</label> <span class="asterix">*</span>
-        <input class = "input-sm input-width100" type ="text">
-        <label>Postal Code</label> <span class="asterix">*</span>
-        <input class = "input-sm input-width100" type ="text">
+        <div class="flexbox-cart">
+          <label for="checkout-credit-name">Name on Card</label> <span class="asterix">*</span>
+          <input class = "input-sm input-width100" id="checkout-credit-name" type ="text">
+        </div>
+
+        <div class="flexbox-cart">
+          <label for="checkout-address-1">Address Line 1</label> <span class="asterix">*</span>
+          <input class = "input-sm input-width100" id="checkout-address-1" type ="text">
+
+        </div>
+
+        <div class="flexbox-cart">
+          <label for="checkout-address-2">Address Line 2</label> 
+          <input class = "input-sm input-width100" id="checkout-address-2" type ="text">
+        </div>
+
+        <div class="flexbox-cart">
+          <label for="checkout-address-city">City</label> <span class="asterix">*</span>
+          <input class = "input-sm input-width100" id="checkout-address-city" type ="text">
+        </div>
+
+        <div class="flexbox-cart">
+          <label for="checkout-address-country">Country</label> <span class="asterix">*</span>
+          <input class = "input-sm input-width100" id="checkout-address-country" type ="text">
+        </div>
+
+        <div class="flexbox-cart">
+          <label for="checkout-postal-code">Postal Code</label> <span class="asterix">*</span>
+          <input class = "input-sm input-width100" id="checkout-postal-code" type ="text">
+        </div>
+
+
+
       </form>
 
-      <div class ="parent-container">
-        <div class = "flexbox-cart"> 
-          <a class="discount-header-font" href="home_page.html">Cancel</a>
+        <div class ="parent-container cart-individual-spacing">
+          <div class = "flexbox-cart"> 
+            <a class="discount-header-font" href="home_page.html">CANCEL</a>
+          </div>
+          <div class = "flexbox-cart"> 
+            <button class = "btn-product" onclick="window.location.href='orderconfirmation.html'">CONFIRM PAYMENT</button> 
+          </div>
         </div>
-        <div class = "flexbox-cart"> 
-          <button class = "btn-product" onclick="window.location.href='orderconfirmation.html'">CONFIRM PAYMENT</button>      
-        </div>
-      </div>
 
     </div>
     <!-- ORDER SUMMARY --------------------------------------------> 
@@ -164,7 +208,6 @@
       <h4>Total</h4> 
 
       <h4>$63.83</h4>
-
 
     </div>    
 
