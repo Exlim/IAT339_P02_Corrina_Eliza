@@ -35,11 +35,13 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	flex:1 0 45%;
 	margin-right:0.25rem;
 	margin-left:0.25rem;	
+
+}
+
 <<<<<<< HEAD
 .cart-items{
 	max-width:33.3%;
 }
-
 
 .input-group{
 	display: -webkit-flex;
