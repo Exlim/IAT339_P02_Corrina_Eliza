@@ -81,7 +81,6 @@ header{
     font: inherit;
     margin: 0;
     color:white;
-
 }
 
 .main-nav-button:hover,
@@ -103,6 +102,10 @@ header{
 
 .discount-header-font{
   font-size:0.7rem;
+}
+
+#discount-banner{
+  transition: height 3s;
 }
 
 /*MAIN NAV SUBNAV CODE*/
@@ -177,7 +180,7 @@ header{
   text-decoration: none;
   display: inline-block;
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .button:hover, 
@@ -189,7 +192,12 @@ header{
 .btn-product:hover,
 .btn-product:focus,
 .btn-product:active{
-  background-color:#292929;
+  border-style:solid;
+  border-width:0.1rem;
+  border-color:black;
+  background-color:white;
+  color:black;
+  transition: background-color 0.2s;
 }
 
 .btn-submit,
