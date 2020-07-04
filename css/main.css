@@ -36,14 +36,11 @@ input{
   color: grey;
   width:20rem;
   height:2rem;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .yourinput{
   height:10rem;
-}
-
-form{
-  padding: 0.5rem;
 }
 
 
@@ -457,8 +454,8 @@ a.dropdown-menu-col {
 }
 
 .input-button-size{
-  height:3.5rem;
-  width:3.5rem;
+  height:2rem;
+  width:2rem;
 }
 
 .cart-header-formatting h2,
@@ -475,10 +472,10 @@ form{
   display:block;
 }
 
-input[type=text] {
+input[type=number] {
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
-  width:2rem;
-  height:2rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
   box-sizing: border-box;
 }
 
