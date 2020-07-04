@@ -101,44 +101,38 @@
 
     <div class = "flexbox-layout-major"> <!-- Start of Cart Section -->
       <h1 class="header-formatting">Your Cart!</h1>
-        <div class="parent-container-wrap flexbox-third flexbox-ordersummary">
+
+      <div class="parent-container flexbox-cart"> <!--Beginning of individual product view-->
+        <div>
+          <img src="../../img/updated-imgs/white-soy-sauce.jpg" alt="Grebox product image">
+        </div>
+        <div class="flexbox-third-nopadding cart-header-formatting"> <!--Beginning of text section of individual product -->
+          <div > <!--product header and size -->
+            <h2> Shiro Murasaki </h2>
+            <p>200ml</p>
+          </div>
+
+          <div class="parent-container-wrap cart-individual-spacing"> <!-- quantity button and price -->
           <div>
-          <h2>Product</h2>
-        </div>
-        <div>
-          <h2>Quantity</h2>
-        </div>
-        <div>
-          <h2>Price</h2>
-        </div>
-        </div> <!--End of headers -->
-
-        <div class="parent-container-wrap flexbox-third flexbox-ordersummary">
-          <div class="flexbox-ordersummary cart-items">
-        <img src="../../img/updated-imgs/white-soy-sauce.jpg" alt="Grebox product image">
-        <h4> Shiro Murasaki </h4>
-      </div>
-
-
-
-        <div class="cart-items">
-        <div class="input-group">
-          <div class="input-group-btn">
-            <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+            <div class="input-group">
+              <div class="input-group-btn">
+                <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+              </div>
+              <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
+              <div class="input-group-btn">
+                <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+              </div>
+            </div>
           </div>
-          <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
-          <div class="input-group-btn">
-            <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+
+
+          <div class="cart-items">
+            <h4> $21.99 </h4>
+            <a href="#"> Remove </a>
           </div>
-        </div>
-        <a href="#"> Remove </a>
-        </div>
-
-
-        <div class="cart-items">
-        <h4> $21.99 </h4>
-      </div>
-    </div>
+        </div> <!-- end of quantity button and price -->
+        </div> <!--end -->
+      </div> <!-- End of individual product view -->
 
     </div> <!--End of cart section -->
 

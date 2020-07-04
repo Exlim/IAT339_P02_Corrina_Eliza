@@ -87,7 +87,9 @@ header{
 
 }
 
-.main-nav-button:hover{
+.main-nav-button:hover,
+.main-nav-button:active,
+.main-nav-button:focus{
     text-decoration:underline;
     color:white;
 
@@ -126,7 +128,9 @@ header{
   margin: 0;
 }
 
- .subnav-button:hover{
+ .subnav-button:hover,
+ .subnav-button:active,
+ .subnav-button:focus{
     text-decoration:underline;
     color:white;
  }
@@ -142,7 +146,9 @@ header{
   max-height:25rem;
 }
 
-.subnav:hover .subnav-content {
+.subnav:hover .subnav-content,
+.subnav:active .subnav-content,
+.subnav:focus .subnav-content {
   display: block;
 }
 
@@ -179,10 +185,13 @@ header{
 
 .button:hover, 
 .button:focus,
+.button:active,
 .btn-submit:hover,
 .btn-submit:focus,
+.btn-submit:active,
 .btn-product:hover,
-.btn-product:focus{
+.btn-product:focus,
+.btn-product:active{
   background-color:#292929;
 }
 
@@ -309,7 +318,7 @@ header{
   color:black;
 }
 
-.product-header-link:hover, .product-header-link:focus{
+.product-header-link:hover, .product-header-link:focus, .product-header-link:active{
   text-decoration:underline;
   color:black;
 }
@@ -392,7 +401,9 @@ header{
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown:active .dropdown-content,
+.dropdown:focus .dropdown-content {
   display: block;
 }
 
@@ -433,13 +444,12 @@ a.dropdown-menu-col {
   background-color:black;
   border:none;
   color: white;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 2rem;
+  width: 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
-  font-size: 2rem;
 }
 
 .form-group{
@@ -449,6 +459,31 @@ a.dropdown-menu-col {
 .input-button-size{
   height:3.5rem;
   width:3.5rem;
+}
+
+.cart-header-formatting h2,
+.cart-header-formatting h4,
+.cart-header-formatting p{
+  margin:0.5rem 0 0.5rem 0;
+}
+
+label{
+cursor:default;
+}
+
+form{
+  display:block;
+}
+
+input[type=text] {
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  width:2rem;
+  height:2rem;
+  box-sizing: border-box;
+}
+
+.input-width100{
+  width:100%;
 }
 
 
@@ -478,7 +513,7 @@ a.dropdown-menu-col {
   text-decoration:none;
 }
 
-.footer-header-link:hover, .footer-header-link:focus{
+.footer-header-link:hover, .footer-header-link:focus, .footer-header-link:active{
   color:#D93333;
 }
 
@@ -533,24 +568,7 @@ ul.breadcrumbs li a:active{
 
 
 
-label{
-cursor:default;
-}
 
-form{
-  display:block;
-}
-
-input[type=text] {
-  font-family: "SpaceMono-Regular", Verdana, sans-serif;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-
-.input-width100{
-  width:100%;
-}
 
 
 
@@ -581,7 +599,9 @@ input[type=text] {
 } 
  
 /* When you mouse over the navigation links, change their color */ 
-.sidenav a:hover { 
+.sidenav a:hover,
+.sidenav a:focus,
+.sidenav a:active { 
   color: #f1f1f1; 
 } 
  
@@ -634,14 +654,28 @@ input[type=text] {
     color: #F9A11C;    
 }
 .rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
+.rate:not(:checked) > label:focus,
+.rate:not(:checked) > label:active,
+.rate:not(:checked) > label:hover ~ label
+.rate:not(:checked) > label:focus ~ label
+.rate:not(:checked) > label:active ~ label {
     color: #deb217;  
 }
 .rate > input:checked + label:hover,
+.rate > input:checked + label:focus,
+.rate > input:checked + label:active,
 .rate > input:checked + label:hover ~ label,
+.rate > input:checked + label:focus ~ label,
+.rate > input:checked + label:active ~ label,
 .rate > input:checked ~ label:hover,
+.rate > input:checked + label:focus,
+.rate > input:checked + label:active,
 .rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
+.rate > input:checked + label:focus ~ label,
+.rate > input:checked + label:active ~ label,
+.rate > label:hover ~ input:checked ~ label,
+.rate > label:focus ~ input:checked ~ label,
+.rate > label:active ~ input:checked ~ label {
     color: #F9A11C;
 }
 
@@ -727,7 +761,9 @@ a:active, a:hover, a:focus {
 }
 
 /* Change color of dropdown links on hover */
-.filter-dropdown-content a:hover {
+.filter-dropdown-content a:hover,
+.filter-dropdown-content a:focus,
+.filter-dropdown-content a:active {
   background-color: #f1f1f1
 }
 
@@ -777,7 +813,8 @@ a:active, a:hover, a:focus {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.close:active {
   color: black;
   text-decoration: none;
   cursor: pointer;
