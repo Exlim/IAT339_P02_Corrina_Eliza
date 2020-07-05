@@ -491,6 +491,10 @@ input[type=number] {
   width:100%;
 }
 
+textarea{
+    font-family: "SpaceMono-Regular", Verdana, sans-serif;
+}
+
 
 
 /* REVIEWS -------------------------------------*/ 
