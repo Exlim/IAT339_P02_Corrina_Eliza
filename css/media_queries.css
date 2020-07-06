@@ -35,6 +35,10 @@
     flex-wrap: -ms-wrap;
     flex-wrap:wrap;
   }
+
+  .flexbox-layout-summary{
+    padding:2rem;
+  }
   
   .sticky-event{
     padding:0rem 0.5rem 0rem 0.5rem;
@@ -68,6 +72,10 @@
 
   .product-nav-button{
     padding:0.3rem 1rem 0.3rem 1rem;
+}
+
+.header-formatting{
+  padding:0 2rem 0 2rem;
 }
 
 }

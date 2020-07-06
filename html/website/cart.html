@@ -54,7 +54,22 @@
     <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
     <section class="discount-header">
       <div class="slab-white center-container">
-        <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a href="#">SEE DETAILS</a></p>
+        <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a id="modalLink" href="#">SEE DETAILS</a></p>
+
+        <!-- The Modal -->
+        <div id="FreeShippingModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Free Shipping on orders of $25 or more*</h2>
+
+
+            <p class="no-max-width">Free shipping offer applies to SaucyBoys.com orders over $25.
+            HOW IT WORKS: Add qualifying product(s) and Free Shipping will be applied to your order. If your order contains items that are ineligible for Free Shipping, you will be charged shipping only for those items.</p>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -113,7 +128,7 @@
             <p>200ml</p>
           </div>
 
-          <div class="parent-container-wrap cart-individual-spacing"> <!-- quantity button and price -->
+          <div class="parent-container-wrap cart-individual-spacing align-bottom"> <!-- quantity button and price -->
           <div>
             <div class="input-group">
               <div class="input-group-btn">
@@ -136,6 +151,39 @@
 
       </div> <!-- End of individual product view -->
       <hr>
+
+      <div class="parent-container flexbox-cart"> <!--Beginning of individual product view-->
+        <div>
+          <img src="../../img/updated-imgs/white-soy-sauce.jpg" alt="Grebox product image">
+        </div>
+        <div class="flexbox-third-nopadding cart-header-formatting"> <!--Beginning of text section of individual product -->
+          <div > <!--product header and size -->
+            <h2> Shiro Murasaki </h2>
+            <p>200ml</p>
+          </div>
+
+          <div class="parent-container-wrap cart-individual-spacing align-bottom"> <!-- quantity button and price -->
+          <div>
+            <div class="input-group">
+              <div class="input-group-btn">
+                <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
+              </div>
+              <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
+              <div class="input-group-btn">
+                <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="cart-items">
+            <h4> $21.99 </h4>
+            <a href="#"> Remove </a>
+          </div>
+        </div> <!-- end of quantity button and price -->
+        </div> <!--end -->
+
+      </div> <!-- End of individual product view -->
     </div> <!--End of cart section -->
 
     <!-- ORDER SUMMARY --------------------------------------------> 
@@ -183,6 +231,46 @@
   </div> <!-- End of Order Summary -->
 
 </div> 
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById("FreeShippingModal");
+
+  // Get the button that opens the modal
+  var link = document.getElementById("modalLink");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on the button, open the modal
+  link.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("discount-banner").style.display = "flex";
+    } else {
+      document.getElementById("discount-banner").style.display = "none";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script>
 </body>
 
 </html>

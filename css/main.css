@@ -33,8 +33,7 @@ p, ol, ul,label {
 
 input{
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
-  color: grey;
-  width:20rem;
+  color: black;
   height:2rem;
   margin: 0.5rem 0 0.5rem 0;
 }
@@ -96,6 +95,10 @@ header{
   top:5.5rem;
   z-index:2;
   background:white;
+}
+
+.main-nav-logo a{
+  display:flex;
 }
 
 /*DISCOUNT HEADER -----------------*/
@@ -489,6 +492,10 @@ input[type=number] {
 
 .input-width100{
   width:100%;
+}
+
+.input-sm{
+  max-width:5rem;
 }
 
 textarea{
