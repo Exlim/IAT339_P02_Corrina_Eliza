@@ -511,8 +511,17 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	justify-content:space-between;
 }
 
+.align-bottom{
+	align-items:flex-end;
+}
+
 .flexbox-cart{
 	align-items:center;
+}
+
+.flexbox-checkout{
+	display:flex;
+	flex-direction:column;
 }
 
 .flexbox-cartname{
@@ -539,7 +548,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	flex-wrap: -ms-wrap;
 	flex-wrap:wrap;
 
-	padding: 2rem 5rem 2rem 2rem;
+	padding: 2rem 4rem 2rem 2rem;
 	width:35%;
 }
 
