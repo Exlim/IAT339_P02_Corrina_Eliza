@@ -17,6 +17,15 @@
 
 </head>
 
+<script>
+
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+  </script>
+
 <body>
 
   <header>
@@ -192,10 +201,12 @@
   <!--MULTIPLE PRODUCTS SECTION --------------------------------------------- --->
 
   <section>
-    <div class="parent-container"> <!--Start of header and filter section -->
-      <h2 class="header-formatting">ALL SOY SAUCE</h2>
+    <div class="parent-container-wrap cart-individual-spacing"> <!--Start of header and filter section -->
+      <div class="flexbox-layout-major-inverted">
+      <h2>ALL SOY SAUCE</h2>
+    </div>
 
-      <div class="filter-dropdown">
+      <div class="flexbox-layout-minor-inverted filter-dropdown">
         <button onclick="myFunction()" class="filterbtn">SORT BY<i class="fa fa-caret-down filter-arrow"></i>
         </button>
         <!--<p class="filter-option">LOWEST PRICE</p>-->
