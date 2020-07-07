@@ -40,7 +40,7 @@
       <div class="slab-white center-container">
         <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a id="modalLink" href="#">SEE DETAILS</a></p>
 
-                <!-- The Modal -->
+        <!-- The Modal -->
         <div id="FreeShippingModal" class="modal">
 
           <!-- Modal content -->
@@ -99,47 +99,55 @@
 
 
   <!-- Product + Product Image --> 
-  <div class = "review-container"> <!--Start of Parent Container -->
+  <div class = "flexbox-padding-margin review-container"> <!--Start of Parent Container -->
     <div class= "reviews-column">
       <img class = "review-image" src="../../img/whitesoy.jpg" alt="Bottle of White Soy Sauce">
       <h1> Shiro Murasaki</h1>
     </div>
   </div>
 
-  <div class ="review-container slab-cream"> 
+  <div class ="flexbox-padding-margin review-container slab-cream"> 
     <div class="reviews-column">
       <form>
-        <div>
-          <h2> Your Review </h2>
+
+        <h2> Your Review </h2>
+        <div class="reviews-column">
           <label for="review-email">Email:</label>
           <input id="review-email" class = "form-input input-width100" placeholder = "Your Email Address" type = "text" name = "text"> 
         </div>
 
-        <div>
+        <div class="reviews-column">
           <label for="review-customer-name">Your Full Name:</label>
           <input id="review-customer-name" class = "form-input input-width100" placeholder = "Your First and Last Name" type = "text" name = "text"> 
         </div>
 
-        <div>
+        <div class="reviews-column">
           <label for="review-star-score">Your Score:</label>
-        </div>
-        <div id="review-star-score" class="rate">
-          <input type="radio" id="star5" name="rate" value="5" />
-          <label for="star5" title="text">5 stars</label>
-          <input type="radio" id="star4" name="rate" value="4" />
-          <label for="star4" title="text">4 stars</label>
-          <input type="radio" id="star3" name="rate" value="3" />
-          <label for="star3" title="text">3 stars</label>
-          <input type="radio" id="star2" name="rate" value="2" />
-          <label for="star2" title="text">2 stars</label>
-          <input type="radio" id="star1" name="rate" value="1" />
-          <label for="star1" title="text">1 star</label>
-        </div>
 
+          <div id="review-star-score" class="rate">
+            <label for="star5" title="five stars">5 stars</label>
+            <input type="radio" id="star5" name="rate" value="5" />
+            
+            <label for="star4" title="four stars">4 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            
+            <label for="star3" title="three stars">3 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            
+            <label for="star2" title="two stars">2 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            
+            <label for="star1" title="one stars">1 star</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            
+          </div>
+        </div>
+        <div class="reviews-column">
           <label>Your Review:</label>
-          <textarea id= "review-text-area" class="form-input input-width100" rows="15" cols="50" placeholder = "Your Review"></textarea>
+          <textarea id= "review-text-area" class="form-input input-width100" rows="15" cols="50" placeholder = "Write your review here!"></textarea>
+        </div>
         
-        <div class>
+        <div class="reviews-column">
           <p> Any review submitted via this form may be posted to the SaucyBoys.com review page and is governed by SaucyBoys’s Terms of Use. SaucyBoys and its trusted third parties will use your information to publish and manage your review and for research and analytics. We may also contact you about your review. For further information on how we treat your personal data, please see our Privacy Policy.</p>
         </div>
         <div class>
@@ -149,7 +157,7 @@
     </div>
   </div>    <!--End of Parent Container -->
 
-    <script>
+  <script>
   // Get the modal
   var modal = document.getElementById("FreeShippingModal");
 

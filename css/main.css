@@ -102,6 +102,61 @@ header{
   padding-left:0.5rem ;
 }
 
+/*MOBILE SIDE NAV*/
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 2.5rem; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  text-decoration:underline;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*#overlay {
+  position: fixed; 
+  display:none;
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 900;
+  cursor: pointer; 
+}*/
+
+
 /*DISCOUNT HEADER -----------------*/
 
 .discount-header-font{
@@ -476,6 +531,15 @@ a.dropdown-menu-col {
   margin:0.5rem 0 0.5rem 0;
 }
 
+.cart-name-margin{
+  margin-right:0.5rem;
+}
+
+.order-summary{
+  position:sticky;
+  top:6rem;
+}
+
 label{
 cursor:default;
 }
@@ -516,12 +580,20 @@ textarea{
   background-color:#FFF9ED;
 }
 
+.reviews-column p{
+  font-size:0.7rem;
+}
+
 /* CART -------------------------------------*/ 
 .cart-image{
   height: 350px ;
   width: 100px;
   padding:1rem;
   background-color: grey;
+}
+
+.text-align-right{
+  text-align:right;
 }
 
 /* FOOTER ----------------------------*/
@@ -586,70 +658,10 @@ ul.breadcrumbs li a:active{
 
 
 
-
-
-
-
-/* THE SIDE NAVIGATION MENU ----------------------------*/ 
- 
-.sidenav { 
-  height: 100%; /* 100% Full-height */ 
-  width: 0; /* 0 width - change this with JavaScript */ 
-  position: fixed; /* Stay in place */ 
-  z-index: 1; /* Stay on top */ 
-  top: 0; /* Stay at the top */ 
-  right: 0; 
-  background-color: #F3F3F3; /*Off White*/ 
-  overflow-x: hidden; /* Disable horizontal scroll */ 
-  padding-top: 60px; /* Place content 60px from the top */ 
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */ 
-  z-index: 1000; /*Keeps the sidenav on top of other navigation bars*/ 
-} 
- 
-/* The navigation menu links */ 
-.sidenav a { 
-  padding: 8px 8px 8px 32px; 
-  text-decoration: none; 
-  font-size: 25px; 
-  color: #818181; 
-  display: block; 
-  transition: 0.3s; 
-} 
- 
-/* When you mouse over the navigation links, change their color */ 
-.sidenav a:hover,
-.sidenav a:focus,
-.sidenav a:active { 
-  color: #f1f1f1; 
-} 
- 
-/* Position and style the close button (top right corner) */ 
-.sidenav .closebtn { 
-  position: absolute; 
-  top: 0; 
-  right: 25px; 
-  font-size: 36px; 
-  margin-left: 50px; 
-} 
- 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */ 
-#main { 
-  transition: margin-left .5s; 
-  padding: 20px; 
-} 
- 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */ 
-@media screen and (max-height: 450px) { 
-  .sidenav {padding-top: 15px;} 
-  .sidenav a {font-size: 18px;} 
-} 
-
-
 .rate {
     float: left;
     height: 46px;
     padding: 0 10px;
-
 
 }
 .rate:not(:checked) > input {
@@ -674,8 +686,8 @@ ul.breadcrumbs li a:active{
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:focus,
 .rate:not(:checked) > label:active,
-.rate:not(:checked) > label:hover ~ label
-.rate:not(:checked) > label:focus ~ label
+.rate:not(:checked) > label:hover ~ label,
+.rate:not(:checked) > label:focus ~ label,
 .rate:not(:checked) > label:active ~ label {
     color: #deb217;  
 }
@@ -692,8 +704,7 @@ ul.breadcrumbs li a:active{
 .rate > input:checked + label:focus ~ label,
 .rate > input:checked + label:active ~ label,
 .rate > label:hover ~ input:checked ~ label,
-.rate > label:focus ~ input:checked ~ label,
-.rate > label:active ~ input:checked ~ label {
+ {
     color: #F9A11C;
 }
 
