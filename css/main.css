@@ -42,6 +42,9 @@ input{
   height:10rem;
 }
 
+.padding-about-SaucyBoys{
+  padding-bottom: 2rem;
+}
 
 /*IMAGES */
 img {
@@ -58,6 +61,10 @@ header{
   position:sticky;
   top:0rem;
   z-index:2;
+}
+
+.white-text{
+  color:white;
 }
 
 /*CSS SELECTORS -------------------------------------------------------------------------------------------------------*/
