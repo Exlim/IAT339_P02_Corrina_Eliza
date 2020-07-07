@@ -36,12 +36,12 @@
 
 <body>
 
-<header>
+  <header>
 
-  <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
-  <section class="discount-header">
-    <div class="slab-white center-container">
-      <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a id="modalLink" href="#">SEE DETAILS</a></p>
+    <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
+    <section class="discount-header">
+      <div class="slab-white center-container">
+        <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a id="modalLink" href="#">SEE DETAILS</a></p>
 
         <!-- The Modal -->
         <div id="FreeShippingModal" class="modal">
@@ -57,51 +57,51 @@
           </div>
 
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- NAV SECTION--------------------------------------------------------------   -->
-  <nav class="main-nav">
-    <div class="main-nav-container slab-black parent-container">
-      <div class="main-nav-logo">
-        <a href="home_page.html">
-          <img class="logo-width logo-size" src="../../img/Saucyboys_Logo.png" alt="Saucyboys website logo" height="27" width="197">
+    <!-- NAV SECTION--------------------------------------------------------------   -->
+    <nav class="main-nav">
+      <div class="main-nav-container slab-black parent-container">
+        <div class="main-nav-logo">
+          <a href="home_page.html">
+            <img class="logo-width logo-size" src="../../img/Saucyboys_Logo.png" alt="Saucyboys website logo" height="27" width="197">
+          </a>
+        </div>
+        <div class="main-nav-items" id="myLinks">
+          <div class="main-nav-col">
+            <a href="home_page.html">
+              <button class="main-nav-button">HOME</button>
+            </a>
+          </div>
+          <div class="main-nav-col subnav">
+
+            <a href="products.html">
+              <button class="main-nav-button">SHOP</button>
+            </a>
+
+          </div>
+          <div class="main-nav-col">
+            <a href="about.html">
+              <button class="main-nav-button">ABOUT</button>
+            </a>
+          </div>
+          <div class="main-nav-col">
+            <a href="cart.html">
+              <button class="main-nav-button">CART</button>
+            </a>
+          </div>
+        </div>
+        <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
         </a>
       </div>
-      <div class="main-nav-items" id="myLinks">
-        <div class="main-nav-col">
-          <a href="home_page.html">
-            <button class="main-nav-button">HOME</button>
-          </a>
-        </div>
-        <div class="main-nav-col subnav">
 
-          <a href="products.html">
-            <button class="main-nav-button">SHOP</button>
-          </a>
-
-        </div>
-        <div class="main-nav-col">
-          <a href="about.html">
-            <button class="main-nav-button">ABOUT</button>
-          </a>
-        </div>
-        <div class="main-nav-col">
-          <a href="cart.html">
-            <button class="main-nav-button">CART</button>
-          </a>
-        </div>
-      </div>
-      <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-
-  </nav>
+    </nav>
 
 
-  <!--End of Nav Section --> 
-</header>
+    <!--End of Nav Section --> 
+  </header>
 
   <div class = "parent-container-wrap slab-cream">
     <div class ="flexbox-half">
@@ -109,20 +109,27 @@
      <p> Have a question or concern? You can email us at any time 
        at <a href="mailto:info@saucyboys.com">info@saucyboys.com</a> or fill out the form. Based in New York City, United States. </p>
      </div>
-     <div class = "flexbox-half">
+     <div class = "parent-container-wrap flexbox-half">
        <form>
-
+        <div class="flexbox-checkout">
           <label for="contact-us-email"> Your Full Name: </label>
-          <input class = "form-input" value = "Your Email Address" type = "text" name = "text"> 
+          <input id="contact-us-email" class = "form-input" value = "Your Email Address" type = "text" name = "text"> 
+        </div>
 
+        <div class="flexbox-checkout">
           <label for="contact-us-customer-name"> Email: </label>
-          <input class = "form-input" value = "Your First and Last Name" type = "text" name = "text"> 
+          <input id="contact-us-customer-name" class = "form-input" value = "Your First and Last Name" type = "text" name = "text"> 
+        </div>
 
+        <div class="flexbox-checkout">
           <label for="contact-us-text-area"> Subject: </label>
-          <input class = "form-input" value = "Your First and Last Name" type = "text" name = "text"> 
+          <input id="contact-us-text-area" class = "form-input" value = "Your First and Last Name" type = "text" name = "text"> 
+        </div>
 
+        <div class="flexbox-checkout">
           <label for="contact-us-text-area"> Message:</label>
           <textarea id= "contact-us-text-area" class="form-input input-width100" rows="15" cols="50" placeholder = "Your Message"></textarea>
+        </div>
       </form>
     </div>
 
@@ -169,6 +176,9 @@
               <li>
                 <a href="../styleguide/citations.html">Citations</a>
               </li>
+              <li>
+                <a href="https://github.com/Exlim/IAT339_P02_Corrina_Eliza_Wk1_Check_In">Our Github</a>
+              </li>
             </ul>
           </div>
           <div class="footer-col">
@@ -192,7 +202,7 @@
 
   </footer>
 
-    <script>
+  <script>
   // Get the modal
   var modal = document.getElementById("FreeShippingModal");
 

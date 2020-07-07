@@ -89,12 +89,12 @@
       <form> 
         <h2>Personal Information</h2> 
         <div class="parent-container-wrap cart-individual-spacing">
-          <div class = "flexbox-checkout">
+          <div class = "flexbox-checkout client-name cart-name-margin">
             <label for="checkout-first-name">First Name<span class="asterix">*</span></label> 
             <input class = "input-width100" id="checkout-first-name" type ="text">
           </div>
 
-          <div class = "flexbox-checkout">
+          <div class = "flexbox-checkout client-name">
             <label for="checkout-last-name">Last Name<span class="asterix">*</span></label> 
             <input class = "input-width100" id="checkout-last-name"type ="text">
           </div>
@@ -162,58 +162,58 @@
 
       </form>
 
-        <div class ="parent-container cart-individual-spacing align-bottom  ">
-          <div class = "flexbox-checkout"> 
-            <a class="discount-header-font" href="home_page.html">CANCEL</a>
-          </div>
-          <div class = "flexbox-checkout"> 
-            <button class = "btn-product" onclick="window.location.href='orderconfirmation.html'">CONFIRM PAYMENT</button> 
-          </div>
+      <div class ="parent-container cart-individual-spacing align-bottom  ">
+        <div class = "flexbox-checkout"> 
+          <a class="discount-header-font" href="white_soy_sauce.html">CANCEL</a>
         </div>
+        <div class = "flexbox-checkout"> 
+          <button class = "btn-product" onclick="window.location.href='orderconfirmation.html'">CONFIRM PAYMENT</button> 
+        </div>
+      </div>
 
     </div>
     <!-- ORDER SUMMARY --------------------------------------------> 
     <div class ="flexbox-layout-summary slab-cream">
+      <div class="order-summary"> <!--Start of sticky div -->
+        <h3> Order Summary </h3> 
+        <div class = "parent-container flexbox-ordersummary">
+         <div class= "flexbox-ordersummary">
+          <h4> White Shiro Murasaki </h4> 
+          <h4> 3 Year Aged Shoyu </h4> 
+        </div>
+        <div class = "flexbox-ordersummary text-align-right">
+          <h4>$21.99 </h4>
+          <h4>$34.99 </h4>
+        </div>
+      </div>
+      <hr>
 
-      <h3> Order Summary </h3> 
       <div class = "parent-container flexbox-ordersummary">
-       <div class= "flexbox-ordersummary">
-        <h4> Shiro Murasaki </h4> 
-        <h4> 3 Year Aged Shoyu </h4> 
+        <div class= "flexbox-ordersummary">
+          <h4> Subtotal </h4> 
+          <h4> Tax </h4> 
+          <h4> Shipping Costs </h4> 
+        </div>
+        <div class = "flexbox-ordersummary text-align-right">
+          <h4>$56.98 </h4>
+          <h4>$2.85 </h4>
+          <h4>$4.00</h4>
+        </div>
       </div>
-      <div class = "flexbox-ordersummary">
-        <h4>$21.99 </h4>
-        <h4>$34.99 </h4>
-      </div>
-    </div>
-    <hr>
 
-    <div class = "parent-container flexbox-ordersummary">
-      <div class= "flexbox-ordersummary">
-        <h4> Subtotal </h4> 
-        <h4> Tax </h4> 
-        <h4> Shipping Costs </h4> 
-      </div>
-      <div class = "flexbox-ordersummary">
-        <h4>$56.98 </h4>
-        <h4>$2.85 </h4>
-        <h4>$4.00</h4>
-      </div>
-    </div>
+      <hr> 
 
-    <hr> 
+      <div class = "parent-container flexbox-ordersummary">
 
-    <div class = "parent-container flexbox-ordersummary">
+        <h4>Total</h4> 
 
-      <h4>Total</h4> 
+        <h4>$63.83</h4>
 
-      <h4>$63.83</h4>
-
-    </div>    
-
+      </div>    
+    </div> <!--End of sticky div-->
   </div> <!-- End of Order Summary -->
 
-    <script>
+  <script>
   // Get the modal
   var modal = document.getElementById("FreeShippingModal");
 
