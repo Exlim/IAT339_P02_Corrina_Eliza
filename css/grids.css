@@ -31,6 +31,10 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	padding:2rem 5rem 2rem 5rem;
 }
 
+.flexbox-padding-margin{
+	padding:2rem 5rem 2rem 5rem;
+}
+
 .flexbox-third-nopadding{
 	flex:1 0 45%;
 	margin-right:0.25rem;
@@ -298,7 +302,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 .product-grid-col{
 	margin-right:0.75rem;
 	margin-left:0.75rem;
-	margin-bottom:2rem;
+	margin-bottom:4rem;
 
 	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
@@ -322,6 +326,13 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	margin-right:0.25rem;
 	margin-left:0.25rem;
 	width:18.6875rem;
+}
+
+.filterbtn {
+	display:flex;
+	align-content:center;
+	justify-content:center;
+	align-items:center;
 }
 
 /*FOOTER CODE --------------------------------------------------------------------*/
@@ -475,6 +486,10 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	-ms-justify-content:flex-start;
 	justify-content:flex-start;
 
+	flex-wrap:-webkit-wrap;
+	flex-wrap:-ms-wrap;
+	flex-wrap:wrap;
+
 	align-content:flex-start;
 	flex-direction:column;
 }
@@ -522,6 +537,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 .flexbox-checkout{
 	display:flex;
 	flex-direction:column;
+	flex: 1 0 auto;
 }
 
 .flexbox-cartname{
@@ -550,6 +566,9 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 
 	padding: 2rem 4rem 2rem 2rem;
 	width:35%;
+	min-height: 36rem;
+
+	background-size: cover;
 }
 
 .pricing-alignright{
