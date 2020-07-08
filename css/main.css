@@ -60,6 +60,19 @@ header{
   z-index:2;
 }
 
+/* LINKS + LINK STATES*/ 
+
+a {
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  color: #D93333;
+}
+
+a:active, a:hover, a:focus {
+  color:#B73326;
+  /** this will prevent there being a line under the link **/
+  text-decoration: none;
+}
+
 /*CSS SELECTORS -------------------------------------------------------------------------------------------------------*/
 
 /*GENERAL CODE */
@@ -440,8 +453,8 @@ header{
 
   .product-page-hero-image{
     background-image: 
-    linear-gradient(rgb(255,249,237, 0.5), rgb(255,249,237,0.5), rgb(255,249,237,0.5),  rgb(255,249,237,0.5), white),
-    url(../img/updated-imgs/products-splash-image.jpg);
+    linear-gradient(rgb(255,249,237, 0.5), rgb(255,249,237,0.5), rgb(255,249,237,0.5),  rgb(255,249,237)),
+    url(../img/updated-imgs/history-of-soysauce-making-full.jpg);
   }
 
   .product-hero-header{
@@ -465,7 +478,7 @@ header{
     position: relative;
     padding: 2rem 1rem 2rem 1rem;
     /*padding: 4rem 2rem 4rem 2rem;*/
-    height: 28.875rem;
+    height: 20.875rem;
   }
 
 
@@ -634,6 +647,10 @@ header{
 
   /* BREADCRUMBS -----------------------*/
 
+  .flexbox-layout-major ul.breadcrumbs{
+    padding:0;
+  }
+
   ul.breadcrumbs {
     list-style: none;
   }
@@ -735,18 +752,7 @@ header{
   }
 
 
-  /* LINKS + LINK STATES*/ 
 
-  a {
-    font-family: "SpaceMono-Regular", Verdana, sans-serif;
-    color: #D93333;
-  }
-
-  a:active, a:hover, a:focus {
-    color:#B73326;
-    /** this will prevent there being a line under the link **/
-    text-decoration: none;
-  }
 
 
   /*DROPDOWN FILTER*/
@@ -877,3 +883,7 @@ header{
   }
 
 
+.blown-up-text{
+  font-family:"Barlow",sans-serif;
+  font-size:2rem;
+}

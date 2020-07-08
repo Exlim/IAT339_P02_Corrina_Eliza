@@ -10,9 +10,10 @@
 
   <link href="../../css/normalize.css" rel="stylesheet">
   <link href="../../css/main.css" rel="stylesheet">
-  <link href="../../css/media_queries.css" rel="stylesheet">
+
   <link href="../../css/fonts.css" rel="stylesheet">
   <link href="../../css/grids.css" rel="stylesheet">
+  <link href="../../css/media_queries.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -95,119 +96,139 @@
               <a href="products.html">
                 <button class="main-nav-button">SHOP</button>
               </a>
+            </div>
+            <div class="main-nav-col">
+              <a href="about.html">
+                <button class="main-nav-button">ABOUT</button>
+              </a>
+            </div>
+            <div class="main-nav-col">
+              <a href="cart.html">
+                <button class="main-nav-button">CART</button>
+              </a>
+            </div>
           </div>
-          <div class="main-nav-col">
-            <a href="about.html">
-              <button class="main-nav-button">ABOUT</button>
-            </a>
-          </div>
-          <div class="main-nav-col">
-            <a href="cart.html">
-              <button class="main-nav-button">CART</button>
-            </a>
-          </div>
+          <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+
         </div>
-        <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-
-      </div>
 
 
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <!-- ABOUT US SECTION -------------------------------------------->
-  <section>
-   <div class="center-container-aboutus slab-cream">
-    <h1>About Us</h1>
-    <p>We're on a mission to make people’s lives saucy! Soy sauce has been such an essential for us growing up, we want to share this amazing stable to every one in the world! We collaborate with many different soy sauce makers around the world, bringing top quality soy sauces to all our customers! </p>
-    <img src="../../img/updated-imgs/soysauce-history-450x300.png" alt="Grebox image 964 px wide">
+    <!-- PRODUCT SPLASH PAGE SECTION ---------------------------- -->
 
-    <h1>We Value</h1>
-    <p>We firmly believe in transparency in our business. We want to be able to communciate all the ingredients that are used and the process of how soy sauces is made. We hope that through being transparent we are able to build a strong relationship with our customers. We value feedback greatly as well!  </p>
-    <img src="../../img/updated-imgs/man-making-soysauce-450x300.jpg" alt="Grebox image 964 px wide">
+    <section>
+      <div class="product-hero-banner product-page-hero-image" role="banner"> <!--Start of products splash page section-->
+        <div class="parent-container-wrap center-container-aboutus">
 
-    <div class = "parent-container-wrap">
-      <div class = "flexbox-half-aboutus">
-        <h3> Have Questions? </h3> 
-      </div>
-      <div class = "flexbox-half-aboutus">
-        <button class = "btn-product" onclick="window.location.href='contact_us.html'">CONTACT US</button>  
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-<!-- SUBSCRIBE SECTION--------------------------------------------------------------   -->
-
-<section class="slab-formatting slab-red">
-
-  <div class="center-container">
-    <h2>You’re SOY awesome! </h2>
-    <p>Be the first to hear about new stuff from SaucyBoys</p>
-
-    <form>
-      <label for="email-form"> Subscribe to our Mailing List!</label><br>
-      <input class="form-input" placeholder = "Your email here please!" type="text" name="text" id="email-form">
-      <input type = "submit" class = "btn-submit" value = "STAY IN TOUCH">
-    </form>
-  </div>
-
-
-</section>
-
-<footer>
-
-  <footer>
-    <!-- FOOTER SECTION ------------------------------------------- -->
-
-    <section id=#footer>
-      <div class="footer-container bg-cream">
-        <div class="footer-content">
-          <div class="footer-col">
-
-            <a class="footer-header-link" href="about.html">
-              <h2>Info</h2>
-            </a>
-
-            <ul class="footer-list">
-              <li>
-                <a href="about.html">About Us</a>
-              </li>
-              <li>
-                <a href="../styleguide/index.html">Styleguide</a>
-              </li>
-              <li>
-                <a href="../styleguide/citations.html">Citations</a>
-              </li>
-              <li>
-                <a href="https://github.com/Exlim/IAT339_P02_Corrina_Eliza_Wk1_Check_In">Our Github</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-
-            <a class="footer-header-link" href="contact_us.html">
-              <h2>Contact Us</h2>
-            </a>
-
-            <ul class="footer-list">
-              <li>ADDRESS: 91 West St, Brooklyn NY 11222</li>
-              <li>TEL: 253.623.2634</li>
-              <li>EMAIL: <a href="mailto:info@saucyboys.com">info@saucyboys.com</a></li>
-            </ul>
-          </div>
         </div>
-        <div class="footer-logo">
-          <img src="../../img/SaucyBoys_Logo_Image_Footer.svg" alt="Saucyboy logo and social media follow buttons">
-        </div>
-      </div>
+      </div> <!-- End of products splash page div section -->
     </section>
 
-  </footer>
+    <!-- ABOUT US SECTION -------------------------------------------->
+    <section>
+     <div class="center-container-aboutus slab-cream">
+      <div>
+        <h1>About Us</h1>
+        <p>We're on a mission to make people’s lives saucy! Soy sauce has been such an essential for us growing up, we want to share this amazing stable to every one in the world! We collaborate with many different soy sauce makers around the world, bringing top quality soy sauces to all our customers! </p>
+      </div>
+      <div>
+        <h1>We Value</h1>
+        <p>We firmly believe in transparency in our business. We want to be able to communciate all the ingredients that are used and the process of how soy sauces is made. We hope that through being transparent we are able to build a strong relationship with our customers. We value feedback greatly as well!  </p>
+      </div>
+      <div>
+        <p class="blown-up-text">"We always had soy sauce in the house growing up, it was one of those childhood food staples. But as we grew up we realized there were so many kinds of soy sauce out there with so much history."
+        - Scott & Tim, Saucyboy's Founders</p>
+      </div>
+      <div>
+        <img src="../../img/updated-imgs/soysauce-history-450x300.png" alt="Grebox image 964 px wide">
+
+        <img src="../../img/updated-imgs/man-making-soysauce-450x300.jpg" alt="Grebox image 964 px wide">
+      </div>
+
+      <div class = "parent-container-wrap">
+        <div class = "flexbox-half-aboutus">
+          <h3> Have Questions? </h3> 
+        </div>
+        <div class = "flexbox-half-aboutus">
+          <button class = "btn-product" onclick="window.location.href='contact_us.html'">CONTACT US</button>  
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SUBSCRIBE SECTION--------------------------------------------------------------   -->
+
+  <section class="slab-formatting slab-red">
+
+    <div class="center-container">
+      <h2>You’re SOY awesome! </h2>
+      <p>Be the first to hear about new stuff from SaucyBoys</p>
+
+      <form>
+        <label for="email-form"> Subscribe to our Mailing List!</label><br>
+        <input class="form-input" placeholder = "Your email here please!" type="text" name="text" id="email-form">
+        <input type = "submit" class = "btn-submit" value = "STAY IN TOUCH">
+      </form>
+    </div>
+
+
+  </section>
+
+  <footer>
+
+    <footer>
+      <!-- FOOTER SECTION ------------------------------------------- -->
+
+      <section id=#footer>
+        <div class="footer-container bg-cream">
+          <div class="footer-content">
+            <div class="footer-col">
+
+              <a class="footer-header-link" href="about.html">
+                <h2>Info</h2>
+              </a>
+
+              <ul class="footer-list">
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="../styleguide/index.html">Styleguide</a>
+                </li>
+                <li>
+                  <a href="../styleguide/citations.html">Citations</a>
+                </li>
+                <li>
+                  <a href="https://github.com/Exlim/IAT339_P02_Corrina_Eliza_Wk1_Check_In">Our Github</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+
+              <a class="footer-header-link" href="contact_us.html">
+                <h2>Contact Us</h2>
+              </a>
+
+              <ul class="footer-list">
+                <li>ADDRESS: 91 West St, Brooklyn NY 11222</li>
+                <li>TEL: 253.623.2634</li>
+                <li>EMAIL: <a href="mailto:info@saucyboys.com">info@saucyboys.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-logo">
+            <img src="../../img/SaucyBoys_Logo_Image_Footer.svg" alt="Saucyboy logo and social media follow buttons">
+          </div>
+        </div>
+      </section>
+
+    </footer>
 
     <script>
   // Get the modal

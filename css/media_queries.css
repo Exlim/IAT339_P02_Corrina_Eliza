@@ -6,6 +6,7 @@
 }
 
 @media (max-width: 60.1875rem) {
+
   .flexbox-layout-minor{
     flex:1 100%;
     flex-wrap: -webkit-wrap;
@@ -47,23 +48,23 @@
   }
 
   .product-grid{
-  display: -webkit-flex;
-  display: -ms-flex;
-  display:flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display:flex;
 
-  flex-wrap: -webkit-wrap;
-  flex-wrap: -ms-wrap;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  padding:1rem 3rem 3rem 3rem;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding:1rem 3rem 3rem 3rem;
 
- }
+  }
 
   .unequal-text-formatting{
     padding:2rem;
   }
 
-.product-nav{
+  .product-nav{
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -72,15 +73,72 @@
 
   .product-nav-button{
     padding:0.3rem 1rem 0.3rem 1rem;
+  }
+
+  .header-formatting{
+    padding:0 2rem 0 2rem;
+  }
+
+  .client-name{
+    width:100%;
+    margin:0;
+  }
+
+
+
+/**/
+
+h1{
+  font-family: "Barlow", Verdana, sans-serif;
+  font-weight:bold;
+  font-size: 2.25rem;
 }
 
-.header-formatting{
-  padding:0 2rem 0 2rem;
+h2{
+  font-family: "Barlow", Verdana, sans-serif;
+  font-weight:bold;
+  font-size: 1.25rem;
 }
 
-.client-name{
-  width:100%;
-  margin:0;
+h3{
+  font-family: "Barlow", Verdana, sans-serif;
+  font-weight:bold;
+  font-size: 1rem;
+}
+
+h4 {
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  padding:0;
+
+}
+
+p, ol, ul,label {
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  font-size: 0.75rem;
+  max-width: 40rem;
+}
+
+a, input{
+  font-size:0.75rem;
+}
+
+.btn-submit, .btn-product{
+  font-size:0.85rem;
+  height:2.5rem;
+}
+
+.discount-header-font, #modalLink{
+  font-size:0.6rem;
+}
+
+.hero-text {
+  bottom:8rem;
+  }
+
+.product-nav-button{
+  font-size:0.75rem;
 }
 
 }
@@ -88,15 +146,15 @@
 @media (max-width: 40.1875rem) {
 
   .product-grid{
-  display: -webkit-flex;
-  display: -ms-flex;
-  display:flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display:flex;
 
-  flex-wrap: -webkit-wrap;
-  flex-wrap: -ms-wrap;
-  flex-wrap:wrap;
-  justify-content:center;
-  padding:1rem 3rem 3rem 3rem;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:1rem 3rem 3rem 3rem;
   }
 
   .footer-col{
@@ -115,51 +173,51 @@
 @media(max-width:44.5rem) {
 
   .hamburger_icon {
-  display: block;
-}
+    display: block;
+  }
 
-.main-nav-container{
-  padding: 1rem 0rem 1rem 0rem;
-}
-
-
-/* Style the navigation menu */
-.main-nav {
-  overflow: hidden;
-  position: relative;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.main-nav #myLinks {
-  display: none;
-}
+  .main-nav-container{
+    padding: 1rem 0rem 1rem 0rem;
+  }
 
 
-/* Style navigation menu links */
-.main-nav button,
-.main-nav-logo button,
-.main-nav-items button,
-.main-nav-content button {
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
+  /* Style the navigation menu */
+  .main-nav {
+    overflow: hidden;
+    position: relative;
+  }
 
-/* Add a grey background color on mouse-over */
-.main-nav a:hover {
-  background-color: white;
-  color: black;
-}
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .main-nav #myLinks {
+    display: none;
+  }
 
-/* Style the hamburger menu */
-.main-nav a.hamburger_icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 1rem;
-  color:red;
-}
+
+  /* Style navigation menu links */
+  .main-nav button,
+  .main-nav-logo button,
+  .main-nav-items button,
+  .main-nav-content button {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .main-nav a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Style the hamburger menu */
+  .main-nav a.hamburger_icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    color:red;
+  }
 
 }
 
