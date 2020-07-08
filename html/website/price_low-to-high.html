@@ -201,58 +201,206 @@
 
   </header>
 
-    </section> 
+</section> 
 
-  <footer>
+<section>
+  <div class="parent-container-wrap cart-individual-spacing"> <!--Start of header and filter section -->
+    <div class="flexbox-layout-major-inverted">
+      <h2>ALL SOY SAUCE</h2>
+    </div>
 
-    <!-- FOOTER SECTION ------------------------------------------- -->
+    <div class="flexbox-layout-minor-inverted filter-dropdown">
+      <button onclick="myFunction()" class="filterbtn">SORT BY<i class="fa fa-caret-down filter-arrow"></i>
+      </button>
+      <div id="myDropdown" class="filter-dropdown-content">
+        <a href="price_low-to-high.html">PRICE (LOW TO HIGH)</a>
+        <a href="price_high-to-low.html">PRICE (HIGH TO LOW)</a>
+      </div>
+    </div>
+  </div> <!-- end of header and filter section-->
 
-    <section id=#footer>
-      <div class="footer-container bg-cream">
-        <div class="footer-content">
-          <div class="footer-col">
+  <!--FIRST ROW OF PRODUCTS ------------------------------------- -->
+  <section>
+    <div class="product-grid"> <!--Parent Product Grid Div Container Starts -->
 
-            <a class="footer-header-link" href="about.html">
-              <h2>Info</h2>
-            </a>
 
-            <ul class="footer-list">
-              <li>
-                <a href="about.html">About Us</a>
-              </li>
-              <li>
-                <a href="../styleguide/index.html">Styleguide</a>
-              </li>
-              <li>
-                <a href="../styleguide/citations.html">Citations</a>
-              </li>
-              <li>
-                <a href="https://github.com/Exlim/IAT339_P02_Corrina_Eliza_Wk1_Check_In">Our Github</a>
-              </li>
-            </ul>
+      <div class="product-grid-col center-grid-items"> <!--Start of product -->
+        <a class="product-links" href="white_soy_sauce.html">
+          <img src="../../img/updated-imgs/teriyaki-sauce.jpg" alt="Bottle of teriyaki sauce on a white background">
+
+          <h3>Sweet Teriyaki Shoyu</h3>
+          <p>Hamada Shoyu - 360ml</p>
+          <div class="rating">
+            <span class = "stars-review">★ ★ ★ ★ ★</span>
+
           </div>
-          <div class="footer-col">
-
-            <a class="footer-header-link" href="contact_us.html">
-              <h2>Contact Us</h2>
-            </a>
-
-            <ul class="footer-list">
-              <li>ADDRESS: 91 West St, Brooklyn NY 11222</li>
-              <li>TEL: 253.623.2634</li>
-              <li>EMAIL: <a href="mailto:info@saucyboys.com">info@saucyboys.com</a></li>
-            </ul>
+          <p>$14.99</p>
+          <div class="bestseller-tag">
+            <p>JUST IN</p>
           </div>
+        </a>
+        <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+      </div> <!--End of product -->
+
+      <div class="product-grid-col center-grid-items"> <!--Start of product -->
+        <a class="product-links" href="white_soy_sauce.html">
+          <img src="../../img/updated-imgs/yuzu-ponzo.jpg" alt="Bottle of yuzu ponzo soy sauce on a white background">
+
+          <h3>Yuzu Ponzo</h3>
+          <p>Namashibori - 300ml</p>
+          <div class="rating">
+            <span class = "stars-review">★ ★ ★ ★ ★</span>
+
+          </div>
+          <div class="inline">
+            <p>$16.99 </p> <p class="strike-through"> $21.99</p>
+          </div>
+          <div class="bestseller-tag">
+            <p>SALE</p>
+          </div>
+        </a>
+        <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+      </div> <!--End of product -->
+
+
+      <div class="product-grid-col center-grid-items"> <!--Start of product -->
+        <a class="product-links" href="white_soy_sauce.html">
+          <img src="../../img/updated-imgs/white-soy-sauce.jpg" alt="Bottle of Shiro Murasaki white soy sauce on a white background">
+
+          <h3>White Soy Sauce</h3>
+          <p>Shiro Murasaki - 200ml</p>
+          <div class="rating">
+            <span class = "stars-review">★ ★ ★ ★ ★</span>
+
+          </div>
+          <p>$21.99</p>
+          <div class="bestseller-tag">
+            <p>BESTSELLER</p>
+          </div>
+        </a>
+        <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+      </div> <!--End of product -->
+
+
+
+      <!--SECOND ROW OF PRODUCTS -------============------------------ -->
+
+
+
+      <div class="product-grid-col center-grid-items"> <!--Start of product -->
+        <a class="product-links" href="white_soy_sauce.html">
+          <img src="../../img/updated-imgs/2-year-old-soysauce.jpg" alt="Bottle of two year old soy sauce on a white background">
+
+          <h3>2-Year Aged Shoyu</h3>
+          <p>Nishikidori - 200ml</p>
+          <div class="rating">
+            <span class = "stars-review">★ ★ ★ ★ ★</span>
+
+          </div>
+          <div class="bestseller-tag">
+            <p>SALE</p>
+          </div>
+          <div class="inline">
+            <p>$28.99 </p> <p class="strike-through"> $31.99</p>
+          </div>
+        </a>
+        <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+      </div> <!--End of product -->
+
+
+      <div class="product-grid-col center-grid-items"> <!--Start of product -->
+        <a class="product-links" href="3_year_aged_shoyu.html">
+          <img src="../../img/updated-imgs/3-year-old-soysauce.jpg" alt="Bottle of 3 year aged shoyu soy sauce on a white background">
+
+          <h3>3-Year Aged Shoyu</h3>
+          <p>Nishikidori - 200ml</p>
+          <div class="rating">
+            <span class = "stars-review">★ ★ ★ ★ ★</span>
+
+          </div>
+          <div class="bestseller-tag">
+            <p>BESTSELLER</p>
+          </div>
+          <p>$34.99</p>
+        </a>
+        <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+      </div> <!--End of product -->
+
+
+      <div class="product-grid-col center-grid-items"> <!--Start of product -->
+        <a class="product-links" href="white_soy_sauce.html">
+          <img src="../../img/updated-imgs/5-year-old-soysauce.jpg" alt="Bottle of five year old soy sauce on a white background">
+
+          <h3>5-Year Aged Shoyu</h3>
+          <p>Kamebishi Ya - 200ml</p>
+          <div class="rating">
+            <span class = "stars-review">★ ★ ★ ★ ★</span>
+
+          </div>
+          <p>$40.99</p>
+        </a>
+        <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+      </div> <!--End of product -->
+
+      <div class="empty-div"></div>
+      <div class="empty-div"></div>
+      <div class="empty-div"></div>
+
+    </div> <!-- Parent Product Grid Div Container Ends -->
+  </section>
+
+</section> 
+
+<footer>
+
+  <!-- FOOTER SECTION ------------------------------------------- -->
+
+  <section id=#footer>
+    <div class="footer-container bg-cream">
+      <div class="footer-content">
+        <div class="footer-col">
+
+          <a class="footer-header-link" href="about.html">
+            <h2>Info</h2>
+          </a>
+
+          <ul class="footer-list">
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+            <li>
+              <a href="../styleguide/index.html">Styleguide</a>
+            </li>
+            <li>
+              <a href="../styleguide/citations.html">Citations</a>
+            </li>
+            <li>
+              <a href="https://github.com/Exlim/IAT339_P02_Corrina_Eliza_Wk1_Check_In">Our Github</a>
+            </li>
+          </ul>
         </div>
-        <div class="footer-logo">
-          <img src="../../img/SaucyBoys_Logo_Image_Footer.svg" alt="Saucyboy logo and social media follow buttons">
+        <div class="footer-col">
+
+          <a class="footer-header-link" href="contact_us.html">
+            <h2>Contact Us</h2>
+          </a>
+
+          <ul class="footer-list">
+            <li>ADDRESS: 91 West St, Brooklyn NY 11222</li>
+            <li>TEL: 253.623.2634</li>
+            <li>EMAIL: <a href="mailto:info@saucyboys.com">info@saucyboys.com</a></li>
+          </ul>
         </div>
       </div>
-    </section>
+      <div class="footer-logo">
+        <img src="../../img/SaucyBoys_Logo_Image_Footer.svg" alt="Saucyboy logo and social media follow buttons">
+      </div>
+    </div>
+  </section>
 
-  </footer>
+</footer>
 
-    <script>
+<script>
   // Get the modal
   var modal = document.getElementById("FreeShippingModal");
 
@@ -292,6 +440,6 @@
   }
 </script>
 
-  </body>
+</body>
 
- </html>
+</html>

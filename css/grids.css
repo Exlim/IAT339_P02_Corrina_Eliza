@@ -302,7 +302,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 .product-grid-col{
 	margin-right:0.75rem;
 	margin-left:0.75rem;
-	margin-bottom:2rem;
+	margin-bottom:4rem;
 
 	flex-wrap: -webkit-wrap;
 	flex-wrap: -ms-wrap;
@@ -327,6 +327,13 @@ https://philipwalton.github.io/solved-by-flexbox/demos/grids/*/
 	margin-left:0.25rem;
 	width:18.6875rem;
 }
+
+.filterbtn {
+display:flex;
+align-content:center;
+justify-content:center;
+align-items:center;
+	}
 
 /*FOOTER CODE --------------------------------------------------------------------*/
 

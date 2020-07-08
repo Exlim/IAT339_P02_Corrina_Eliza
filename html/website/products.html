@@ -20,97 +20,97 @@
 <script>
 
     /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
   </script>
 
-<body>
+  <body>
 
-  <header>
+    <header>
 
-    <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
-    <section class="discount-header">
-      <div class="slab-white center-container">
-        <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a id="modalLink" href="#">SEE DETAILS</a></p>
+      <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
+      <section class="discount-header">
+        <div class="slab-white center-container">
+          <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a id="modalLink" href="#">SEE DETAILS</a></p>
 
-        <!-- The Modal -->
-        <div id="FreeShippingModal" class="modal">
+          <!-- The Modal -->
+          <div id="FreeShippingModal" class="modal">
 
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Free Shipping on orders of $25 or more*</h2>
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Free Shipping on orders of $25 or more*</h2>
 
 
-            <p class="no-max-width">Free shipping offer applies to SaucyBoys.com orders over $25.
-            HOW IT WORKS: Add qualifying product(s) and Free Shipping will be applied to your order. If your order contains items that are ineligible for Free Shipping, you will be charged shipping only for those items.</p>
+              <p class="no-max-width">Free shipping offer applies to SaucyBoys.com orders over $25.
+              HOW IT WORKS: Add qualifying product(s) and Free Shipping will be applied to your order. If your order contains items that are ineligible for Free Shipping, you will be charged shipping only for those items.</p>
+            </div>
+
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- NAV SECTION--------------------------------------------------------------   -->
-    <nav class="main-nav">
-      <div class="main-nav-container slab-black parent-container">
-        <div class="main-nav-logo">
-          <a class="logo-formatting" href="home_page.html">
-            <img class="logo-width logo-size" src="../../img/Saucyboys_Logo.png" alt="Saucyboys website logo" height="27" width="197">
+      <!-- NAV SECTION--------------------------------------------------------------   -->
+      <nav class="main-nav">
+        <div class="main-nav-container slab-black parent-container">
+          <div class="main-nav-logo">
+            <a class="logo-formatting" href="home_page.html">
+              <img class="logo-width logo-size" src="../../img/Saucyboys_Logo.png" alt="Saucyboys website logo" height="27" width="197">
+            </a>
+          </div>
+          <div class="main-nav-items"  id="myLinks">
+            <div class="main-nav-col">
+              <a href="home_page.html">
+                <button class="main-nav-button">HOME</button>
+              </a>
+            </div>
+            <div class="main-nav-col subnav">
+              <a href="products.html">
+                <button class="main-nav-button">SHOP</button>
+              </a>
+            </div>
+            <div class="main-nav-col">
+              <a href="about.html">
+                <button class="main-nav-button">ABOUT</button>
+              </a>
+            </div>
+
+            <div class="main-nav-col" id="myCart">
+              <a href="cart.html">
+                <button class="main-nav-button"><img src="../../img/shopping_bag.png"></button>
+              </a>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
           </a>
         </div>
-        <div class="main-nav-items"  id="myLinks">
-          <div class="main-nav-col">
-            <a href="home_page.html">
-              <button class="main-nav-button">HOME</button>
-            </a>
-          </div>
-          <div class="main-nav-col subnav">
-            <a href="products.html">
-              <button class="main-nav-button">SHOP</button>
-            </a>
-          </div>
-          <div class="main-nav-col">
-            <a href="about.html">
-              <button class="main-nav-button">ABOUT</button>
-            </a>
-          </div>
+      </nav>
+      <!-- PRODUCT NAV ---------------------------- -->
+      <section class="product-nav-section">
+        <div class="product-nav"> <!-- Start of product nav div -->
 
-          <div class="main-nav-col" id="myCart">
-            <a href="cart.html">
-              <button class="main-nav-button"><img src="../../img/shopping_bag.png"></button>
-            </a>
-          </div>
-        </div>
-        <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </nav>
-    <!-- PRODUCT NAV ---------------------------- -->
-    <section class="product-nav-section">
-      <div class="product-nav"> <!-- Start of product nav div -->
+          <!--ALL SOY SAUCE BUTTON -------------------------------------------------------------------------------->
+          <div class="product-nav-col">
+            <button class="product-nav-button">ALL SOY SAUCE<i class="insert_icon_here"></i>
+            </button>
+          </div> <!-- End of dropdown-content menu -->
 
-        <!--ALL SOY SAUCE BUTTON -------------------------------------------------------------------------------->
-        <div class="product-nav-col">
-          <button class="product-nav-button">ALL SOY SAUCE<i class="insert_icon_here"></i>
-          </button>
-        </div> <!-- End of dropdown-content menu -->
+          <div class="product-nav-col">
+            <button class="product-nav-button">BESTSELLERS<i class="insert_icon_here"></i>
+            </button>
+          </div> <!-- End of dropdown-content menu -->
 
-        <div class="product-nav-col">
-          <button class="product-nav-button">BESTSELLERS<i class="insert_icon_here"></i>
-          </button>
-        </div> <!-- End of dropdown-content menu -->
-
-        <!--SAUCE TYPE DROP DOWN BUTTON -------------------------------------------------------------------------------->
+          <!--SAUCE TYPE DROP DOWN BUTTON -------------------------------------------------------------------------------->
         <!--
         <div class="product-nav-col dropdown">
           <button class="product-nav-button drop-button">SAUCE TYPE<i class="insert_icon_here"></i>
           </button>
           <div class="dropdown-content">--> <!--Start of dropdown-content menu -->
 <!--
-            <div class="row dropdown-menu-container">--> <!--Start of dropdown-menu-container div -->
+  <div class="row dropdown-menu-container">--> <!--Start of dropdown-menu-container div -->
 <!--
               <div class="dropdown-menu-col">
                 <a class="product-links" href="white_soy_sauce.html">
@@ -147,7 +147,7 @@ function myFunction() {
           </button>
           <div class="dropdown-content"> <!--Start of dropdown-content menu -->
 <!--
-            <div class="row dropdown-menu-container"> <!--Start of dropdown-menu-container div -->
+  <div class="row dropdown-menu-container"> <!--Start of dropdown-menu-container div -->
 <!--
               <div class="dropdown-menu-col">
                 <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
@@ -212,13 +212,12 @@ function myFunction() {
   <section>
     <div class="parent-container-wrap cart-individual-spacing"> <!--Start of header and filter section -->
       <div class="flexbox-layout-major-inverted">
-      <h2>ALL SOY SAUCE</h2>
-    </div>
+        <h2>ALL SOY SAUCE</h2>
+      </div>
 
       <div class="flexbox-layout-minor-inverted filter-dropdown">
         <button onclick="myFunction()" class="filterbtn">SORT BY<i class="fa fa-caret-down filter-arrow"></i>
         </button>
-        <!--<p class="filter-option">LOWEST PRICE</p>-->
         <div id="myDropdown" class="filter-dropdown-content">
           <a href="price_low-to-high.html">PRICE (LOW TO HIGH)</a>
           <a href="price_high-to-low.html">PRICE (HIGH TO LOW)</a>
@@ -257,6 +256,9 @@ function myFunction() {
               <span class = "stars-review">★ ★ ★ ★ ★</span>
 
             </div>
+            <div class="bestseller-tag">
+              <p>BESTSELLER</p>
+            </div>
             <p>$34.99</p>
           </a>
           <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
@@ -272,9 +274,11 @@ function myFunction() {
               <span class = "stars-review">★ ★ ★ ★ ★</span>
 
             </div>
-            <p>$21.99</p>
+            <div class="inline">
+              <p>$16.99 </p> <p class="strike-through"> $21.99</p>
+            </div>
             <div class="bestseller-tag">
-              <p>BESTSELLER</p>
+              <p>SALE</p>
             </div>
           </a>
           <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
@@ -311,7 +315,12 @@ function myFunction() {
               <span class = "stars-review">★ ★ ★ ★ ★</span>
 
             </div>
-            <p>$31.99</p>
+            <div class="bestseller-tag">
+              <p>SALE</p>
+            </div>
+            <div class="inline">
+              <p>$28.99 </p> <p class="strike-through"> $31.99</p>
+            </div>
           </a>
           <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
         </div> <!--End of product -->
@@ -389,7 +398,7 @@ function myFunction() {
 
   </footer>
 
-    <script>
+  <script>
   // Get the modal
   var modal = document.getElementById("FreeShippingModal");
 

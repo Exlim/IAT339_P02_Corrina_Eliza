@@ -27,7 +27,7 @@
     if (x.style.display === "block") {
       x.style.display = "none";
 
-      } else {
+    } else {
       y.style.width="12rem";
       /*document.getElementById("overlay").style.display = "block";*/
     }
@@ -45,60 +45,60 @@
 
 <body>
 
-        <div id="saucyBoySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <hr>
-          <a href="cart.html">CART</a>
-          <a href="products.html">SHOP</a>
-          <a href="about.html">ABOUT</a>
-          <a href="home_page.html">HOME</a>
+  <div id="saucyBoySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <hr>
+    <a href="cart.html">CART</a>
+    <a href="products.html">SHOP</a>
+    <a href="about.html">ABOUT</a>
+    <a href="home_page.html">HOME</a>
 
-        </div>
+  </div>
 
-<div id="overlay"> <!--Start of entire overlay div -->
-  <header>
+  <div id="overlay"> <!--Start of entire overlay div -->
+    <header>
 
-    <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
-    <section class="discount-header">
-      <div class="slab-white center-container" id="discount-banner">
-        <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a id="modalLink" href="#">SEE DETAILS</a></p>
+      <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
+      <section class="discount-header">
+        <div class="slab-white center-container" id="discount-banner">
+          <p class="discount-header-font"> GET FREE SHIPPING ON ORDERS OVER $25 <a id="modalLink" href="#">SEE DETAILS</a></p>
 
-        <!-- The Modal -->
-        <div id="FreeShippingModal" class="modal">
+          <!-- The Modal -->
+          <div id="FreeShippingModal" class="modal">
 
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Free Shipping on orders of $25 or more*</h2>
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Free Shipping on orders of $25 or more*</h2>
 
 
-            <p class="no-max-width">Free shipping offer applies to SaucyBoys.com orders over $25.
-            HOW IT WORKS: Add qualifying product(s) and Free Shipping will be applied to your order. If your order contains items that are ineligible for Free Shipping, you will be charged shipping only for those items.</p>
+              <p class="no-max-width">Free shipping offer applies to SaucyBoys.com orders over $25.
+              HOW IT WORKS: Add qualifying product(s) and Free Shipping will be applied to your order. If your order contains items that are ineligible for Free Shipping, you will be charged shipping only for those items.</p>
+            </div>
+
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- NAV SECTION--------------------------------------------------------------   -->
-    <nav class="main-nav">
-      <div class="main-nav-container slab-black parent-container">
-        <div class="main-nav-logo">
-          <a href="home_page.html">
-            <img class="logo-width logo-size" src="../../img/Saucyboys_Logo.png" alt="Saucyboys website logo" height="27" width="197">
-          </a>
-        </div>
-        <div class="main-nav-items" id="myLinks">
-          <div class="main-nav-col">
+      <!-- NAV SECTION--------------------------------------------------------------   -->
+      <nav class="main-nav">
+        <div class="main-nav-container slab-black parent-container">
+          <div class="main-nav-logo">
             <a href="home_page.html">
-              <button class="main-nav-button">HOME</button>
+              <img class="logo-width logo-size" src="../../img/Saucyboys_Logo.png" alt="Saucyboys website logo" height="27" width="197">
             </a>
           </div>
-          <div class="main-nav-col subnav">
+          <div class="main-nav-items" id="myLinks">
+            <div class="main-nav-col">
+              <a href="home_page.html">
+                <button class="main-nav-button">HOME</button>
+              </a>
+            </div>
+            <div class="main-nav-col subnav">
 
-            <a href="products.html">
-              <button class="main-nav-button subnav-button">SHOP</button>
-            </a>
+              <a href="products.html">
+                <button class="main-nav-button subnav-button">SHOP</button>
+              </a>
           <!--
             <div class="subnav-content"> <!--Subnav content container div starts -->
             <!--
@@ -176,129 +176,134 @@
     </nav>
 
     <!-- STICKY SMALL CLOSEABLE BANNER --------------------------- -->
-      <section>
-
-        <div class="sticky-event block-orange">
-          <p class="discount-header-font">BUY ONE GET ONE 25% ON ALL SOY SAUCE</p>
-          <div aria-label="Close" class="close_button" onclick="this.parentElement.style.display='none';">&times;
-          </div>
-        </div>
-      </section>
-    </header>
-
-
-    <!-- HERO IMAGE -------------------------------------------------- -->
     <section>
-      <div class="hero-banner homepage-image" role="banner"> <!-- start of flexbox container -->
-        <div class="hero-text">
-          <h1>Has life been a bit bland? <em>Let’s get Saucy!</em> </h1>
-          <p>We have what we’re looking for - a huge selection
-          of the world’s tastiest soy sauce! Come take a peek!</p>
-          <button class="button" onclick="window.location.href='products.html'">BUY SOY SAUCE</button>
+
+      <div class="sticky-event block-orange">
+        <p class="discount-header-font">BUY ONE GET ONE 25% ON ALL SOY SAUCE</p>
+        <div aria-label="Close" class="close_button" onclick="this.parentElement.style.display='none';">&times;
         </div>
-      </div> <!-- end of flexbox container-->
-    </section>
-
-    <!-- ABOUT SECTION ------------------------------ -->
-
-    <section class="slab-cream">
-      <div class="parent-container-wrap"> <!--about section div starts -->
-        <div class="flexbox-layout-minor unequal-text-formatting">
-          <h2>Soy Sauce? What’s that?</h2>
-          <p>Soy sauce has first been made since the 13th century. It has an earthy, umami flavour, making it the ideal all-purpose seasoning! The most basic and key ingredients to Soy Sauce are:</p>
-          <ul>
-            <li>Fermented Soybeans</li>
-            <li>Salt</li>
-            <li>Water</li>
-            <li>Wheat</li>
-          </ul>      
-        </div>
-        <div class="flexbox-layout-major stick-img-right ">
-          <img src="../../img/updated-imgs/history-of-soysauce-making-full.jpg" alt="Illustration of people making soy sauce">
-        </div>
-      </div> <!-- about section div ends -->
-    </section>
-
-
-    <!-- PRODUCT GRID SECTION --------------------------- -->
-
-    <section class="slab-formatting">
-      <h2 class="header-formatting">Our Best Selling Soy Sauce!</h2>
-      <div class="product-grid"> <!--Parent Product Grid Div Container Starts -->
-
-
-        <div class="product-grid-col center-grid-items"> <!--Start of product -->
-          <a class="product-links" href="white_soy_sauce.html">
-            <img src="../../img/updated-imgs/white-soy-sauce.jpg" alt="Bottle of Shiro Murasaki white soy sauce on a white background">
-
-            <h3>White Soy Sauce</h3>
-            <p>Shiro Murasaki - 200ml</p>
-            <div class="rating">
-              <span class = "stars-review">★ ★ ★ ★ ★</span>
-
-            </div>
-            <p>$21.99</p>
-            <div class="bestseller-tag">
-              <p>BESTSELLER</p>
-            </div>
-          </a>
-          <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
-        </div> <!--End of product -->
-
-        <div class="product-grid-col center-grid-items"> <!--Start of product -->
-          <a class="product-links" href="3_year_aged_shoyu.html">
-            <img src="../../img/updated-imgs/3-year-old-soysauce.jpg" alt="Bottle of 3 year aged shoyu soy sauce on a white background">
-
-            <h3>3-Year Aged Shoyu</h3>
-            <p>Nishikidori - 200ml</p>
-            <div class="rating">
-              <span class = "stars-review">★ ★ ★ ★ ★</span>
-
-            </div>
-            <p>$34.99</p>
-          </a>
-          <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
-        </div> <!--End of product -->
-
-        <div class="product-grid-col center-grid-items"> <!--Start of product -->
-          <a class="product-links" href="white_soy_sauce.html">
-            <img src="../../img/updated-imgs/yuzu-ponzo.jpg" alt="Bottle of yuzu ponzo soy sauce on a white background">
-
-            <h3>Yuzu Ponzo</h3>
-            <p>Namashibori - 300ml</p>
-            <div class="rating">
-              <span class = "stars-review">★ ★ ★ ★ ★</span>
-
-            </div>
-            <p>$21.99</p>
-            <div class="bestseller-tag">
-              <p>BESTSELLER</p>
-            </div>
-          </a>
-          <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
-        </div> <!--End of product -->
-
-
-      </div> <!-- Parent Product Grid Div Container Ends -->
-    </section>
-
-    <!-- SUBSCRIBE SECTION--------------------------------------------------------------   -->
-
-    <section class="slab-formatting slab-red">
-
-      <div class="center-container">
-        <h2>You’re SOY awesome! </h2>
-        <p>Be the first to hear about new stuff from SaucyBoys</p>
-
-        <form>
-          <label for="email-form"> Subscribe to our Mailing List!</label><br>
-          <input class="form-input" placeholder = "Your email here please!" type="text" name="text" id="email-form">
-          <input type = "submit" class = "btn-submit" value = "STAY IN TOUCH">
-        </form>
       </div>
-
-
     </section>
+  </header>
+
+
+  <!-- HERO IMAGE -------------------------------------------------- -->
+  <section>
+    <div class="hero-banner homepage-image" role="banner"> <!-- start of flexbox container -->
+      <div class="hero-text">
+        <h1>Has life been a bit bland? <em>Let’s get Saucy!</em> </h1>
+        <p>We have what we’re looking for - a huge selection
+        of the world’s tastiest soy sauce! Come take a peek!</p>
+        <button class="button" onclick="window.location.href='products.html'">BUY SOY SAUCE</button>
+      </div>
+    </div> <!-- end of flexbox container-->
+  </section>
+
+  <!-- ABOUT SECTION ------------------------------ -->
+
+  <section class="slab-cream">
+    <div class="parent-container-wrap"> <!--about section div starts -->
+      <div class="flexbox-layout-minor unequal-text-formatting">
+        <h2>Soy Sauce? What’s that?</h2>
+        <p>Soy sauce has first been made since the 13th century. It has an earthy, umami flavour, making it the ideal all-purpose seasoning! The most basic and key ingredients to Soy Sauce are:</p>
+        <ul>
+          <li>Fermented Soybeans</li>
+          <li>Salt</li>
+          <li>Water</li>
+          <li>Wheat</li>
+        </ul>      
+      </div>
+      <div class="flexbox-layout-major stick-img-right ">
+        <img src="../../img/updated-imgs/history-of-soysauce-making-full.jpg" alt="Illustration of people making soy sauce">
+      </div>
+    </div> <!-- about section div ends -->
+  </section>
+
+
+  <!-- PRODUCT GRID SECTION --------------------------- -->
+
+  <section class="slab-formatting">
+    <h2 class="header-formatting">Our Best Selling Soy Sauce!</h2>
+    <div class="product-grid"> <!--Parent Product Grid Div Container Starts -->
+
+
+      <div class="product-grid-col center-grid-items"> <!--Start of product -->
+        <a class="product-links" href="white_soy_sauce.html">
+          <img src="../../img/updated-imgs/white-soy-sauce.jpg" alt="Bottle of Shiro Murasaki white soy sauce on a white background">
+
+          <h3>White Soy Sauce</h3>
+          <p>Shiro Murasaki - 200ml</p>
+          <div class="rating">
+            <span class = "stars-review">★ ★ ★ ★ ★</span>
+
+          </div>
+          <p>$21.99</p>
+          <div class="bestseller-tag">
+            <p>BESTSELLER</p>
+          </div>
+        </a>
+        <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+      </div> <!--End of product -->
+
+      <div class="product-grid-col center-grid-items"> <!--Start of product -->
+        <a class="product-links" href="3_year_aged_shoyu.html">
+          <img src="../../img/updated-imgs/3-year-old-soysauce.jpg" alt="Bottle of 3 year aged shoyu soy sauce on a white background">
+
+          <h3>3-Year Aged Shoyu</h3>
+          <p>Nishikidori - 200ml</p>
+          <div class="rating">
+            <span class = "stars-review">★ ★ ★ ★ ★</span>
+
+          </div>
+          <div class="bestseller-tag">
+            <p>BESTSELLER</p>
+          </div>
+          <p>$34.99</p>
+        </a>
+        <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+      </div> <!--End of product -->
+
+      <div class="product-grid-col center-grid-items"> <!--Start of product -->
+        <a class="product-links" href="white_soy_sauce.html">
+          <img src="../../img/updated-imgs/yuzu-ponzo.jpg" alt="Bottle of yuzu ponzo soy sauce on a white background">
+
+          <h3>Yuzu Ponzo</h3>
+          <p>Namashibori - 300ml</p>
+          <div class="rating">
+            <span class = "stars-review">★ ★ ★ ★ ★</span>
+
+          </div>
+          <div class="inline">
+          <p>$16.99 </p> <p class="strike-through"> $21.99</p>
+          </div>
+          <div class="bestseller-tag">
+            <p>SALE</p>
+          </div>
+        </a>
+        <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
+      </div> <!--End of product -->
+
+
+    </div> <!-- Parent Product Grid Div Container Ends -->
+  </section>
+
+  <!-- SUBSCRIBE SECTION--------------------------------------------------------------   -->
+
+  <section class="slab-formatting slab-red">
+
+    <div class="center-container">
+      <h2>You’re SOY awesome! </h2>
+      <p>Be the first to hear about new stuff from SaucyBoys</p>
+
+      <form>
+        <label for="email-form"> Subscribe to our Mailing List!</label><br>
+        <input class="form-input" placeholder = "Your email here please!" type="text" name="text" id="email-form">
+        <input type = "submit" class = "btn-submit" value = "STAY IN TOUCH">
+      </form>
+    </div>
+
+
+  </section>
 
   <footer>
     <!-- FOOTER SECTION ------------------------------------------- -->
@@ -348,7 +353,7 @@
 
   </footer>
 </div> <!-- End of overlay -->
-  <script>
+<script>
   // Get the modal
   var modal = document.getElementById("FreeShippingModal");
 
