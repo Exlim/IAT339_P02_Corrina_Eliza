@@ -122,20 +122,28 @@
         <div class="product-nav"> <!-- Start of product nav div -->
 
           <!--ALL SOY SAUCE BUTTON -------------------------------------------------------------------------------->
+
           <div class="product-nav-col">
-            <button class="product-nav-button">ALL SOY SAUCE<i class="insert_icon_here"></i>
-            </button>
+            <a href="products.html">
+              <button class="product-nav-button">ALL SOY SAUCE</button>
+            </a>
           </div> <!-- End of dropdown-content menu -->
 
           <div class="product-nav-col">
-            <button class="product-nav-button">BESTSELLERS<i class="insert_icon_here"></i>
-            </button>
+            <a href="bestsellers.html">
+              <button class="product-nav-button">BESTSELLERS</button>
+            </a>
           </div> <!-- End of dropdown-content menu -->
           <div class="product-nav-col">
-            <button class="product-nav-button">JUST IN</button>
+            <a href="just_in.html">
+              <button class="product-nav-button">JUST IN</button>
+            </a>
           </div>
+
           <div class="product-nav-col">
-            <button class="product-nav-button">SALE</button>
+            <a href="sale.html">
+              <button class="product-nav-button">SALE</button>
+            </a>
           </div>
         </div> <!-- End of product nav div -->
         <hr>
@@ -145,9 +153,8 @@
 
 
 
-    <ul class="breadcrumbs">
+    <ul class="breadcrumbs parent-container flexbox-padding-margin">
       <li><a href="products.html">ALL SOY SAUCE</a></li>
-      <li><a href="#">AGED SOY SAUCE</a></li>
       <li><a href="#">3-YEAR AGED SHOYU</a></li>
     </ul>
 
@@ -158,11 +165,11 @@
 
       <div class = "flexbox-half">
        <h1>3-Year Aged Shoyu</h1>
-       <p>Nishikidori</p>
+       <p>Nishikidori - 200ml</p>
        <div>
         <span class = "stars">★ ★ ★ ★ ★</span>
         
-        <a href="#detailed_product-reviews">22 reviews</a>
+        <a href="#detailed_product-reviews">4 reviews</a>
       </div>
       <h2> $34.99 </h2>
       <p> Traditionally made, using only 4 natural ingredients, this is soy sauce of perfect balance, delicately combining acidity, sweetness, saltiness and rich umami. Aged for at least 3 years in 100 year old cedar barrels to add depth and character of the highest quality. The flavour and balance of Kamebishi soy sauces rely on the exact replication of a process 250 years old and diligently overseen by the Okada family right up to the 17th generation of today. </p> 
@@ -219,6 +226,7 @@
     <div class="product-grid-col center-grid-items"> <!--Start of product -->
       <a class="product-links" href="white_soy_sauce.html">
         <img src="../../img/updated-imgs/white-soy-sauce.jpg" alt="Bottle of Shiro Murasaki white soy sauce on a white background">
+
         <h3>White Soy Sauce</h3>
         <p>Shiro Murasaki - 200ml</p>
         <div class="rating">
@@ -264,7 +272,12 @@
           <span class = "stars-review">★ ★ ★ ★ ★</span>
 
         </div>
-        <p>$31.99</p>
+        <div class="bestseller-tag">
+          <p>SALE</p>
+        </div>
+        <div class="inline">
+          <p>$26.99 </p> <p class="strike-through"> $31.99</p>
+        </div>
       </a>
       <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
     </div> <!--End of product -->

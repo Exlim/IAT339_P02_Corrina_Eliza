@@ -119,20 +119,28 @@
         <div class="product-nav"> <!-- Start of product nav div -->
 
           <!--ALL SOY SAUCE BUTTON -------------------------------------------------------------------------------->
+
           <div class="product-nav-col">
-            <button class="product-nav-button">ALL SOY SAUCE<i class="insert_icon_here"></i>
-            </button>
+            <a href="products.html">
+              <button class="product-nav-button">ALL SOY SAUCE</button>
+            </a>
           </div> <!-- End of dropdown-content menu -->
 
           <div class="product-nav-col">
-            <button class="product-nav-button">BESTSELLERS<i class="insert_icon_here"></i>
-            </button>
+            <a href="bestsellers.html">
+              <button class="product-nav-button">BESTSELLERS</button>
+            </a>
           </div> <!-- End of dropdown-content menu -->
           <div class="product-nav-col">
-            <button class="product-nav-button">JUST IN</button>
+            <a href="just_in.html">
+              <button class="product-nav-button">JUST IN</button>
+            </a>
           </div>
+
           <div class="product-nav-col">
-            <button class="product-nav-button">SALE</button>
+            <a href="sale.html">
+              <button class="product-nav-button">SALE</button>
+            </a>
           </div>
         </div> <!-- End of product nav div -->
         <hr>
@@ -142,9 +150,8 @@
 
 
 
-    <ul class="breadcrumbs">
+    <ul class="breadcrumbs parent-container flexbox-padding-margin">
       <li><a href="products.html">ALL SOY SAUCE</a></li>
-      <li><a href="#">WHITE SOY SAUCE</a></li>
       <li><a href="#">SHIRO MURASAKI</a></li>
     </ul>
 
@@ -155,11 +162,11 @@
 
       <div class = "flexbox-half">
        <h1>White Soy Sauce</h1>
-       <p>Shiro Murasaki</p>
+       <p>Shiro Murasaki - 200ml</p>
        <div>
         <span class = "stars">★ ★ ★ ★ ★</span>
         
-        <a href="#detailed_product-reviews">22 reviews</a>
+        <a href="#detailed_product-reviews">4 reviews</a>
       </div>
       <h2> $15.98 </h2>
       <p> Shiro murasaki white soy sauce is distinguished by its pale color which allows it to be used as a rich soy seasoning without darkening the colour of the dish in the same way as a traditional soy sauce. </p> 
@@ -213,7 +220,6 @@
   <h2 class="header-formatting">Be Adventurous, Try Something New!</h2>
   <div class="product-grid"> <!--Parent Product Grid Div Container Starts -->
 
-    
     <div class="product-grid-col center-grid-items"> <!--Start of product -->
       <a class="product-links" href="white_soy_sauce.html">
         <img src="../../img/updated-imgs/yuzu-ponzo.jpg" alt="Bottle of yuzu ponzo soy sauce on a white background">
@@ -224,14 +230,15 @@
           <span class = "stars-review">★ ★ ★ ★ ★</span>
 
         </div>
-        <p>$21.99</p>
+        <div class="inline">
+          <p>$16.99 </p> <p class="strike-through"> $21.99</p>
+        </div>
         <div class="bestseller-tag">
-          <p>BESTSELLER</p>
+          <p>SALE</p>
         </div>
       </a>
       <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
     </div> <!--End of product -->
-
 
 
     <div class="product-grid-col center-grid-items"> <!--Start of product -->
@@ -263,7 +270,12 @@
           <span class = "stars-review">★ ★ ★ ★ ★</span>
 
         </div>
-        <p>$31.99</p>
+        <div class="bestseller-tag">
+          <p>SALE</p>
+        </div>
+        <div class="inline">
+          <p>$26.99 </p> <p class="strike-through"> $31.99</p>
+        </div>
       </a>
       <button class = "btn-product" onclick="window.location.href='cart.html'">Add to Cart</button>      
     </div> <!--End of product -->
