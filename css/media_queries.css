@@ -108,7 +108,13 @@
     padding:2rem;
   }
 
-.hamburger_icon {
+
+
+}
+
+@media(max-width:44.5rem) {
+
+  .hamburger_icon {
   display: block;
 }
 

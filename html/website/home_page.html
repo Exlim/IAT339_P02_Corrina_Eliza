@@ -48,8 +48,8 @@
   <div id="saucyBoySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <hr>
-    <a href="cart.html">CART</a>
     <a href="products.html">SHOP</a>
+    <a href="cart.html">CART</a>
     <a href="about.html">ABOUT</a>
     <a href="home_page.html">HOME</a>
 
@@ -89,71 +89,11 @@
             </a>
           </div>
           <div class="main-nav-items" id="myLinks">
-            <div class="main-nav-col">
-              <a href="home_page.html">
-                <button class="main-nav-button">HOME</button>
-              </a>
-            </div>
             <div class="main-nav-col subnav">
 
               <a href="products.html">
-                <button class="main-nav-button subnav-button">SHOP</button>
+                <button class="main-nav-button">SHOP</button>
               </a>
-          <!--
-            <div class="subnav-content"> <!--Subnav content container div starts -->
-            <!--
-              <div class="subnav-container"> <!--Subnav flexbox container div start -->
-              <!--
-                <div class="subnav-filter"> <!-- Subnav filter div starts -->
-                <!--
-                <h4><a href="#">All Soy Sauce</a></h4>
-                <h4><a href="#">Soy Sauce by Country</a></h4>
-                <ul>
-                  <li><a href="#">China</a></li>
-                  <li><a href="#">Japan</a></li>
-                  <li><a href="#">Korea</a></li>
-                  <li><a href="#">Indonesia</a></li>
-                  <li><a href="#">Vietnam</a></li>
-                </ul>
-                <h4><a href="#">Just In</a></h4>
-                <h4><a href="#">Bestsellers</a></h4>
-                <h4><a href="#">Top Rated</a></h4>
-                <h4><a href="#">Sale</a></h4>
-
-
-              </div> <!-- Subnav filter div ends -->
-
-<!--
-              <div class="subnav-types">
-                <div class="subnav-col">
-                  <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                  <a href="#">Dark Soy Sauce</a>                
-                </div>
-                <div class="subnav-col">
-                  <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                  <a href="#">Tamaru Soy Sauce</a>                  
-                </div>
-                <div class="subnav-col">
-                  <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                  <a href="#">White Soy Sauce</a>                  
-                </div>
-                <div class="subnav-col">
-                  <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                  <a href="#">Special Soy Sauce</a>                  
-                </div>
-                <div class="subnav-col">
-                  <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                  <a href="#">Low Sodium Soy Sauce</a>                  
-                </div>
-                <div class="subnav-col">
-                  <img src="../../img/Dropdown_Menu_Product_Image.svg" alt="Greybox image to be replaced by product image">
-                  <a href="#">Gluten Free Soy Sauce</a>                  
-                </div>
-              </div>
-
-            </div> <!--Subnav flexbox container div ends -->
-            <!--
-            </div> --> <!--Subnav content container div ends -->
           </div>
           <div class="main-nav-col">
             <a href="about.html">
@@ -179,7 +119,7 @@
     <section>
 
       <div class="sticky-event block-orange">
-        <p class="discount-header-font">BUY ONE GET ONE 25% ON ALL SOY SAUCE</p>
+        <p class="discount-header-font">$5 OFF SELECT SOY SAUCE! <a href="#">SHOP NOW</a></p>
         <div aria-label="Close" class="close_button" onclick="this.parentElement.style.display='none';">&times;
         </div>
       </div>
@@ -297,7 +237,7 @@
 
       <form>
         <label for="email-form"> Subscribe to our Mailing List!</label><br>
-        <input class="form-input" placeholder = "Your email here please!" type="text" name="text" id="email-form">
+        <input class="form-input subscribe-input" placeholder = "Your email here please!" type="text" name="text" id="email-form">
         <input type = "submit" class = "btn-submit" value = "STAY IN TOUCH">
       </form>
     </div>
@@ -380,17 +320,6 @@
     }
   }
 
-  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("discount-banner").style.display = "flex";
-    } else {
-      document.getElementById("discount-banner").style.display = "none";
-    }
-    prevScrollpos = currentScrollPos;
-  }
 </script>
 
 </body>

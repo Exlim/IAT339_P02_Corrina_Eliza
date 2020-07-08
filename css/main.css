@@ -120,7 +120,7 @@ header{
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
   text-decoration: none;
   font-size: 1rem;
   color: white;
@@ -137,24 +137,15 @@ header{
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  right: 1rem;
+  font-family:"Barlow",sans-serif;
+  font-size: 1.25rem;
+  margin-left: 1rem;
 }
 
-/*#overlay {
-  position: fixed; 
-  display:none;
-  width: 100%; 
-  height: 100%; 
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); 
-  z-index: 900;
-  cursor: pointer; 
-}*/
+.form-input{
+  min-width:15rem;
+}
 
 
 /*DISCOUNT HEADER -----------------*/
