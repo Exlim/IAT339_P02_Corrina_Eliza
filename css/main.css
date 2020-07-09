@@ -62,6 +62,12 @@ header{
   z-index:2;
 }
 
+blockquote{
+  max-width:39rem;
+  font-family:"Barlow", sans-serif;
+  font-size:2rem;
+}
+
 .white-text{
   color:white;
 }
@@ -906,11 +912,6 @@ a:active, a:hover, a:focus {
   }
 
 
-  .blown-up-text{
-    font-family:"Barlow",sans-serif;
-    font-size:2rem;
-  }
-
   .bolder-p-text{
     font-family: "SpaceMono-Regular", Verdana, sans-serif;
     font-size: 1rem;
@@ -921,6 +922,12 @@ a:active, a:hover, a:focus {
 
   .h2-styling{
    font-family: "Barlow", Verdana, sans-serif;
+   font-weight:bold;
+   font-size: 2rem;   
+ }
+
+ .h3-styling{
+  font-family: "Barlow", Verdana, sans-serif;
   font-weight:bold;
-  font-size: 2rem;   
-  }
+  font-size: 1.5rem;
+}
