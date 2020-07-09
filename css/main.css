@@ -179,6 +179,8 @@ a:active, a:hover, a:focus {
 
 .discount-header-font{
   font-size:0.7rem;
+  padding:0rem 0.25rem 0rem 0.25rem;
+  color:black;
 }
 
 #discount-banner{
@@ -368,11 +370,12 @@ a:active, a:hover, a:focus {
     position:fixed;
     top:8rem;
     right:1rem;
+    display:flex;
     z-index:3;
   }
 
   .close_button {
-    position: absolute;
+    display:block;
     top:0;
     right:0.15rem;
     color: black;
