@@ -14,12 +14,13 @@
   <link href="../../css/media_queries.css" rel="stylesheet">
   <link href="../../css/fonts.css" rel="stylesheet">
 
-  <script src="../../js/everything.js"></script>
-
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../../js/everything.js"></script>
 
 
 </head>
+
 
 
 <body>
@@ -30,7 +31,7 @@
     <a href="products.html">SHOP</a>
     <a href="cart.html">CART</a>
     <a href="about.html">ABOUT</a>
-    <a href="index.html">HOME</a>
+    <a href="home_page.html">HOME</a>
 
   </div>
 
@@ -62,22 +63,25 @@
       <nav class="main-nav">
         <div class="main-nav-container slab-black parent-container">
           <div class="main-nav-logo">
-            <a href="index.html">
+            <a href="home_page.html">
               <img class="logo-width logo-size" src="../../img/Saucyboys_Logo.png" alt="Saucyboys website logo" height="27" width="197">
             </a>
           </div>
           <div class="main-nav-items" id="myLinks">
             <div class="main-nav-col subnav">
 
-              <a href="products.html" class="main-nav-button">SHOP</a>
+              <a href="products.html" class="main-nav-button">SHOP
+              </a>
             </div>
             <div class="main-nav-col">
              
-              <a href="about.html" class="main-nav-button">ABOUT</a>
+              <a href="about.html" class="main-nav-button">ABOUT
+              </a>
               
             </div>
             <div class="main-nav-col">
-              <a href="cart.html" class="main-nav-button">CART</a>
+              <a href="cart.html" class="main-nav-button">CART
+              </a>
             </div>
           </div>
           <a href="javascript:void(0);" aria-label="Hamburger menu icon to show menu items" class="hamburger_icon" onclick="myFunction()">
@@ -110,8 +114,7 @@
           <h1>Has life been a bit bland? <em>Let’s get Saucy!</em> </h1>
           <p>We have what we’re looking for - a huge selection
           of the world’s tastiest soy sauce! Come take a peek!</p>
-          <a class="btn-product btn-alignment" href="products.html">BUY SOY SAUCE</a>
-
+          <button class="button" onclick="window.location.href='products.html'">BUY SOY SAUCE</button>
         </div>
       </div> <!-- end of flexbox container-->
     </section>
@@ -173,7 +176,6 @@
             </div>
           </a>
           <a class="btn-product btn-alignment" href="cart.html">Add to Cart</a>
-  
         </div> <!--End of product -->
 
         <div class="product-grid-col center-grid-items"> <!--Start of product -->
@@ -191,8 +193,7 @@
             </div>
             <p>$34.99</p>
           </a>
-          <a class="btn-product btn-alignment" href="cart.html">Add to Cart</a>
-     
+          <a class="btn-product btn-alignment" href="cart.html">Add to Cart</a>     
         </div> <!--End of product -->
 
         <div class="product-grid-col center-grid-items"> <!--Start of product -->
@@ -212,8 +213,7 @@
               <p>SALE</p>
             </div>
           </a>
-          <a class="btn-product btn-alignment" href="cart.html">Add to Cart</a>
-    
+          <a class="btn-product btn-alignment" href="cart.html">Add to Cart</a>    
         </div> <!--End of product -->
 
 
@@ -280,36 +280,6 @@
         </div>
       </section>
     </footer>
-
-    <script>
-  // Get the modal
-  var modal = document.getElementById("FreeShippingModal");
-
-  // Get the button that opens the modal
-  var link = document.getElementById("modalLink");
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks on the button, open the modal
-  link.onclick = function() {
-    modal.style.display = "block";
-  }
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-</script>
 </body>
-
-
 
 </html>
