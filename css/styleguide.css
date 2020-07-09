@@ -112,6 +112,7 @@ form{
 a {
 	font-family: "SpaceMono-Regular", Verdana, sans-serif;
 	color: #D93333;
+	text-decoration: none;
 }
 
 a:active, a:hover, a:focus {
@@ -133,6 +134,7 @@ a:active, a:hover, a:focus {
 .topnav a:active, a:hover, a:focus{
   background-color: #D93333;
   color: white;
+  text-decoration: none;
 
 }
 
@@ -143,11 +145,13 @@ a:active, a:hover, a:focus {
   font-size: 17px;
   color: #f1f1f1;
   display: block;
+  text-decoration: none;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
+  text-decoration: none;
 }
 
 .saucyboynav a {
@@ -286,7 +290,47 @@ code, samp {
 	display: -ms-flex;
 	display:flex;
 }
+/*NAV CODE*/
 
+
+
+.main-nav-button{
+  background-color: inherit;
+  color:black;
+  border:none;
+  padding:0.9rem 1rem 0.9rem 1rem;
+  font: inherit;
+  margin: 0;
+  color:white;
+}
+
+.main-nav-button-white{
+  background-color: inherit;
+  color:black;
+  border:none;
+  padding:0.9rem 1rem 0.9rem 1rem;
+  font: inherit;
+  margin: 0;
+}
+
+.main-nav-button:hover,
+.main-nav-button:active,
+.main-nav-button:focus{
+  text-decoration:underline;
+  color:white;
+
+}
+
+.product-nav-section{
+  position:sticky;
+  top:5.5rem;
+  z-index:2;
+  background:white;
+}
+.main-nav-logo a{
+  display:flex;
+  padding-left:0.5rem ;
+}
 
 /* FLEXBOX -------------------------------------------------------- */ 
 
@@ -554,4 +598,7 @@ code, samp {
     font-family: "SpaceMono-Regular", Verdana, sans-serif;
   }
 
-
+  .slab-black, .bg-black, .block-black{
+    background:black;
+    color:white;
+  }
