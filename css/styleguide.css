@@ -290,34 +290,6 @@ code, samp {
 	display: -ms-flex;
 	display:flex;
 }
-/*NAV CODE*/
-
-.main-nav-button{
-  background-color: inherit;
-  color:black;
-  border:none;
-  padding:0.9rem 1rem 0.9rem 1rem;
-  font: inherit;
-  margin: 0;
-  color:white;
-}
-
-.main-nav-button-white{
-  background-color: inherit;
-  color:black;
-  border:none;
-  padding:0.9rem 1rem 0.9rem 1rem;
-  font: inherit;
-  margin: 0;
-}
-
-.main-nav-button:hover,
-.main-nav-button:active,
-.main-nav-button:focus{
-  text-decoration:underline;
-  color:white;
-
-}
 
 .product-nav-section{
   position:sticky;
@@ -600,3 +572,113 @@ code, samp {
     background:black;
     color:white;
   }
+
+  .input-group{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display:flex;
+
+  flex-direction:row;
+  align-items: center;
+}
+
+  .bolder-p-text{
+    font-family: "SpaceMono-Regular", Verdana, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding:0;
+    font-weight:bold;
+  }
+
+  .h2-styling{
+   font-family: "Barlow", Verdana, sans-serif;
+   font-weight:bold;
+   font-size: 2rem;   
+ }
+
+ .h3-styling{
+  font-family: "Barlow", Verdana, sans-serif;
+  font-weight:bold;
+  font-size: 1.5rem;
+}
+
+/*NAV CODE*/
+
+
+
+.main-nav-button{
+  background-color: inherit;
+  color:black;
+  border:none;
+  padding:0.9rem 1rem 0.9rem 1rem;
+  margin: 0;
+  color:white;
+  text-decoration:none;
+  display:flex;
+  font-family:"SpaceMono-Regular", sans-serif;
+}
+
+.main-nav-button-white{
+  background-color: inherit;
+  color:black;
+  border:none;
+  padding:0.9rem 1rem 0.9rem 1rem;
+  font: inherit;
+  margin: 0;
+}
+
+.main-nav-col a:hover,
+.main-nav-col a:active,
+.main-nav-col a:focus{
+  text-decoration:underline;
+  color:white;
+  background:black;
+
+}
+
+.main-nav-logo a:hover,
+.main-nav-logo a:active,
+.main-nav-logo a:focus{
+  background:none;
+}
+
+.product-nav-section{
+  position:sticky;
+  top:5.5rem;
+  z-index:2;
+  background:white;
+}
+.main-nav-logo a{
+  display:flex;
+  padding-left:0.5rem ;
+}
+
+.parent-container{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display:flex;
+
+}
+
+.parent-container-wrap{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display:flex;
+
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
+  flex-wrap:wrap;
+}
+
+/* LINKS + LINK STATES*/ 
+
+a {
+  font-family: "SpaceMono-Regular", Verdana, sans-serif;
+  color: #D93333;
+}
+
+a:active, a:hover, a:focus {
+  color:#B73326;
+  /** this will prevent there being a line under the link **/
+  text-decoration: none;
+}
