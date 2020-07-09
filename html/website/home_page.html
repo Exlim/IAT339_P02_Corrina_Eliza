@@ -68,7 +68,7 @@
 
             <!-- Modal content -->
             <div class="modal-content">
-              <span class="close">&times;</span>
+              <span aria-label="close" class="close">&times;</span>
               <h2>Free Shipping on orders of $25 or more*</h2>
 
 
@@ -80,7 +80,7 @@
         </div>
       </section>
 
-      <!-- NAV SECTION--------------------------------------------------------------   -->
+      <!-- NAV SECTION---------------------------------------------------   -->
       <nav class="main-nav">
         <div class="main-nav-container slab-black parent-container">
           <div class="main-nav-logo">
@@ -248,10 +248,30 @@
       <form>
         <label for="email-form"> Subscribe to our Mailing List!</label><br>
         <input class="form-input subscribe-input" placeholder = "Your email here please!" type="text" name="text" id="email-form">
-        <input type = "submit" class = "btn-submit" value = "STAY IN TOUCH">
+        <button type = "btn-submit" data-toggle="modal" data-target="#SubscriptionModal">STAY IN TOUCH</button>
       </form>
     </div>
 
+<!-- The Modal -->
+          <div id="SubscriptionModal" class="modal fade" role="dialog">
+            <div class = "modal-dialog">
+
+            <!-- Modal content -->
+           <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
   </section>
 
