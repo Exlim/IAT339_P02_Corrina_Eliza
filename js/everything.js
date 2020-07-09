@@ -178,8 +178,7 @@ console.log('JavaScript is running.');
     }
   }
   
-
-    // Get the modal
+// Get the modal
   var modal = document.getElementById("FreeShippingModal");
 
   // Get the button that opens the modal
@@ -204,7 +203,3 @@ console.log('JavaScript is running.');
       modal.style.display = "none";
     }
   }
-
-
-
-
