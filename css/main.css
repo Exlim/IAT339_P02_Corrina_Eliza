@@ -247,7 +247,7 @@ a:active, a:hover, a:focus {
   text-decoration:underline;
 }
 
-.button{
+/*.button{
   background-color:black;
   border:none;
   color: white;
@@ -258,6 +258,29 @@ a:active, a:hover, a:focus {
   display: inline-block;
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
   font-size: 1rem;
+}*/
+
+.button {
+    text-rendering: auto;
+    color: -internal-light-dark-color(buttontext, rgb(170, 170, 170));
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark-color(rgb(239, 239, 239), rgb(74, 74, 74));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 1rem "SpaceMono-Regular", Verdana, sans-serif;;
+    padding: 0.25rem 0.5rem;
+    border-width: 0.25rem;
+    border-style: outset;
+    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
 }
 .btn-white{
   background-color:white;
@@ -291,7 +314,7 @@ a:active, a:hover, a:focus {
   text-decoration: none;
   display: inline-block;
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
-  font-size: 16px;  
+  font-size: 1rem;  
   margin-top:1rem;
 }
 
