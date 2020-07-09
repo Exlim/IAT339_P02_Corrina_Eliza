@@ -15,159 +15,155 @@
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script src="../../js/everything.js"></script>
+ <script src="../../js/everything.js"></script>
 
 
 </head>
-  
-  <body>
 
-    <div id="saucyBoySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <hr>
-      <a href="products.html">SHOP</a>
-      <a href="cart.html">CART</a>
-      <a href="about.html">ABOUT</a>
-      <a href="index.html">HOME</a>
+<body>
 
-    </div>
+  <div id="saucyBoySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <hr>
+    <a href="products.html">SHOP</a>
+    <a href="cart.html">CART</a>
+    <a href="about.html">ABOUT</a>
+    <a href="index.html">HOME</a>
 
-      <header>
+  </div>
 
-        <!-- NAV SECTION--------------------------------------------------------------   -->
-        <nav class="main-nav">
-          <div class="main-nav-container slab-black parent-container">
-            <div class="main-nav-logo">
-              <a href="index.html">
-                <img class="logo-width logo-size" src="../../img/Saucyboys_Logo.png" alt="Saucyboys website logo" height="27" width="197">
-              </a>
-            </div>
-            <div class="main-nav-items" id="myLinks">
-              <div class="main-nav-col subnav">
+  <header>
 
-                <a href="products.html">
-                  <button class="main-nav-button">SHOP</button>
-                </a>
-              </div>
-              <div class="main-nav-col">
-                <a href="about.html">
-                  <button class="main-nav-button">ABOUT</button>
-                </a>
-              </div>
-              <div class="main-nav-col">
-                <a href="cart.html">
-                  <button class="main-nav-button">CART</button>
-                </a>
-              </div>
-            </div>
-            <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
+    <!-- NAV SECTION--------------------------------------------------------------   -->
+    <nav class="main-nav">
+      <div class="main-nav-container slab-black parent-container">
+        <div class="main-nav-logo">
+          <a href="index.html">
+            <img class="logo-width logo-size" src="../../img/Saucyboys_Logo.png" alt="Saucyboys website logo" height="27" width="197">
+          </a>
+        </div>
+        <div class="main-nav-items" id="myLinks">
+          <div class="main-nav-col subnav">
 
+            <a href="products.html" class="main-nav-button">SHOP</a>
+          </div>
+          <div class="main-nav-col">
+           
+            <a href="about.html" class="main-nav-button">ABOUT</a>
+            
+          </div>
+          <div class="main-nav-col">
+            <a href="cart.html" class="main-nav-button">CART</a>
+          </div>
+        </div>
+        <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+      </div>
+
+
+    </nav>
+
+  </header>
+
+  <!-- PAYMENT FORM ------------------------------------> 
+  <div class="parent-container-wrap">
+    <div class = "flexbox-layout-major">
+
+      <ul class="breadcrumbs">
+        <li><a href="cart.html">CART</a></li>
+        <li><a href="checkout.html">CHECKOUT</a></li>
+      </ul>
+
+      <h1>Checkout</h1>
+
+      <form> 
+        <h2>Personal Information</h2> 
+        <div class="parent-container-wrap cart-individual-spacing">
+          <div class = "flexbox-checkout client-name cart-name-margin">
+            <label for="checkout-first-name">First Name<span class="asterix">*</span></label> 
+            <input class = "input-width100" id="checkout-first-name" type ="text">
           </div>
 
-
-        </nav>
-
-      </header>
-
-      <!-- PAYMENT FORM ------------------------------------> 
-      <div class="parent-container-wrap">
-        <div class = "flexbox-layout-major">
-
-          <ul class="breadcrumbs">
-            <li><a href="cart.html">CART</a></li>
-            <li><a href="checkout.html">CHECKOUT</a></li>
-          </ul>
-
-          <h1>Checkout</h1>
-
-          <form> 
-            <h2>Personal Information</h2> 
-            <div class="parent-container-wrap cart-individual-spacing">
-              <div class = "flexbox-checkout client-name cart-name-margin">
-                <label for="checkout-first-name">First Name<span class="asterix">*</span></label> 
-                <input class = "input-width100" id="checkout-first-name" type ="text">
-              </div>
-
-              <div class = "flexbox-checkout client-name">
-                <label for="checkout-last-name">Last Name<span class="asterix">*</span></label> 
-                <input class = "input-width100" id="checkout-last-name"type ="text">
-              </div>
-            </div>
-
-            <div class="flexbox-checkout">
-              <label for="checkout-email">Email Address<span class="asterix">*</span></label> 
-              <input class = "input-width100" id="checkout-email" type ="text">
-            </div>
-
-            <div class="flexbox-checkout">
-              <label for="checkout-email-confirm">Confirm Email Address<span class="asterix">*</span></label> 
-              <input class = "input-width100" id="checkout-email-confirm" type ="text">
-            </div>
-
-            <h2> Payment Information </h2> 
-            <div class="flexbox-checkout">
-              <label for="checkout-credit-card-number">Credit Card Number<span class="asterix">*</span></label> 
-              <input class = "input-width100" id="checkout-credit-card-number" type ="text">
-            </div>
-
-            <div class="parent-container cart-individual-spacing">
-              <div class = "flexbox-checkout">
-                <label for="checkout-credit-exp">Expiry Date<span class="asterix">*</span></label> 
-                <input class = "input-sm input-width100" id="checkout-credit-exp" type ="text">
-              </div>
-              <div class = "flexbox-checkout">
-                <label for="checkout-credit-cvv">CVV<span class="asterix">*</span></label> 
-                <input class = "input-sm" id="checkout-credit-cvv" type ="text">
-              </div>
-            </div>
-
-            <div class="flexbox-checkout">
-              <label for="checkout-credit-name">Name on Card<span class="asterix">*</span></label> 
-              <input class = "input-width100" id="checkout-credit-name" type ="text">
-            </div>
-
-            <div class="flexbox-checkout">
-              <label for="checkout-address-1">Address Line 1<span class="asterix">*</span></label> 
-              <input class = "input-width100" id="checkout-address-1" type ="text">
-
-            </div>
-
-            <div class="flexbox-checkout">
-              <label for="checkout-address-2">Address Line 2</label> 
-              <input class = "input-width100" id="checkout-address-2" type ="text">
-            </div>
-
-            <div class="flexbox-checkout">
-              <label for="checkout-address-city">City<span class="asterix">*</span></label> 
-              <input class = "input-width100" id="checkout-address-city" type ="text">
-            </div>
-
-            <div class="flexbox-checkout">
-              <label for="checkout-address-country">Country<span class="asterix">*</span></label> 
-              <input class = "input-width100" id="checkout-address-country" type ="text">
-            </div>
-
-            <div class="flexbox-checkout">
-              <label for="checkout-postal-code">Postal Code<span class="asterix">*</span></label> 
-              <input class = "input-width100" id="checkout-postal-code" type ="text">
-            </div>
-
-
-
-          </form>
-
-          <div class ="parent-container cart-individual-spacing align-bottom  ">
-            <div class = "flexbox-checkout"> 
-              <a class="discount-header-font" href="white_soy_sauce.html">CANCEL</a>
-            </div>
-            <div class = "flexbox-checkout"> 
-              <button class = "btn-product" onclick="window.location.href='orderconfirmation.html'">CONFIRM PAYMENT</button> 
-            </div>
+          <div class = "flexbox-checkout client-name">
+            <label for="checkout-last-name">Last Name<span class="asterix">*</span></label> 
+            <input class = "input-width100" id="checkout-last-name"type ="text">
           </div>
+        </div>
+
+        <div class="flexbox-checkout">
+          <label for="checkout-email">Email Address<span class="asterix">*</span></label> 
+          <input class = "input-width100" id="checkout-email" type ="text">
+        </div>
+
+        <div class="flexbox-checkout">
+          <label for="checkout-email-confirm">Confirm Email Address<span class="asterix">*</span></label> 
+          <input class = "input-width100" id="checkout-email-confirm" type ="text">
+        </div>
+
+        <h2> Payment Information </h2> 
+        <div class="flexbox-checkout">
+          <label for="checkout-credit-card-number">Credit Card Number<span class="asterix">*</span></label> 
+          <input class = "input-width100" id="checkout-credit-card-number" type ="text">
+        </div>
+
+        <div class="parent-container cart-individual-spacing">
+          <div class = "flexbox-checkout">
+            <label for="checkout-credit-exp">Expiry Date<span class="asterix">*</span></label> 
+            <input class = "input-sm input-width100" id="checkout-credit-exp" type ="text">
+          </div>
+          <div class = "flexbox-checkout">
+            <label for="checkout-credit-cvv">CVV<span class="asterix">*</span></label> 
+            <input class = "input-sm" id="checkout-credit-cvv" type ="text">
+          </div>
+        </div>
+
+        <div class="flexbox-checkout">
+          <label for="checkout-credit-name">Name on Card<span class="asterix">*</span></label> 
+          <input class = "input-width100" id="checkout-credit-name" type ="text">
+        </div>
+
+        <div class="flexbox-checkout">
+          <label for="checkout-address-1">Address Line 1<span class="asterix">*</span></label> 
+          <input class = "input-width100" id="checkout-address-1" type ="text">
 
         </div>
+
+        <div class="flexbox-checkout">
+          <label for="checkout-address-2">Address Line 2</label> 
+          <input class = "input-width100" id="checkout-address-2" type ="text">
+        </div>
+
+        <div class="flexbox-checkout">
+          <label for="checkout-address-city">City<span class="asterix">*</span></label> 
+          <input class = "input-width100" id="checkout-address-city" type ="text">
+        </div>
+
+        <div class="flexbox-checkout">
+          <label for="checkout-address-country">Country<span class="asterix">*</span></label> 
+          <input class = "input-width100" id="checkout-address-country" type ="text">
+        </div>
+
+        <div class="flexbox-checkout">
+          <label for="checkout-postal-code">Postal Code<span class="asterix">*</span></label> 
+          <input class = "input-width100" id="checkout-postal-code" type ="text">
+        </div>
+
+
+
+      </form>
+
+      <div class ="parent-container cart-individual-spacing align-bottom  ">
+        <div class = "flexbox-checkout"> 
+          <a class="discount-header-font" href="white_soy_sauce.html">CANCEL</a>
+        </div>
+        <div class = "flexbox-checkout"> 
+          <button class = "btn-product" onclick="window.location.href='orderconfirmation.html'">CONFIRM PAYMENT</button> 
+        </div>
+      </div>
+
+    </div>
     <!-- ORDER SUMMARY --------------------------------------------> 
     <div class ="flexbox-layout-summary slab-cream">
       <div class="order-summary">
@@ -208,7 +204,7 @@
     </div>
   </div> <!-- End of Order Summary -->
 
-      <script>
+  <script>
   // Get the modal
   var modal = document.getElementById("FreeShippingModal");
 
