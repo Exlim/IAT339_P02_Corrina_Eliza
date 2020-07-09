@@ -35,19 +35,6 @@
       document.getElementById("myNumber").value = min;
     }
   }
-
-    function up2(max) {
-    document.getElementById("myNumber2").value = parseInt(document.getElementById("myNumber2").value) + 1;
-    if (document.getElementById("myNumber2").value >= parseInt(max)) {
-      document.getElementById("myNumber2").value = max;
-    }
-  }
-  function down2(min) {
-    document.getElementById("myNumber2").value = parseInt(document.getElementById("myNumber2").value) - 1;
-    if (document.getElementById("myNumber2").value <= parseInt(min)) {
-      document.getElementById("myNumber2").value = min;
-    }
-  }
   
   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
   function myFunction() {
@@ -179,41 +166,7 @@
 
             <div class="cart-items">
               <p class="bolder-p-text"> $21.99 </p>
-              <a href="cart_3-year.html"> Remove </a>
-            </div>
-          </div> <!-- end of quantity button and price -->
-        </div> <!--end -->
-
-      </div> <!-- End of individual product view -->
-      <hr>
-
-      <div class="parent-container flexbox-cart"> <!--Beginning of individual product view-->
-        <div class="flexbox-third-nopadding cart-product-image">
-          <img src="../../img/updated-imgs/3-year-old-soysauce.jpg" alt="Grebox product image">
-        </div>
-        <div class="flexbox-third-nopadding cart-header-formatting"> <!--Beginning of text section of individual product -->
-          <div > <!--product header and size -->
-            <h2> 3 Year Aged Shoyu </h2>
-            <p>Nishikidori - 200ml</p>
-          </div>
-
-          <div class="parent-container-wrap cart-individual-spacing align-bottom"> <!-- quantity button and price -->
-            <div>
-              <div class="input-group">
-                <div class="input-group-btn">
-                  <button id="down" class="btn-blacksquare" onclick=" down2('1')">-</button>
-                </div>
-                <input type="text" id="myNumber2" class="input-button-size form-control input-number" value="1"/>
-                <div class="input-group-btn">
-                  <button id="up" class="btn-blacksquare" onclick="up2('10')">+</button>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="cart-items">
-              <p class="bolder-p-text"> $34.99 </p>
-              <a href="cart_white-soy.html"> Remove </a>
+              <a href="#"> Remove </a>
             </div>
           </div> <!-- end of quantity button and price -->
         </div> <!--end -->
@@ -228,11 +181,9 @@
         <div class = "parent-container flexbox-ordersummary">
          <div class= "flexbox-ordersummary">
           <p class="bolder-p-text"> White Shiro Murasaki </p> 
-          <p class="bolder-p-text"> 3 Year Aged Shoyu </p> 
         </div>
         <div class = "flexbox-ordersummary text-align-right">
           <p class="bolder-p-text">$21.99 </p>
-          <p class="bolder-p-text">$34.99 </p>
         </div>
       </div>
       <hr>
@@ -244,9 +195,9 @@
           <p class="bolder-p-text"> Shipping Costs </p> 
         </div>
         <div class = "flexbox-ordersummary text-align-right">
-          <p class="bolder-p-text">$56.98 </p>
-          <p class="bolder-p-text">$2.85 </p>
-          <p class="bolder-p-text">FREE</p>
+          <p class="bolder-p-text">$21.99 </p>
+          <p class="bolder-p-text">$1.85 </p>
+          <p class="bolder-p-text">$4.00</p>
         </div>
       </div>
 
@@ -256,7 +207,7 @@
 
         <p class="bolder-p-text">Total</p> 
 
-        <p class="bolder-p-text">$59.83</p>
+        <p class="bolder-p-text">$27.83</p>
 
 
       </div>
