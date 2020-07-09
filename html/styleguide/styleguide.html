@@ -31,7 +31,7 @@
       <a href="#typograpahy">Typography</a>
       <a href="#Components">COMPONENTS</a>
       <a href="#Addtocartbutton">Add to Cart Button</a>
-      <a href="#bfbutton">Back + Forward Button</a>
+      <a href="#Add&minusbutton">Add & Minus Button</a>
       <a href="#textfieldlabel">Label + Form</a>
       <a href="#Mainnav">Main Navigation</a>
       <a href="#detailedproduct">Detailed Product View</a>
@@ -172,7 +172,7 @@
   <section id="Add&minusbutton"> 
     <h2> Add and Minus Button </h2> 
 
-    <!-- quantity button and price -->
+    <!-- Quantity button and price -->
               <div class="input-group">
                 <div class="input-group-btn">
                   <button id="down" class="btn-blacksquare" onclick=" down('0')">-</button>
@@ -199,11 +199,12 @@
   </section>
       <section id="textfieldlabel"> 
         <h2>Text Input Field & Label</h2>
-          <form> 
-            <p> Subscribe to our Mailing List!</p>
-            <input class = "form-input" value= "Your email here please!" type = "text"> 
-            <input type = "submit" class="btn-submit" value="STAY IN TOUCH">
-          </form>
+      
+      <form>
+        <label for="email-form"> Subscribe to our Mailing List!</label><br>
+        <input class="form-input" placeholder = "Your email here please!" type="text" name="text" id="email-form">
+        <input type = "submit" class = "btn-submit" value = "STAY IN TOUCH">
+      </form>
 
         <h3>CSS Selector</h3>
           <p>label  .form-input  .btn-submit</p>
@@ -368,6 +369,28 @@
     document.getElementById("saucyBoySidenav").style.width = "0";
     /*document.getElementById("overlay").style.display = "none";*/
   }
+
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    var y = document.getElementById("saucyBoySidenav");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+
+    } else {
+      y.style.width="12rem";
+      /*document.getElementById("overlay").style.display = "block";*/
+    }
+  }
+
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("saucyBoySidenav").style.width = "0";
+    /*document.getElementById("overlay").style.display = "none";*/
+  }
+
 
 </script>
   </body> 
