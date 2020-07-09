@@ -28,6 +28,7 @@
     flex-wrap: -webkit-wrap;
     flex-wrap: -ms-wrap;
     flex-wrap:wrap;
+    padding:2rem;
   }
 
   .flexbox-layout-major-inverted{
@@ -35,6 +36,7 @@
     flex-wrap: -webkit-wrap;
     flex-wrap: -ms-wrap;
     flex-wrap:wrap;
+    padding:2rem;
   }
 
   .flexbox-layout-summary{
@@ -84,62 +86,74 @@
     margin:0;
   }
 
+  /**/
 
-
-/**/
-
-h1{
-  font-family: "Barlow", Verdana, sans-serif;
-  font-weight:bold;
-  font-size: 2.25rem;
-}
-
-h2{
-  font-family: "Barlow", Verdana, sans-serif;
-  font-weight:bold;
-  font-size: 1.25rem;
-}
-
-h3{
-  font-family: "Barlow", Verdana, sans-serif;
-  font-weight:bold;
-  font-size: 1rem;
-}
-
-h4 {
-  font-family: "SpaceMono-Regular", Verdana, sans-serif;
-  font-size: 0.9rem;
-  margin-top: 0.3rem;
-  padding:0;
-
-}
-
-p, ol, ul,label {
-  font-family: "SpaceMono-Regular", Verdana, sans-serif;
-  font-size: 0.75rem;
-  max-width: 40rem;
-}
-
-a, input{
-  font-size:0.75rem;
-}
-
-.btn-submit, .btn-product{
-  font-size:0.85rem;
-  height:2.5rem;
-}
-
-.discount-header-font, #modalLink{
-  font-size:0.6rem;
-}
-
-.hero-text {
-  bottom:8rem;
+  h1{
+    font-family: "Barlow", Verdana, sans-serif;
+    font-weight:bold;
+    font-size: 2.25rem;
   }
 
-.product-nav-button{
-  font-size:0.75rem;
-}
+  h2{
+    font-family: "Barlow", Verdana, sans-serif;
+    font-weight:bold;
+    font-size: 1.25rem;
+  }
+
+  h3{
+    font-family: "Barlow", Verdana, sans-serif;
+    font-weight:bold;
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-family: "SpaceMono-Regular", Verdana, sans-serif;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    padding:0;
+
+  }
+
+  p, ol, ul,label {
+    font-family: "SpaceMono-Regular", Verdana, sans-serif;
+    font-size: 0.75rem;
+    max-width: 40rem;
+  }
+
+  a, input{
+    font-size:0.75rem;
+  }
+
+  .btn-submit, .btn-product{
+    font-size:0.85rem;
+    height:2.5rem;
+  }
+
+  .discount-header-font, #modalLink{
+    font-size:0.6rem;
+  }
+
+  .flexbox-padding-margin{
+    padding:2rem;
+  }
+
+  .hero-text {
+    bottom:8rem;
+  }
+
+  .product-nav-button{
+    font-size:0.75rem;
+  }
+
+  .filter-dropdown{
+    margin:0;
+    padding:0.5rem 4rem 0.5rem 4rem;
+  }
+
+   .review-cards{
+    max-width:none;
+    min-height: 18rem;
+   }
 
 }
 
@@ -164,9 +178,29 @@ a, input{
   .flexbox-half,
   .flexox-third {
     padding:2rem;
+    flex:1 100%;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap:wrap;
   }
 
+  .price-filter{
+    padding:0rem;
+    margin-right:2rem;
+    margin-left:2rem;
+  }
 
+  .filterbtn{
+    width:100%;
+  }
+
+  .filter-dropdown-content{
+    width:100%;
+  }
+
+  .filter-dropdown-content a {
+    display:block;
+  }
 
 }
 
