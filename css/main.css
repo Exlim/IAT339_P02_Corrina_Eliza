@@ -102,9 +102,10 @@ a:active, a:hover, a:focus {
   color:black;
   border:none;
   padding:0.9rem 1rem 0.9rem 1rem;
-  font: inherit;
   margin: 0;
   color:white;
+  text-decoration:none;
+  display:flex;
 }
 
 .main-nav-button-white{
@@ -299,7 +300,7 @@ a:active, a:hover, a:focus {
   text-decoration: none;
   display: inline-block;
   font-family: "SpaceMono-Regular", Verdana, sans-serif;
-  font-size: 16px;  
+  font-size: 1rem;  
   margin-top:1rem;
 }
 
@@ -423,18 +424,28 @@ a:active, a:hover, a:focus {
     position:relative;
   }
 
+  .btn-alignment{
+    text-align:center;
+    display:flex;
+    color:white;
+    justify-content:center;
+    align-items: center;
+    box-sizing: border-box; 
+    font: 400 1rem "SpaceMono-Regular", Verdana, sans-serif;; 
+  }
+
   .product-links h3,
   .product-links p {
     margin-top:0.15rem;
     margin-bottom:0.15rem;
   }
 
-  .product-grid-col a{
+  .product-grid-col .product-links{
     color:black;
     text-decoration:none;
   }
 
-  .product-grid-col a:hover{
+  .product-grid-col .product-links:hover{
     text-decoration:none;
     color:black;
   }
@@ -931,3 +942,5 @@ a:active, a:hover, a:focus {
   font-weight:bold;
   font-size: 1.5rem;
 }
+
+
