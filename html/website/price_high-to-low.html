@@ -21,7 +21,7 @@
 
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
-    function dropDownFunction() {
+  function dropDownFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
 
@@ -135,37 +135,37 @@
 
 
       </nav>
-        <!-- PRODUCT NAV ---------------------------- -->
-        <section class="product-nav-section">
-          <div class="product-nav"> <!-- Start of product nav div -->
+      <!-- PRODUCT NAV ---------------------------- -->
+      <section class="product-nav-section">
+        <div class="product-nav"> <!-- Start of product nav div -->
 
-            <!--ALL SOY SAUCE BUTTON -------------------------------------------------------------------------------->
+          <!--ALL SOY SAUCE BUTTON -------------------------------------------------------------------------------->
 
-            <div class="product-nav-col">
-              <a href="products.html">
-                <button class="product-nav-button">ALL SOY SAUCE</button>
-              </a>
-            </div> <!-- End of dropdown-content menu -->
+          <div class="product-nav-col">
+            <a href="products.html">
+              <button class="product-nav-button">ALL SOY SAUCE</button>
+            </a>
+          </div> <!-- End of dropdown-content menu -->
 
-            <div class="product-nav-col">
-              <a href="bestsellers.html">
-                <button class="product-nav-button">BESTSELLERS</button>
-              </a>
-            </div> <!-- End of dropdown-content menu -->
-            <div class="product-nav-col">
-              <a href="just_in.html">
-                <button class="product-nav-button">JUST IN</button>
-              </a>
-            </div>
+          <div class="product-nav-col">
+            <a href="bestsellers.html">
+              <button class="product-nav-button">BESTSELLERS</button>
+            </a>
+          </div> <!-- End of dropdown-content menu -->
+          <div class="product-nav-col">
+            <a href="just_in.html">
+              <button class="product-nav-button">JUST IN</button>
+            </a>
+          </div>
 
-            <div class="product-nav-col">
-              <a href="sale.html">
-                <button class="product-nav-button">SALE</button>
-              </a>
-            </div>
-          </div> <!-- End of product nav div -->
-          <hr>
-        </section>
+          <div class="product-nav-col">
+            <a href="sale.html">
+              <button class="product-nav-button">SALE</button>
+            </a>
+          </div>
+        </div> <!-- End of product nav div -->
+        <hr>
+      </section>
 
     </header>
 
@@ -177,7 +177,7 @@
         <h1>ALL SOY SAUCE</h1>
       </div>
 
-      <div class="flexbox-layout-minor-inverted filter-dropdown">
+      <div class="flexbox-layout-minor filter-dropdown price-filter">
         <button onclick="dropDownFunction()" class="filterbtn">SORT BY<i class="fa fa-caret-down filter-arrow"></i>
         </button>
         <div id="myDropdown" class="filter-dropdown-content">
@@ -397,18 +397,6 @@
     if (event.target == modal) {
       modal.style.display = "none";
     }
-  }
-
-  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("discount-banner").style.display = "flex";
-    } else {
-      document.getElementById("discount-banner").style.display = "none";
-    }
-    prevScrollpos = currentScrollPos;
   }
 </script>
 
