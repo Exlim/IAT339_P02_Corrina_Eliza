@@ -16,42 +16,10 @@
   <link href="../../css/media_queries.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-</head>
-
   <link href="../../js/everything.js" rel="javascript">
 
+</head>
 
-<!-- Javascript for Add and Minus Buttons --> 
-<script>
-
-  function up(max) {
-    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
-    if (document.getElementById("myNumber").value >= parseInt(max)) {
-      document.getElementById("myNumber").value = max;
-    }
-  }
-  function down(min) {
-    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
-    if (document.getElementById("myNumber").value <= parseInt(min)) {
-      document.getElementById("myNumber").value = min;
-    }
-  }
-
-  function up2(max) {
-    document.getElementById("myNumber2").value = parseInt(document.getElementById("myNumber2").value) + 1;
-    if (document.getElementById("myNumber2").value >= parseInt(max)) {
-      document.getElementById("myNumber2").value = max;
-    }
-  }
-  function down2(min) {
-    document.getElementById("myNumber2").value = parseInt(document.getElementById("myNumber2").value) - 1;
-    if (document.getElementById("myNumber2").value <= parseInt(min)) {
-      document.getElementById("myNumber2").value = min;
-    }
-  }
-  
-
-</script>
 
 <body>
 
@@ -65,7 +33,6 @@
 
   </div>
 
-  <div id="overlay"> <!--Start of entire overlay div -->
     <header>
 
       <!-- DISCOUNT HEADER SECTION--------------------------------------------------------------   -->
@@ -116,7 +83,7 @@
               </a>
             </div>
           </div>
-          <a href="javascript:void(0);" class="hamburger_icon" onclick="myFunction()">
+          <a href="javascript:void(0);" aria-label="Hamburger menu icon to show menu items" class="hamburger_icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
 
@@ -148,11 +115,11 @@
               <div>
                 <div class="input-group">
                   <div class="input-group-btn">
-                    <button id="down" class="btn-blacksquare" aria-label="subtract_button" onclick="down('1')">-</button>
+                    <button id="down" aria-label="Subtraction button" class="btn-blacksquare" aria-label="subtract_button" onclick="down('1')">-</button>
                   </div>
                   <input type="text" id="myNumber" class="input-button-size form-control input-number" value="1"/>
                   <div class="input-group-btn">
-                    <button id="up" class="btn-blacksquare" onclick="up('10')">+</button>
+                    <button id="up" aria-label="Addition button" class="btn-blacksquare" onclick="up('10')">+</button>
                   </div>
                 </div>
               </div>
@@ -182,11 +149,11 @@
               <div>
                 <div class="input-group">
                   <div class="input-group-btn">
-                    <button id="down2" class="btn-blacksquare" onclick=" down2('1')">-</button>
+                    <button id="down2" aria-label="subtract button" class="btn-blacksquare" onclick=" down2('1')">-</button>
                   </div>
                   <input type="text" id="myNumber2" class="input-button-size form-control input-number" value="1"/>
                   <div class="input-group-btn">
-                    <button id="up2" class="btn-blacksquare" onclick="up2('10')">+</button>
+                    <button id="up2" aria-label="addition button" class="btn-blacksquare" onclick="up2('10')">+</button>
                   </div>
                 </div>
               </div>
@@ -248,34 +215,6 @@
 
   </div> 
 
-  <script>
-  // Get the modal
-  var modal = document.getElementById("FreeShippingModal");
-
-  // Get the button that opens the modal
-  var link = document.getElementById("modalLink");
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks on the button, open the modal
-  link.onclick = function() {
-    modal.style.display = "block";
-  }
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-
-</script>
 </body>
 
 </html>
