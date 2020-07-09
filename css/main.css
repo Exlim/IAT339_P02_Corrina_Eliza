@@ -754,7 +754,7 @@ a:active, a:hover, a:focus {
   .rate > input:checked ~ label:hover ~ label,
   .rate > input:checked + label:focus ~ label,
   .rate > input:checked + label:active ~ label,
-  .rate > label:hover ~ input:checked ~ label,
+  .rate > label:hover ~ input:checked ~ label
   {
     color: #F9A11C;
   }
