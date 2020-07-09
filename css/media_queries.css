@@ -153,10 +153,19 @@
     padding:0.5rem 4rem 0.5rem 4rem;
   }
 
-   .review-cards{
+  .review-cards{
     max-width:none;
     min-height: 18rem;
-   }
+  }
+
+  blockquote{
+    font-size:1.35rem;
+    margin:1rem;
+  }
+
+  .product-hero-banner {
+    height:auto;
+  }
 
 }
 
