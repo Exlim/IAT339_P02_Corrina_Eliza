@@ -16,30 +16,8 @@
 
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../../js/everything.cjs" rel="javascript">
 
-  <script>
-    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      var y = document.getElementById("saucyBoySidenav");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-
-      } else {
-        y.style.width="12rem";
-        /*document.getElementById("overlay").style.display = "block";*/
-      }
-    }
-
-    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-
-    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-    function closeNav() {
-      document.getElementById("saucyBoySidenav").style.width = "0";
-      /*document.getElementById("overlay").style.display = "none";*/
-    }
-
-  </script>
 
 </head>
 
@@ -98,9 +76,11 @@
               </a>
             </div>
             <div class="main-nav-col">
+             
               <a href="about.html">
                 <button class="main-nav-button">ABOUT</button>
               </a>
+              
             </div>
             <div class="main-nav-col">
               <a href="cart.html">
