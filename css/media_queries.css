@@ -101,7 +101,8 @@
     font-size: 1.25rem;
   }
 
-  h3{
+  h3,
+  .h3-styling{
     font-family: "Barlow", Verdana, sans-serif;
     font-weight:bold;
     font-size: 1rem;
